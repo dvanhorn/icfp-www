@@ -155,7 +155,7 @@
           ,@(role-rows "Workshop Co-Chairs" 'wc)
           ;,@(role-rows "Programming Contest Co-Chairs" 'contest)
           ,(role-row "Publicity Chair" 'pub)
-          ,(role-row "Video Chair" 'video)
+          ;,(role-row "Video Chair" 'video)
           ,(role-row "Treasurer" 'treasurer)
           ;,(role-row "Student Research Competition Chair" 'src)
           )
