@@ -55,7 +55,7 @@
 (define city-img "img/boston.png")
 (define city "Boston, Massachusetts")
 (define dates '("September 25 " ndash " 27"))
-(define affiliated-dates '("September ?? and ?? " ndash " ??"))
+(define affiliated-dates '("September 22 " ndash " 24 and 28"))
 (define industry-email "adams-moran@galois.com")
 (define cfwp-deadline "December 7, 2012")
 (define cfwp-notification "January 7, 2013")
@@ -198,8 +198,8 @@
               @em{Photo credit: @a[((href "http://www.flickr.com/people/werkunz/"))]{Werner Kunz}}))
           (h3 @em{@,city; @,@dates, @,year}
               (br)
-              #;"Affiliated events: "
-              #;,@affiliated-dates))
+              "Affiliated events: "
+              ,@affiliated-dates))
          @p{ICFP 2013 provides a forum for researchers and
             developers to hear about the latest work on the design,
             implementations, principles, and uses of functional
@@ -209,12 +209,14 @@
          
          (h3 "News")
          (ul
+          (li (img ((src "img/new.gif")))
+              (a ((href "cfwp.html"))
+                 "Submit a proposal for a workshop or co-located events")
+              (img ((src "img/new.gif"))))
           (li "Interested in sponsoring? "
               (a ((href ,(string-append "mailto:" industry-email)))
                  "Contact the Industrial Relations Chair"))
-          (li (img ((src "img/new.gif")))
-              "Dates have been chosen."
-              (img ((src "img/new.gif")))))
+          (li "Dates have been chosen for ICFP and affiliated events."))
          (h3 "Conference Organizers")
          (table
           ((cellpadding "5")
