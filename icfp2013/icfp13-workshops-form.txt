@@ -37,7 +37,7 @@ NAMES OF POTENTIAL PROGRAM COMMITTEE MEMBERS, WITH AFFILIATIONS:
    (Note that this list must be reviewed by SIGPLAN, which includes
     checking for broad representation.
 
-      http://www.sigplan.org/DiversityPolicy.htm 
+      http://www.sigplan.org/Resources/Policies/Diversity
 
     Since SIGPLAN does sometimes request changes, PC invitations
     should wait until the workshop is approved.  Thus, you may
