@@ -322,7 +322,7 @@
          (p "Prospective organizers of workshops or other "
             "co-located events are invited to submit a completed "
             (a ((href ,(string-append "http://www.icfpconference.org/icfp" year
-                                      "/icfp" year "-workshops-form.txt")))
+                                      "/icfp" (substring year 2 4) "-workshops-form.txt")))               
                "workshop proposal form")
             " in plain text format to the ICFP "
             ,year
@@ -346,7 +346,7 @@
             "final report after the event has taken place that is "
             "suitable for publication in SIGPLAN Notices. Further "
             "information about SIGPLAN sponsorship is available "
-            (a ((href "http://acm.org/sigplan/sigplan_workshop_proposal.htm"))
+            (a ((href "http://www.sigplan.org/Resources/Proposals/Workshop"))
                "here")
             ".")
          (h3 "Selection committee")
