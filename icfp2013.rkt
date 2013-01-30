@@ -47,7 +47,7 @@
   (person 'treasurer "Jean-Baptiste" "Tristan" "Oracle Labs" "http://labs.oracle.com/people/tristan"))
 
 (define andy
-  (person 'industry "Andy" "Adams-Moran" "Galois" "http://corp.galois.com/andrew-adams-moran/"))
+  (person 'industry "Andy" "Adams-Moran" "" "mailto:andy.adamsmoran@gmail.com"))
 
 (define unknown
   (person 'unknown "???" "" "???" #f))
