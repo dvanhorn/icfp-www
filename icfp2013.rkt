@@ -3,6 +3,28 @@
 ;; (person Role String String String (U #f String))
 (struct person (role first last affil url) #:transparent)
 
+;; start PC
+
+(define program-committee
+  (list
+   (person 'pcm "Thorsten" "Altenkirch" "University of Nottingham" "http://www.cs.nott.ac.uk/~txa/")
+   (person 'pcm "Olaf" "Chitil" "University of Kent" "http://www.cs.kent.ac.uk/people/staff/oc/")
+   (person 'pcm "Silvia" "Ghilezan" "University of Novi Sad" "http://imft.ftn.uns.ac.rs/~silvia/")
+   (person 'pcm "Michael" "Hanus" "Christian-Albrechts-Universität zu Kiel" "http://www.informatik.uni-kiel.de/~mh/")
+   (person 'pcm "Fritz" "Henglein" "University of Copenhagen" "http://www.diku.dk/~henglein/")
+   (person 'pcm "Mauro" "Jaskelioff" "Universidad Nacional de Rosario" "http://www.fceia.unr.edu.ar/~mauro/")
+   (person 'pcm "Alan" "Jeffrey" "Alcatel-Lucent Bell Labs" "http://ect.bell-labs.com/who/ajeffrey/")
+   (person 'pcm "Shin-ya" "Katsumata" "Kyoto University" "http://www.kurims.kyoto-u.ac.jp/~sinya/index-e.html")
+   (person 'pcm "Shriram" "Krishnamurthi" "Brown University" "http://cs.brown.edu/~sk/")
+   (person 'pcm "John" "Launchbury" "Galois, Inc." "http://corp.galois.com/john-launchbury")
+   (person 'pcm "Ryan" "Newton" "Indiana University" "http://www.cs.indiana.edu/~rrnewton/homepage.html")
+   (person 'pcm "Sungwoo" "Park" "POSTECH" "http://www.postech.ac.kr/~gla/")
+   (person 'pcm "Sam" "Staton" "University of Cambridge" "http://www.cl.cam.ac.uk/~ss368/")
+   (person 'pcm "Nikhil" "Swamy" "MSR Redmond" "http://research.microsoft.com/en-us/people/nswamy/")
+   (person 'pcm "Dimitrios" "Vytiniotis" "MSR Cambridge" "http://research.microsoft.com/en-us/people/dimitris/")))
+
+;; end PC
+
 (define greg
   (person 'gc "Greg" "Morrisett" "Harvard University" "http://www.eecs.harvard.edu/~greg/"))
 
@@ -18,7 +40,7 @@
 (define david
   (person 'pub "David" "Van Horn" "Northeastern University" "http://www.ccs.neu.edu/home/dvanhorn/"))
 
-(define malcolm 
+(define malcolm
   (person 'video "Malcolm" "Wallace" "Standard Chartered Bank" #f))
 
 (define jean-baptiste
@@ -32,7 +54,8 @@
 
 
 (define people
-  (list greg tarmo sam patrik david malcolm jean-baptiste andy))
+  (append program-committee
+          (list greg tarmo sam patrik david malcolm jean-baptiste andy)))
 
 ;; Role -> [Listof Person]
 (define (get-roles r)
@@ -210,13 +233,28 @@
          (h3 "News")
          (ul
           (li (img ((src "img/new.gif")))
-              (a ((href "cfwp.html"))
-                 "Submit a proposal for a workshop or co-located events")
+              "The Program Committee has been selected (below)."
+              (img ((src "img/new.gif"))))
+          (li (img ((src "img/new.gif")))
+              "Important dates have been announced (below)."
               (img ((src "img/new.gif"))))
           (li "Interested in sponsoring? "
               (a ((href ,(string-append "mailto:" industry-email)))
                  "Contact the Industrial Relations Chair"))
           (li "Dates have been chosen for ICFP and affiliated events."))
+         
+         (h3 "Important dates")
+         (table
+          ((cellpadding "5"))
+          (tr (td "Submissions due:")
+              (td "Thursday, 28 March, 2013"))
+          (tr (td "Author response:")
+              (td "Wednesday, 22 May, 2013 " ndash " Friday, 24 May, 2013"))
+          (tr (td "Notification:")
+              (td "Friday, 7 June, 2013"))
+          (tr (td "Final copy due:")
+              (td "Friday, 5 July, 2013")))
+         
          (h3 "Conference Organizers")
          (table
           ((cellpadding "5")
@@ -233,15 +271,17 @@
           ,(role-row "Treasurer" 'treasurer)
           ;,(role-row "Student Research Competition Chair" 'src)
           )
-         #;(h3 "Program Committee")
-         #;(table
+
+         (h3 "Program Committee")
+         (table
             ((cellpadding "5")
              (summary "PC"))
+	    ,@(map (lambda (p) (row "" p)) program-committee)
             ))
-        
-        ,col2)))     
-     ,@footers)))
 
+        ,col2)))
+     ,@footers)))
+  
 
 (define workshop-date-par
   '(p "The workshops are scheduled to occur on September 22-24 (the three days before ICFP) "
