@@ -141,10 +141,11 @@
        ((class "navigation")
         (href "index.html"))
        "Home"))
-     #;
      (li
       ((class "roomy"))
-      "Call for papers")
+      (a ((class "navigation")
+          (href "cfp.html"))
+         "Call for papers"))
      (li
       ((class "roomy"))
       (a ((class "navigation")
@@ -182,6 +183,167 @@
                                           var pageTracker = _gat._getTracker("UA-10975741-1");
                                           pageTracker._trackPageview();
                                           } catch(err) {}}|))
+
+(define important-dates
+  '[(h3 "Important dates")
+    (table
+     ((cellpadding "5"))
+     (tr (td "Submissions due:")
+         (td (a ((href "http://www.timeanddate.com/worldclock/city.html?n=1033"))
+                "Thursday, 28 March, 2013, 11:59pm American Samoa time (UTC-11h)")))
+     (tr (td "Author response:")
+         (td "Wednesday, 22 May, 2013 " ndash " Friday, 24 May, 2013"))
+     (tr (td "Notification:")
+         (td "Friday, 7 June, 2013"))
+     (tr (td "Final copy due:")
+         (td "Friday, 5 July, 2013")))])
+
+(define cfp.xexpr
+  `(html
+    (head
+     @title{ICFP @,year : The @,nth ACM SIGPLAN International Conference on Functional Programming}
+     (meta ((http-equiv "Content-Type")
+            (content "text/html; charset=us-ascii")))
+     (meta ((name "keywords")
+            (content ,keywords)))
+     (link ((href "column.css")
+            (rel "stylesheet")
+            (type "text/css"))))
+    (body
+     (div
+      ((id "content"))
+      (div
+       ((id "header"))
+       (center
+	(div
+	 ((class "whited"))
+         @h1[((style "font-size:400%"))]{ICFP @,year}
+         @h2{The @,nth ACM SIGPLAN International Conference on
+                 Functional Programming})))
+      (div
+       ((class "colmask leftmenu"))
+       (div
+        ((class "colleft"))
+        (div
+         ((class "col1"))
+         (center
+          (h3 @em{@,city; @,@dates, @,year}))
+	  (h2 "Call for Papers")
+          ,@important-dates
+          (h3 "Scope")
+          (p "ICFP 2013 seeks original papers on the art and science of functional
+programming.  Submissions are invited on all topics from principles to
+practice, from foundations to features, and from abstraction to
+application.  The scope includes all languages that encourage
+functional programming, including both purely applicative and
+imperative languages, as well as languages with objects, concurrency,
+or parallelism.  Topics of interest include (but are not limited to):")
+          (ul
+           (li "Language Design: concurrency and distribution; modules; components
+  and composition; metaprogramming; interoperability; type systems;
+  relations to imperative, object-oriented, or logic programming")
+           (li "Implementation: abstract machines; virtual machines; interpretation;
+  compilation; compile-time and run-time optimization; memory
+  management; multi-threading; exploiting parallel hardware; interfaces
+  to foreign functions, services, components, or low-level machine
+  resources")
+           (li "Software-Development Techniques: algorithms and data structures;
+  design patterns; specification; verification; validation; proof
+  assistants; debugging; testing; tracing; profiling")
+           (li "Foundations: formal semantics; lambda calculus; rewriting; type
+  theory; monads; continuations; control; state; effects; program
+  verification; dependent types")
+           (li "Analysis and Transformation: control-flow; data-flow; abstract
+  interpretation; partial evaluation; program calculation")
+           (li "Applications and Domain-Specific Languages: symbolic computing;
+  formal-methods tools; artificial intelligence; systems programming;
+  distributed-systems and web programming; hardware design; databases;
+  XML processing; scientific and numerical computing; graphical user
+  interfaces; multimedia programming; scripting; system
+  administration; security")
+           (li "Education: teaching introductory programming; parallel programming;
+  mathematical proof; algebra")
+           (li "Functional Pearls: elegant, instructive, and fun essays on
+  functional programming")
+           (li "Experience Reports: short papers that provide evidence that
+  functional programming really works or describe obstacles that have
+  kept it from working"))
+          (p "If you are concerned about the appropriateness of some topic, do not
+hesitate to contact the program chair.")
+          (h3 "Abbreviated instructions for authors")
+          (ul
+           (li "By Thursday, 28 March 2013, 23:59 UTC-11 (American Samoa time),
+  submit a full paper of at most 12 pages (6 pages for an Experience
+  Report), including bibliography and figures."))
+          (p "The deadlines will be strictly enforced and papers exceeding the page
+limits will be summarily rejected.")
+          (ul
+           (li "Authors have the option to attach supplementary material to a submission,
+  on the understanding that reviewers may choose not to look at it.")
+           (li "Each submission must adhere to SIGPLAN's republication policy, as
+  explained on the web at "
+               (a ((href "http://www.sigplan.org/Resources/Policies/Republication"))
+                  "http://www.sigplan.org/Resources/Policies/Republication"))
+           (li "Authors of resubmitted (but previously rejected) papers have the
+  option to attach an annotated copy of the reviews of their previous
+  submission(s), explaining how they have addressed these previous
+  reviews in the present submission.  If a reviewer identifies
+  him/herself as a reviewer of this previous submission and wishes to
+  see how his/her comments have been addressed, the program chair will
+  communicate to this reviewer the annotated copy of his/her previous
+  review.  Otherwise, no reviewer will read the annotated copies of
+  the previous reviews."))
+          (p "Overall, a submission will be evaluated according to its relevance,
+correctness, significance, originality, and clarity.  It should
+explain its contributions in both general and technical terms, clearly
+identifying what has been accomplished, explaining why it is
+significant, and comparing it with previous work.  The technical
+content should be accessible to a broad audience.  Functional Pearls
+and Experience Reports are separate categories of papers that need not
+report original research results and must be marked as such at the
+time of submission.  Detailed guidelines on both categories are on the
+conference web site.")
+          (p "Proceedings will be published by ACM Press.  Authors of accepted
+submissions are expected to transfer the copyright to the
+ACM.  Presentations will be videotaped and released online if the
+presenter consents.")
+          (p (em "Formatting: ")
+             "Submissions must be in PDF format printable in black and
+white on US Letter sized paper and interpretable by
+Ghostscript. Papers must adhere to the standard ACM conference format:
+two columns, nine-point font on a ten-point baseline, with columns
+20pc (3.33in) wide and 54pc (9in) tall, with a column gutter of 2pc
+(0.33in).  A suitable document template for LaTeX is available: "
+             (a ((href "http://www.acm.org/sigs/sigplan/authorInformation.htm"))
+                "http://www.acm.org/sigs/sigplan/authorInformation.htm"))
+          (p (em "Submission: ") 
+             "Submissions will be accepted on the web at
+https://www.easychair.org/conferences/?conf=icfp2013 . Improved
+versions of a paper may be submitted at any point before the
+submission deadline using the same web interface.")
+          (p (em "Author response: ")
+             "Authors will have a 72-hour period, starting at 0:00
+UTC-11 on Wednesday, 22 May 2013, to read reviews and respond to them.")
+
+          (p (em "Special Journal Issue: ") 
+             "There will be a special issue of the Journal of
+Functional Programming with papers from ICFP 2013.  The program
+committee will invite the authors of select accepted papers to submit
+a journal version to this issue.")
+          
+          (h3 "Organizers")
+          (table
+           ((cellpadding "5")
+            (summary "Organizers"))
+           ,(role-row "General Chair" 'gc)
+           ,(role-row "Program Chair" 'pc)
+           (tr (td "Program Committee:"))
+           ,@(map (lambda (p) (row "" p)) program-committee)))
+           
+               
+        ,col2)))
+     ,@footers)))
+     
 
 (define index.xexpr
   `(html
@@ -243,18 +405,7 @@
                  "Contact the Industrial Relations Chair"))
           (li "Dates have been chosen for ICFP and affiliated events."))
          
-         (h3 "Important dates")
-         (table
-          ((cellpadding "5"))
-          (tr (td "Submissions due:")
-              (td (a ((href "http://www.timeanddate.com/worldclock/city.html?n=1033"))
-                     "Thursday, 28 March, 2013, 11:59pm American Samoa time (UTC-11h)")))
-          (tr (td "Author response:")
-              (td "Wednesday, 22 May, 2013 " ndash " Friday, 24 May, 2013"))
-          (tr (td "Notification:")
-              (td "Friday, 7 June, 2013"))
-          (tr (td "Final copy due:")
-              (td "Friday, 5 July, 2013")))
+         ,@important-dates
          
          (h3 "Conference Organizers")
          (table
@@ -421,6 +572,7 @@
 
 (write-page index.xexpr "index.html")
 (write-page cfwp.xexpr "cfwp.html")
+(write-page cfp.xexpr "cfp.html")
 
 
 
