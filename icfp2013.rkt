@@ -247,7 +247,8 @@
          (table
           ((cellpadding "5"))
           (tr (td "Submissions due:")
-              (td "Thursday, 28 March, 2013"))
+              (td (a ((href "http://www.timeanddate.com/worldclock/city.html?n=1033"))
+                     "Thursday, 28 March, 2013, 11:59pm American Samoa time (UTC-11h)")))
           (tr (td "Author response:")
               (td "Wednesday, 22 May, 2013 " ndash " Friday, 24 May, 2013"))
           (tr (td "Notification:")
