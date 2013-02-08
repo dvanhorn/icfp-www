@@ -10,18 +10,18 @@
    (person 'pcm "Thorsten" "Altenkirch" "University of Nottingham" "http://www.cs.nott.ac.uk/~txa/")
    (person 'pcm "Olaf" "Chitil" "University of Kent" "http://www.cs.kent.ac.uk/people/staff/oc/")
    (person 'pcm "Silvia" "Ghilezan" "University of Novi Sad" "http://imft.ftn.uns.ac.rs/~silvia/")
-   (person 'pcm "Michael" "Hanus" "Christian-Albrechts-Universität zu Kiel" "http://www.informatik.uni-kiel.de/~mh/")
+   (person 'pcm "Michael" "Hanus" '("Christian-Albrechts-Universit" auml "t zu Kiel") "http://www.informatik.uni-kiel.de/~mh/")
    (person 'pcm "Fritz" "Henglein" "University of Copenhagen" "http://www.diku.dk/~henglein/")
    (person 'pcm "Mauro" "Jaskelioff" "Universidad Nacional de Rosario" "http://www.fceia.unr.edu.ar/~mauro/")
    (person 'pcm "Alan" "Jeffrey" "Alcatel-Lucent Bell Labs" "http://ect.bell-labs.com/who/ajeffrey/")
    (person 'pcm "Shin-ya" "Katsumata" "Kyoto University" "http://www.kurims.kyoto-u.ac.jp/~sinya/index-e.html")
    (person 'pcm "Shriram" "Krishnamurthi" "Brown University" "http://cs.brown.edu/~sk/")
-   (person 'pcm "John" "Launchbury" "Galois, Inc." "http://corp.galois.com/john-launchbury")
+   (person 'pcm "John" "Launchbury" "Galois" "http://corp.galois.com/john-launchbury")
    (person 'pcm "Ryan" "Newton" "Indiana University" "http://www.cs.indiana.edu/~rrnewton/homepage.html")
-   (person 'pcm "Sungwoo" "Park" "POSTECH" "http://www.postech.ac.kr/~gla/")
+   (person 'pcm "Sungwoo" "Park" "Pohang University of Science and Technology" "http://www.postech.ac.kr/~gla/")
    (person 'pcm "Sam" "Staton" "University of Cambridge" "http://www.cl.cam.ac.uk/~ss368/")
-   (person 'pcm "Nikhil" "Swamy" "MSR Redmond" "http://research.microsoft.com/en-us/people/nswamy/")
-   (person 'pcm "Dimitrios" "Vytiniotis" "MSR Cambridge" "http://research.microsoft.com/en-us/people/dimitris/")))
+   (person 'pcm "Nikhil" "Swamy" "Microsoft Research, Redmond" "http://research.microsoft.com/en-us/people/nswamy/")
+   (person 'pcm "Dimitrios" "Vytiniotis" "Microsoft Research, Cambridge" "http://research.microsoft.com/en-us/people/dimitris/")))
 
 ;; end PC
 
@@ -101,7 +101,8 @@
     (td ((align "left"))
         ,@(link (person-url p) (person-first p) " " (person-last p)))
     (td ((align "left"))
-        ,(person-affil p))))
+        ,@(local [(define affil (person-affil p))]
+            (if (cons? affil) affil (list affil))))))
 
 (define (role-row desc r)
   (row desc (get-role r)))
@@ -190,7 +191,7 @@
      ((cellpadding "5"))
      (tr (td "Submissions due:")
          (td (a ((href "http://www.timeanddate.com/worldclock/city.html?n=1033"))
-                "Thursday, 28 March, 2013, 11:59pm American Samoa time (UTC-11h)")))
+                "Thursday, 28 March 2013, 23:59 UTC-11 American Samoa time")))
      (tr (td "Author response:")
          (td "Wednesday, 22 May, 2013 " ndash " Friday, 24 May, 2013"))
      (tr (td "Notification:")
@@ -317,8 +318,10 @@ two columns, nine-point font on a ten-point baseline, with columns
              (a ((href "http://www.acm.org/sigs/sigplan/authorInformation.htm"))
                 "http://www.acm.org/sigs/sigplan/authorInformation.htm"))
           (p (em "Submission: ") 
-             "Submissions will be accepted on the web at
-https://www.easychair.org/conferences/?conf=icfp2013 . Improved
+             "Submissions will be accepted on the web at "
+	     (a ((href "https://www.easychair.org/conferences/?conf=icfp2013"))
+                "https://www.easychair.org/conferences/?conf=icfp2013")
+". Improved
 versions of a paper may be submitted at any point before the
 submission deadline using the same web interface.")
           (p (em "Author response: ")
@@ -395,10 +398,7 @@ a journal version to this issue.")
          (h3 "News")
          (ul
           (li (img ((src "img/new.gif")))
-              "The Program Committee has been selected (below)."
-              (img ((src "img/new.gif"))))
-          (li (img ((src "img/new.gif")))
-              "Important dates have been announced (below)."
+              "The " (a ((href "cfp.html")) "Call for Papers") "has been announced."
               (img ((src "img/new.gif"))))
           (li "Interested in sponsoring? "
               (a ((href ,(string-append "mailto:" industry-email)))
