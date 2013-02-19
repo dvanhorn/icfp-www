@@ -25,6 +25,13 @@
 
 ;; end PC
 
+(define contest-committee
+  (list
+   (person 'cc "Nikhil" "Swamy" "Microsoft Research, Redmond" "http://research.microsoft.com/en-us/people/nswamy/")
+   (person 'cc "Michal" "Moskal" "Microsoft Research, Redmond" "http://research.microsoft.com/en-us/um/people/moskal/")
+   (person 'cc "Nikolai" "Tillmann" "Microsoft Research, Redmond" "http://research.microsoft.com/en-us/people/nikolait/")
+   (person 'cc "Peli" "de Halleux" "Microsoft Research, Redmond" "http://research.microsoft.com/en-us/people/jhalleux/")))
+
 (define greg
   (person 'gc "Greg" "Morrisett" "Harvard University" "http://www.eecs.harvard.edu/~greg/"))
 
@@ -55,12 +62,13 @@
 
 (define people
   (append program-committee
+          contest-committee
           (list greg tarmo sam patrik david malcolm jean-baptiste andy)))
 
 ;; Role -> [Listof Person]
 (define (get-roles r)
   (sort (filter (λ (p) (eq? r (person-role p))) people)
-        string<?
+        string-ci<?
         #:key person-last))
 
 ;; Role -> Person
@@ -398,6 +406,9 @@ a journal version to this issue.")
          (h3 "News")
          (ul
           (li (img ((src "img/new.gif")))
+              "The RiSE group at MSR Redmond has agreed to run the programming contest!"
+              (img ((src "img/new.gif"))))
+          (li (img ((src "img/new.gif")))
               "The " (a ((href "cfp.html")) "Call for Papers") "has been announced."
               (img ((src "img/new.gif"))))
           (li "Interested in sponsoring? "
@@ -417,7 +428,7 @@ a journal version to this issue.")
           ;,(role-row "Local Arrangements Chair" 'local)
           ,(role-row "Industrial Relations Chair" 'industry)
           ,@(role-rows "Workshop Co-Chairs" 'wc)
-          ;,@(role-rows "Programming Contest Co-Chairs" 'contest)
+          ,@(role-rows "Programming Contest Co-Chairs" 'cc)
           ,(role-row "Publicity Chair" 'pub)
           ;,(role-row "Video Chair" 'video)
           ,(role-row "Treasurer" 'treasurer)
