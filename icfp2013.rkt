@@ -159,7 +159,7 @@
       ((class "roomy"))
       (a ((class "navigation")
           (href "cfwp.html"))
-         "Call for workshop proposals"))
+         "Call for workshop proposals")) 
      #;
      (li
       ((class "roomy"))
@@ -168,7 +168,17 @@
       ((class "roomy"))
       (a ((class "navigation")
           (href "http://www.icfpconference.org"))
-         "More about ICFP")))))
+         "More about ICFP"))
+
+     (li
+      ((class "roomy"))
+      (a ((class "navigation")
+          (href "industry.html"))
+         "Industrial partners")
+      (p ((class "indent1")) "Platinum partners")
+      (p ((class "indent2")) (a ((href "http://janestreet.com/")) "Jane Street Capital"))
+      (p ((class "indent1")) "Silver partners")
+      (p ((class "indent2")) (a ((href "http://www.erlang-solutions.com/")) "Erlang Solutions"))) )))
 
 (define footers
   `((div
@@ -205,12 +215,14 @@
      (tr (td "Notification:")
          (td "Friday, 7 June, 2013"))
      (tr (td "Final copy due:")
-         (td "Friday, 5 July, 2013")))])
+         (td "Friday, 5 July, 2013"))
+     (tr (td "Conference:")
+         (td "Wednesday, 25 September - Friday, 27 September, 2013")))])
 
-(define cfp.xexpr
+(define (make-page title col)
   `(html
     (head
-     @title{ICFP @,year : The @,nth ACM SIGPLAN International Conference on Functional Programming}
+     @title{ICFP @,year : @,title}
      (meta ((http-equiv "Content-Type")
             (content "text/html; charset=us-ascii")))
      (meta ((name "keywords")
@@ -221,79 +233,85 @@
     (body
      (div
       ((id "content"))
-      (div
+      (div 
        ((id "header"))
        (center
-	(div
-	 ((class "whited"))
+        (div
+         ((class "whited"))
          @h1[((style "font-size:400%"))]{ICFP @,year}
-         @h2{The @,nth ACM SIGPLAN International Conference on
-                 Functional Programming})))
+         @h2{The @,nth ACM SIGPLAN International
+                  Conference on Functional Programming})))
       (div
        ((class "colmask leftmenu"))
        (div
         ((class "colleft"))
-        (div
-         ((class "col1"))
-         (center
-          (h3 @em{@,city; @,@dates, @,year}))
-	  (h2 "Call for Papers")
-          ,@important-dates
-          (h3 "Scope")
-          (p "ICFP 2013 seeks original papers on the art and science of functional
+	,col
+	,col2))
+      ,@footers))))
+
+(define cfp.xexpr
+  (make-page 
+   "Call for Papers"
+   `(div
+     ((class "col1"))
+     (center
+      (h1 "Call for Papers"))
+     ,@important-dates
+     (h3 "Scope")
+     (p "ICFP 2013 seeks original papers on the art and science of functional
 programming.  Submissions are invited on all topics from principles to
 practice, from foundations to features, and from abstraction to
 application.  The scope includes all languages that encourage
 functional programming, including both purely applicative and
 imperative languages, as well as languages with objects, concurrency,
 or parallelism.  Topics of interest include (but are not limited to):")
-          (ul
-           (li "Language Design: concurrency and distribution; modules; components
+     (ul
+      (li "Language Design: concurrency and distribution; modules; components
   and composition; metaprogramming; interoperability; type systems;
   relations to imperative, object-oriented, or logic programming")
-           (li "Implementation: abstract machines; virtual machines; interpretation;
+      (li "Implementation: abstract machines; virtual machines; interpretation;
   compilation; compile-time and run-time optimization; memory
   management; multi-threading; exploiting parallel hardware; interfaces
   to foreign functions, services, components, or low-level machine
   resources")
-           (li "Software-Development Techniques: algorithms and data structures;
+      (li "Software-Development Techniques: algorithms and data structures;
   design patterns; specification; verification; validation; proof
   assistants; debugging; testing; tracing; profiling")
-           (li "Foundations: formal semantics; lambda calculus; rewriting; type
+      (li "Foundations: formal semantics; lambda calculus; rewriting; type
   theory; monads; continuations; control; state; effects; program
   verification; dependent types")
-           (li "Analysis and Transformation: control-flow; data-flow; abstract
+      (li "Analysis and Transformation: control-flow; data-flow; abstract
   interpretation; partial evaluation; program calculation")
-           (li "Applications and Domain-Specific Languages: symbolic computing;
+      (li "Applications and Domain-Specific Languages: symbolic computing;
   formal-methods tools; artificial intelligence; systems programming;
   distributed-systems and web programming; hardware design; databases;
   XML processing; scientific and numerical computing; graphical user
   interfaces; multimedia programming; scripting; system
   administration; security")
-           (li "Education: teaching introductory programming; parallel programming;
+      (li "Education: teaching introductory programming; parallel programming;
   mathematical proof; algebra")
-           (li "Functional Pearls: elegant, instructive, and fun essays on
+      (li "Functional Pearls: elegant, instructive, and fun essays on
   functional programming")
-           (li "Experience Reports: short papers that provide evidence that
+      (li "Experience Reports: short papers that provide evidence that
   functional programming really works or describe obstacles that have
   kept it from working"))
-          (p "If you are concerned about the appropriateness of some topic, do not
+     (p "If you are concerned about the appropriateness of some topic, do not
 hesitate to contact the program chair.")
-          (h3 "Abbreviated instructions for authors")
-          (ul
-           (li "By Thursday, 28 March 2013, 23:59 UTC-11 (American Samoa time),
+     (h3 "Abbreviated instructions for authors")
+     (ul
+      (li "By Thursday, 28 March 2013, 23:59 UTC-11 (American Samoa time),
   submit a full paper of at most 12 pages (6 pages for an Experience
   Report), including bibliography and figures."))
-          (p "The deadlines will be strictly enforced and papers exceeding the page
+     (p "The deadlines will be strictly enforced and papers exceeding the page
 limits will be summarily rejected.")
-          (ul
-           (li "Authors have the option to attach supplementary material to a submission,
+     (ul
+      (li "Authors have the option to attach supplementary material to a submission,
   on the understanding that reviewers may choose not to look at it.")
-           (li "Each submission must adhere to SIGPLAN's republication policy, as
+      (li "Each submission must adhere to SIGPLAN's republication policy, as
   explained on the web at "
-               (a ((href "http://www.sigplan.org/Resources/Policies/Republication"))
-                  "http://www.sigplan.org/Resources/Policies/Republication"))
-           (li "Authors of resubmitted (but previously rejected) papers have the
+	  (a ((href "http://www.sigplan.org/Resources/Policies/Republication"))
+	     "http://www.sigplan.org/Resources/Policies/Republication"))
+      (li "Authors of resubmitted (but previously rejected) papers have the
   option to attach an annotated copy of the reviews of their previous
   submission(s), explaining how they have addressed these previous
   reviews in the present submission.  If a reviewer identifies
@@ -302,7 +320,7 @@ limits will be summarily rejected.")
   communicate to this reviewer the annotated copy of his/her previous
   review.  Otherwise, no reviewer will read the annotated copies of
   the previous reviews."))
-          (p "Overall, a submission will be evaluated according to its relevance,
+     (p "Overall, a submission will be evaluated according to its relevance,
 correctness, significance, originality, and clarity.  It should
 explain its contributions in both general and technical terms, clearly
 identifying what has been accomplished, explaining why it is
@@ -312,12 +330,12 @@ and Experience Reports are separate categories of papers that need not
 report original research results and must be marked as such at the
 time of submission.  Detailed guidelines on both categories are on the
 conference web site.")
-          (p "Proceedings will be published by ACM Press.  Authors of accepted
+     (p "Proceedings will be published by ACM Press.  Authors of accepted
 submissions are expected to transfer the copyright to the
 ACM.  Presentations will be videotaped and released online if the
 presenter consents.")
-          (p (em "Formatting: ")
-             "Submissions must be in PDF format printable in black and
+     (p (em "Formatting: ")
+	"Submissions must be in PDF format printable in black and
 white on US Letter sized paper and interpretable by
 Ghostscript. Papers must adhere to the standard ACM conference format:
 two columns, nine-point font on a ten-point baseline, with columns
@@ -349,12 +367,39 @@ a journal version to this issue.")
            ,(role-row "General Chair" 'gc)
            ,(role-row "Program Chair" 'pc)
            (tr (td "Program Committee:"))
-           ,@(map (lambda (p) (row "" p)) program-committee)))
-           
-               
-        ,col2)))
-     ,@footers)))
-     
+           ,@(map (lambda (p) (row "" p)) program-committee)))))     
+
+(define industry.xexpr
+  (make-page 
+    "Industrial partnership program"
+   `(div
+     ((class "col1"))
+     (center
+      (h1 "Industrial partnership program"))
+      (p "Would you be willing to provide corporate financial support for the 17th ACM SIGPLAN International Conference on Functional Programming (ICFP)?")
+      (p "Corporate support funds are primarily used to subsidize students" mdash "the lifeblood of our community" mdash "and in turn serve to raise the community profile of the supporting companies.")
+      (p "Your generosity would make it possible for students from all over the world to attend ICFP, which is the premier conference in functional programming. There, they will meet luminaries in the field, as well as people who've succeeded in building a successful career built on functional programming. They will return home further motivated to continue pursuing functional programming in the confidence that exciting careers are available.")
+      (p "This year, we're again offering levels of financial support to enable smaller companies to contribute while allowing larger companies to be as generous as they wish (with additional benefits, in recognition of that generosity).")
+      (p "The proposed support levels, and their associated benefits and pledge amounts and benefits are as follows (costs in US dollars).")
+      (table (tr (td (strong "Bronze"))
+		 (td "$500")
+		 (td "Logo on website, poster at industrial reception,
+              listed in proceedings."))
+	     (tr (td (strong "Silver"))
+		 (td "$2000")
+		 (td "As above plus: logo in proceedings, logo on
+              publicity materials (e.g., posters, etc.)"))
+	     (tr (td (strong "Gold"))
+		 (td "$5000")
+		 (td "As above plus: named supporter of industrial reception, opportunity to include branded merchandise in participants' swag bag."))
+	     (tr (td (strong "Platinum"))
+		 (td "$10000")
+		 (td "As above plus: logo on swag bag, named supporter of whole event, logo on lanyards, badge ribbon, table/booth-like space available (in coffee break areas), other negotiated benefits (subject to ACM restrictions on commercial involvement).")))
+      (p "As the premier conference in the field, ICFP is the ideal venue to promote your company's interests in functional programming, and to meet with prospective employees and leading figures in the community.")
+      (p "For more information, please contact " (a ((href "mailto:andy.adamsmoran@gmail.com")) "Andy Adams-Moran") ", the Industrial Relations Chair."))))
+	     
+		 
+
 
 (define index.xexpr
   `(html
@@ -394,8 +439,7 @@ a journal version to this issue.")
               @em{Photo credit: @a[((href "http://www.flickr.com/people/werkunz/"))]{Werner Kunz}}))
           (h3 @em{@,city; @,@dates, @,year}
               (br)
-              "Affiliated events: "
-              ,@affiliated-dates))
+              @em["Affiliated events: "  ,@affiliated-dates]))
          @p{ICFP 2013 provides a forum for researchers and
             developers to hear about the latest work on the design,
             implementations, principles, and uses of functional
@@ -409,7 +453,7 @@ a journal version to this issue.")
               "The RiSE group at MSR Redmond has agreed to run the programming contest!"
               (img ((src "img/new.gif"))))
           (li (img ((src "img/new.gif")))
-              "The " (a ((href "cfp.html")) "Call for Papers") "has been announced."
+              "The " (a ((href "cfp.html")) "Call for Papers") " has been announced."
               (img ((src "img/new.gif"))))
           (li "Interested in sponsoring? "
               (a ((href ,(string-append "mailto:" industry-email)))
@@ -440,7 +484,13 @@ a journal version to this issue.")
             ((cellpadding "5")
              (summary "PC"))
 	    ,@(map (lambda (p) (row "" p)) program-committee)
-            ))
+            )
+
+         (h3 "Industrial Partners")
+         (h4 "Platinum partners")
+         (img ((class "sponsor") (src "img/JS.png")))
+         (h4 "Silver partners")
+         (img ((class "sponsor") (src "img/erl_solutions_logo.png"))))
 
         ,col2)))
      ,@footers)))
@@ -454,125 +504,99 @@ a journal version to this issue.")
     `(a ((href ,(string-append "mailto:" addr)))
         ,addr)))
 
+
 (define cfwp.xexpr
-  `(html
-    (head
-     @title{ICFP @,year : Call for Workshop and Co-Located Event Proposals}
-     (meta ((http-equiv "Content-Type")
-            (content "text/html; charset=us-ascii")))
-     (meta ((name "keywords")
-            (content ,keywords)))
-     (link ((href "column.css")
-            (rel "stylesheet")
-            (type "text/css"))))
-    (body
-     (div
-      ((id "content"))
-      (div 
-       ((id "header"))
-       (center
-        (div
-         ((class "whited"))
-         (h1 "Call for workshop and co-located event proposals")
-         @h2{ICFP @,year : The @,nth ACM SIGPLAN International
-                  Conference on Functional Programming})))
-      (div
-       ((class "colmask leftmenu"))
-       (div
-        ((class "colleft"))
-        (div
-         ((class "col1"))
-         (center
-          (h2
-           (em ,city
-               (br)
-               ,@dates)))
-         (p "The "
-            ,nth
-            " ACM SIGPLAN International Conference on Functional Programming ("
-            (a ((href ,(string-append "http://www.icfpconference.org/icfp" year "/")))
-               "ICFP " ,year)
-            ") will be held in "
-            ,city " on " @,@dates ". "
-            "ICFP provides a forum for researchers and "
-            "developers to hear about the latest work on the design, "
-            "implementations, principles, and uses of functional "
-            "programming.")
-         (p "Proposals are invited for workshops (and other "
-            "co-located events, such as tutorials) to be affiliated "
-            "with ICFP " ,year " and sponsored by "
-            (a ((href "http://acm.org/sigplan/")) "SIGPLAN")
-            ".  "
-            "These events should be more informal and focused than ICFP itself, "
-            "include sessions that enable interaction among the "
-            "attendees, and foster the exchange of new ideas. The preference is for "
-            "one-day events, but other schedules can also be " 
-            "considered.")
-         
-         ,workshop-date-par
-         
-         (h3 "Submission details")
-         (table
-          ((cellpadding "5"))
-          (tbody
-           (tr
-            (td "Deadline for submission:")
-            (td (font ((color "#FF0000")) (strong ,cfwp-deadline))))
-           (tr 
-            (td "Notification of acceptance:")
-            (td ,cfwp-notification))))
-         
-         (p "Prospective organizers of workshops or other "
-            "co-located events are invited to submit a completed "
-            (a ((href ,(string-append "http://www.icfpconference.org/icfp" year
-                                      "/icfp" (substring year 2 4) "-workshops-form.txt")))               
-               "workshop proposal form")
-            " in plain text format to the ICFP "
-            ,year
-            " workshop co-chairs ("
-            ,@(role-oxford 'wc)
-            ")"
-            " via email to "
-            ,workshop-email
-            " by "
-            ,cfwp-deadline
-            ". "
-            "(For proposals of co-located events other than workshops, "
-            "please fill in the workshop proposal form and just leave "
-            "blank any sections that do not apply.) Please note that "
-            "this is a firm deadline.")
-         (p "Organizers will be notified if their event proposal is "
-            "accepted by "
-            ,cfwp-notification
-            ", and if successful, "
-            "depending on the event, they will be asked to produce a "
-            "final report after the event has taken place that is "
-            "suitable for publication in SIGPLAN Notices. Further "
-            "information about SIGPLAN sponsorship is available "
-            (a ((href "http://www.sigplan.org/Resources/Proposals/Workshop"))
-               "here")
-            ".")
-         (h3 "Selection committee")
-         (p "The proposals will be evaluated by a committee "
-            "comprising the following members of the ICFP "
-            ,year
-            " organizing committee, together with the members of the "
-            (a ((href "http://acm.org/sigplan/SigplanOfficers.htm"))
-               "SIGPLAN executive committee"))
-         (table
-          ((cellpadding "5"))
-          (tbody
-           ,@(role-rows "Workshop Co-Chairs" 'wc)
-           ,(role-row "General Chair" 'gc)
-           ,(role-row "Program Chair" 'pc)))
-         
-         (h3 "Further information")
-         (p "Any queries should be addressed to the workshop "
-            "co-chairs (" ,@(role-oxford 'wc) "), via email to "
-            ,workshop-email
-            "."))
-        ,col2)))
-     ,@footers)))
+  (make-page 
+   "Call for Workshop and Co-Located Event Proposals"	     
+   `(div
+     ((class "col1"))
+     (center
+      (h1 "Call for workshop and co-located event proposals"))
+     (h3 "Overview")
+     (p "The "
+	,nth
+	" ACM SIGPLAN International Conference on Functional Programming ("
+	(a ((href ,(string-append "http://www.icfpconference.org/icfp" year "/")))
+	   "ICFP " ,year)
+	") will be held in "
+	,city " on " @,@dates ". "
+	"ICFP provides a forum for researchers and "
+	"developers to hear about the latest work on the design, "
+	"implementations, principles, and uses of functional "
+	"programming.")
+     (p "Proposals are invited for workshops (and other "
+	"co-located events, such as tutorials) to be affiliated "
+	"with ICFP " ,year " and sponsored by "
+	(a ((href "http://acm.org/sigplan/")) "SIGPLAN")
+	".  "
+	"These events should be more informal and focused than ICFP itself, "
+	"include sessions that enable interaction among the "
+	"attendees, and foster the exchange of new ideas. The preference is for "
+	"one-day events, but other schedules can also be " 
+	"considered.")
+     
+     ,workshop-date-par
+     
+     (h3 "Submission details")
+     (table
+      ((cellpadding "5"))
+      (tbody
+       (tr
+	(td "Deadline for submission:")
+	(td (font ((color "#FF0000")) (strong ,cfwp-deadline))))
+       (tr 
+	(td "Notification of acceptance:")
+	(td ,cfwp-notification))))
+     
+     (p "Prospective organizers of workshops or other "
+	"co-located events are invited to submit a completed "
+	(a ((href ,(string-append "http://www.icfpconference.org/icfp" year
+				  "/icfp" (substring year 2 4) "-workshops-form.txt")))               
+	   "workshop proposal form")
+	" in plain text format to the ICFP "
+	,year
+	" workshop co-chairs ("
+	,@(role-oxford 'wc)
+	")"
+	" via email to "
+	,workshop-email
+	" by "
+	,cfwp-deadline
+	". "
+	"(For proposals of co-located events other than workshops, "
+	"please fill in the workshop proposal form and just leave "
+	"blank any sections that do not apply.) Please note that "
+	"this is a firm deadline.")
+     (p "Organizers will be notified if their event proposal is "
+	"accepted by "
+	,cfwp-notification
+	", and if successful, "
+	"depending on the event, they will be asked to produce a "
+	"final report after the event has taken place that is "
+	"suitable for publication in SIGPLAN Notices. Further "
+	"information about SIGPLAN sponsorship is available "
+	(a ((href "http://www.sigplan.org/Resources/Proposals/Workshop"))
+	   "here")
+	".")
+     (h3 "Selection committee")
+     (p "The proposals will be evaluated by a committee "
+	"comprising the following members of the ICFP "
+	,year
+	" organizing committee, together with the members of the "
+	(a ((href "http://acm.org/sigplan/SigplanOfficers.htm"))
+	   "SIGPLAN executive committee"))
+     (table
+      ((cellpadding "5"))
+      (tbody
+       ,@(role-rows "Workshop Co-Chairs" 'wc)
+       ,(role-row "General Chair" 'gc)
+       ,(role-row "Program Chair" 'pc)))
+     
+     (h3 "Further information")
+     (p "Any queries should be addressed to the workshop "
+	"co-chairs (" ,@(role-oxford 'wc) "), via email to "
+	,workshop-email
+	"."))))
 
 (define (write-page xexpr fn)
   (with-output-to-file (string-append www fn)
@@ -584,6 +608,7 @@ a journal version to this issue.")
 (write-page index.xexpr "index.html")
 (write-page cfwp.xexpr "cfwp.html")
 (write-page cfp.xexpr "cfp.html")
+(write-page industry.xexpr "industry.html")
 
 
 
