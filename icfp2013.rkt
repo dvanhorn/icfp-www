@@ -158,6 +158,11 @@
      (li
       ((class "roomy"))
       (a ((class "navigation")
+	  (href "affiliated.html")) 
+	 "Affiliated events"))
+     (li
+      ((class "roomy"))
+      (a ((class "navigation")
           (href "cfwp.html"))
          "Call for workshop proposals")) 
      #;
@@ -450,11 +455,14 @@ a journal version to this issue.")
          (h3 "News")
          (ul
           (li (img ((src "img/new.gif")))
+              "The schedule of " (a ((href "affiliated.html")) "affiliated events")
+	      " has been announced."
+              (img ((src "img/new.gif"))))
+
+          (li (img ((src "img/new.gif")))
               "The RiSE group at MSR Redmond has agreed to run the programming contest!"
               (img ((src "img/new.gif"))))
-          (li (img ((src "img/new.gif")))
-              "The " (a ((href "cfp.html")) "Call for Papers") " has been announced."
-              (img ((src "img/new.gif"))))
+          (li "The " (a ((href "cfp.html")) "Call for Papers") " has been announced.")
           (li "Interested in sponsoring? "
               (a ((href ,(string-append "mailto:" industry-email)))
                  "Contact the Industrial Relations Chair"))
@@ -504,6 +512,62 @@ a journal version to this issue.")
     `(a ((href ,(string-append "mailto:" addr)))
         ,addr)))
 
+
+(define CUFP `(a ((href "http://cufp.org/")) "ACM SIGPLAN Commerical Users of Functional Programming"))
+(define FARM `(a ((href "http://www.cis.upenn.edu/~byorgey/farm13/"))
+		 "ACM SIGPLAN Workshop on Functional Art, Music, Modeling and Design"))
+(define Erlang `(a ((href "http://www.erlang.org/workshop/2013/"))
+		   "ACM SIGPLAN Erlang Workshop"))
+(define Haskell `(a ((href "http://www.haskell.org/haskell-symposium/"))
+		    "ACM SIGPLAN Haskell Symposium"))
+(define ML `(a ((href "http://www.mlworkshop.org/")) "ACM SIGPLAN Workshop on ML"))
+(define HIW `(a ((href "http://www.haskell.org/haskellwiki/HaskellImplementorsWorkshop"))
+		"ACM SIGPLAN Haskell Implementors Workshop"))
+(define FPCDSL
+  `(a ((href "http://quantum.bbn.com/FPCDSL/"))
+      "ACM SIGPLAN Functional Programming Concepts in Domain-Specific Languages"))
+(define WGP
+  `(a ((href "http://www.wgp-sigplan.org/2013"))
+      "ACM SIGPLAN Workshop on Generic Programming"))
+
+(define affiliated.xexpr
+  (make-page
+   "Affiliated events"
+   `(div
+     ((class "col1"))
+     (center
+      (h1 "Affilated events"))
+
+     (h3 "Sunday, September 22")
+     (ul 
+      (li ,CUFP " " ndash " Day 1, Tutorials")
+      (li ,FPCDSL)
+      (li ,HIW)
+      (li ,ML))
+
+     (h3 "Monday, September 23")
+     (ul
+      (li ,CUFP " " ndash " Day 2, Tutorials")
+      (li "ACM SIGPLAN Dependently-typed programming")
+      (li ,Haskell " " ndash " Day 1"))
+      
+
+     (h3 "Tuesday, September 24")
+     (ul
+      (li ,Haskell "  " ndash " Day 2")
+      (li "ACM SIGPLAN International Workshop on Logical Frameworks and Meta-Languages: Theory and Practice")
+      (li ,CUFP " " ndash " Day 3, Talks"))
+
+     (h3 "Wednesday, September 25 " ndash " Friday, September 27")
+     (ul (li "ICFP"))
+
+     (h3 "Saturday, September 28")
+     (ul
+      (li ,Erlang)
+      (li ,FARM)
+      (li "ACM SIGPLAN Workshop on Higher-order Programming with Effects")
+      (li "ACM SIGPLAN OCaml")
+      (li ,WGP)))))
 
 (define cfwp.xexpr
   (make-page 
@@ -609,6 +673,6 @@ a journal version to this issue.")
 (write-page cfwp.xexpr "cfwp.html")
 (write-page cfp.xexpr "cfp.html")
 (write-page industry.xexpr "industry.html")
-
+(write-page affiliated.xexpr "affiliated.html")
 
 
