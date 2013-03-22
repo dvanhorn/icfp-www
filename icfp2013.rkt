@@ -266,6 +266,12 @@
      (center
       (h1 "Call for Papers"))
      ,@important-dates
+
+     (br)
+     (center (span ((style "font-size: 200%;"))
+                   (b (a ((href "https://www.easychair.org/account/signin.cgi?conf=icfp2013")) "Submission site is open"))))
+     
+
      (h3 "Scope")
      (p "ICFP 2013 seeks original papers on the art and science of functional
 programming.  Submissions are invited on all topics from principles to
