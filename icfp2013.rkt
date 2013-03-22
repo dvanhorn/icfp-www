@@ -183,7 +183,11 @@
       (p ((class "indent1")) "Platinum partners")
       (p ((class "indent2")) (a ((href "http://janestreet.com/")) "Jane Street Capital"))
       (p ((class "indent1")) "Silver partners")
-      (p ((class "indent2")) (a ((href "http://www.erlang-solutions.com/")) "Erlang Solutions"))) )))
+      (p ((class "indent2")) (a ((href "http://www.erlang-solutions.com/")) "Erlang Solutions"))
+      (p ((class "indent2")) (a ((href "https://www.fpcomplete.com/")) "FP Complete"))
+      (p ((class "indent2")) (a ((href "http://corp.galois.com/")) "Galois"))
+      (p ((class "indent2")) (a ((href "http://ccs.neu.edu/")) "Northeastern University, College of Computer and Information Science"))
+      (p ((class "indent2")) (a ((href "http://www.quviq.com/")) "QuviQ"))))))
 
 (define footers
   `((div
@@ -452,6 +456,9 @@ a journal version to this issue.")
             work, from practice to theory, including its
             peripheries.}
          
+	 (center (span ((style "font-size: 200%;"))
+                   (b (a ((href "https://www.easychair.org/account/signin.cgi?conf=icfp2013")) "Submission site is open"))))
+
          (h3 "News")
          (ul
           (li (img ((src "img/new.gif")))
@@ -498,8 +505,16 @@ a journal version to this issue.")
          (h4 "Platinum partners")
          (img ((class "sponsor") (src "img/JS.png")))
          (h4 "Silver partners")
-         (img ((class "sponsor") (src "img/erl_solutions_logo.png"))))
-
+         (img ((class "sponsor") (src "img/erl_solutions_logo.png")))
+	 " "
+	 (a ((href "https://www.fpcomplete.com/")) "FP Complete")
+	 " "	 
+	 (img ((class "sponsor") (src "img/galois.png")))
+	 " "
+	 (img ((class "sponsor") (src "img/CCIS.png")))
+	 (h4 "Bronze partners")
+	 (img ((class "sponsor") (src "img/quviq.jpeg"))))
+	
         ,col2)))
      ,@footers)))
   
@@ -540,22 +555,24 @@ a journal version to this issue.")
 
      (h3 "Sunday, September 22")
      (ul 
-      (li ,CUFP " " ndash " Day 1, Tutorials")
-      (li ,FPCDSL)
+      (li ,CUFP " " ndash " Day 1, Tutorials")      
+      (li "ACM SIGPLAN Dependently-typed programming")
+      (li "ACM SIGPLAN International Workshop on Logical Frameworks and Meta-Languages: Theory and Practice")
       (li ,HIW)
       (li ,ML))
 
      (h3 "Monday, September 23")
      (ul
       (li ,CUFP " " ndash " Day 2, Tutorials")
-      (li "ACM SIGPLAN Dependently-typed programming")
+      (li ,FPCDSL)
+      (li "ACM SIGPLAN Workshop on Functional High-Performance Computing")
       (li ,Haskell " " ndash " Day 1"))
       
 
      (h3 "Tuesday, September 24")
      (ul
       (li ,Haskell "  " ndash " Day 2")
-      (li "ACM SIGPLAN International Workshop on Logical Frameworks and Meta-Languages: Theory and Practice")
+      (li "ACM SIGPLAN OCaml Workshop")
       (li ,CUFP " " ndash " Day 3, Talks"))
 
      (h3 "Wednesday, September 25 " ndash " Friday, September 27")
@@ -566,7 +583,6 @@ a journal version to this issue.")
       (li ,Erlang)
       (li ,FARM)
       (li "ACM SIGPLAN Workshop on Higher-order Programming with Effects")
-      (li "ACM SIGPLAN OCaml")
       (li ,WGP)))))
 
 (define cfwp.xexpr
