@@ -265,12 +265,7 @@
      ((class "col1"))
      (center
       (h1 "Call for Papers"))
-     ,@important-dates
-
-     (br)
-     (center (span ((style "font-size: 200%;"))
-                   (b (a ((href "https://www.easychair.org/account/signin.cgi?conf=icfp2013")) "Submission site is open"))))
-     
+     ,@important-dates         
 
      (h3 "Scope")
      (p "ICFP 2013 seeks original papers on the art and science of functional
@@ -462,8 +457,6 @@ a journal version to this issue.")
             work, from practice to theory, including its
             peripheries.}
          
-	 (center (span ((style "font-size: 200%;"))
-                   (b (a ((href "https://www.easychair.org/account/signin.cgi?conf=icfp2013")) "Submission site is open"))))
 
          (h3 "News")
          (ul
