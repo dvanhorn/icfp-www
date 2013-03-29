@@ -187,6 +187,7 @@
       (p ((class "indent2")) (a ((href "https://www.fpcomplete.com/")) "FP Complete"))
       (p ((class "indent2")) (a ((href "http://corp.galois.com/")) "Galois"))
       (p ((class "indent2")) (a ((href "http://ccs.neu.edu/")) "Northeastern University, College of Computer and Information Science"))
+      (p ((class "indent2")) "Bronze partners")
       (p ((class "indent2")) (a ((href "http://www.quviq.com/")) "QuviQ"))))))
 
 (define footers
@@ -510,7 +511,7 @@ a journal version to this issue.")
          (h4 "Silver partners")
          (img ((class "sponsor") (src "img/erl_solutions_logo.png")))
 	 " "
-	 (a ((href "https://www.fpcomplete.com/")) "FP Complete")
+	 (img ((class "sponsor") (src "img/fp-complete.png")))
 	 " "	 
 	 (img ((class "sponsor") (src "img/galois.png")))
 	 " "
