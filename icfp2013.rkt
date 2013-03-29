@@ -461,6 +461,10 @@ a journal version to this issue.")
          (h3 "News")
          (ul
           (li (img ((src "img/new.gif")))
+              "ICFP 2013 received a record setting 133 submissions!  Thanks to "
+	      "all the authors for their hard work!"
+	      (img ((src "img/new.gif"))))
+          (li (img ((src "img/new.gif")))
               "The schedule of " (a ((href "affiliated.html")) "affiliated events")
 	      " has been announced."
               (img ((src "img/new.gif"))))
