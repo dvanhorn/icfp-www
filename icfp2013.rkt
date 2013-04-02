@@ -541,7 +541,7 @@ a journal version to this issue.")
 		   "ACM SIGPLAN Erlang Workshop"))
 (define Haskell `(a ((href "http://www.haskell.org/haskell-symposium/"))
 		    "ACM SIGPLAN Haskell Symposium"))
-(define ML `(a ((href "http://www.mlworkshop.org/")) "ACM SIGPLAN Workshop on ML"))
+(define ML `(a ((href "http://research.microsoft.com/en-us/um/people/daan/mlworkshop2013/")) "ACM SIGPLAN Workshop on ML"))
 (define HIW `(a ((href "http://www.haskell.org/haskellwiki/HaskellImplementorsWorkshop"))
 		"ACM SIGPLAN Haskell Implementors Workshop"))
 (define FPCDSL
