@@ -188,6 +188,7 @@
       (p ((class "indent2")) (a ((href "http://corp.galois.com/")) "Galois"))
       (p ((class "indent2")) (a ((href "http://ccs.neu.edu/")) "Northeastern University, College of Computer and Information Science"))
       (p ((class "indent2")) "Bronze partners")
+      (p ((class "indent2")) (a ((href "http://www.intellifactory.com/")) "IntelliFactory"))
       (p ((class "indent2")) (a ((href "http://www.quviq.com/")) "QuviQ"))))))
 
 (define footers
@@ -517,6 +518,7 @@ a journal version to this issue.")
 	 " "
 	 (img ((class "sponsor") (src "img/CCIS.png")))
 	 (h4 "Bronze partners")
+         (img ((class "sponsor") (src "img/IntelliFactory.png")))
 	 (img ((class "sponsor") (src "img/quviq.jpeg"))))
 	
         ,col2)))
