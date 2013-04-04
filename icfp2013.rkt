@@ -534,7 +534,7 @@ a journal version to this issue.")
         ,addr)))
 
 
-(define CUFP `(a ((href "http://cufp.org/")) "ACM SIGPLAN Commerical Users of Functional Programming"))
+(define CUFP `(a ((href "http://cufp.org/")) "ACM SIGPLAN Commercial Users of Functional Programming"))
 (define FARM `(a ((href "http://www.cis.upenn.edu/~byorgey/farm13/"))
 		 "ACM SIGPLAN Workshop on Functional Art, Music, Modeling and Design"))
 (define Erlang `(a ((href "http://www.erlang.org/workshop/2013/"))
