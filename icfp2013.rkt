@@ -550,6 +550,10 @@ a journal version to this issue.")
 (define WGP
   `(a ((href "http://www.wgp-sigplan.org/2013"))
       "ACM SIGPLAN Workshop on Generic Programming"))
+(define HOPE
+  `(a ((href "http://hope2013.mpi-sws.org"))
+      "ACM SIGPLAN Workshop on Higher-order Programming with Effects"))
+
 
 (define affiliated.xexpr
   (make-page
@@ -588,7 +592,7 @@ a journal version to this issue.")
      (ul
       (li ,Erlang)
       (li ,FARM)
-      (li "ACM SIGPLAN Workshop on Higher-order Programming with Effects")
+      (li ,HOPE)
       (li ,WGP)))))
 
 (define cfwp.xexpr
