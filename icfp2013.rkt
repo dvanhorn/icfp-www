@@ -553,7 +553,15 @@ a journal version to this issue.")
 (define HOPE
   `(a ((href "http://hope2013.mpi-sws.org"))
       "ACM SIGPLAN Workshop on Higher-order Programming with Effects"))
-
+(define FHPC
+  `(a ((href "http://hiperfit.dk/fhpc13.html"))
+      "ACM SIGPLAN Workshop on Functional High-Performance Computing"))
+(define DTP
+  `(a ((href "http://www.seas.upenn.edu/~sweirich/dtp13"))
+      "ACM SIGPLAN Dependently-typed programming"))
+(define LFMTP
+  `(a ((href "http://complogic.cs.mcgill.ca/lfmtp13"))
+      "ACM SIGPLAN International Workshop on Logical Frameworks and Meta-Languages: Theory and Practice"))
 
 (define affiliated.xexpr
   (make-page
@@ -566,24 +574,23 @@ a journal version to this issue.")
      (h3 "Sunday, September 22")
      (ul 
       (li ,CUFP " " ndash " Day 1, Tutorials")      
-      (li "ACM SIGPLAN Dependently-typed programming")
-      (li "ACM SIGPLAN International Workshop on Logical Frameworks and Meta-Languages: Theory and Practice")
+      (li ,FPCDSL)
       (li ,HIW)
       (li ,ML))
 
      (h3 "Monday, September 23")
      (ul
       (li ,CUFP " " ndash " Day 2, Tutorials")
-      (li ,FPCDSL)
-      (li "ACM SIGPLAN Workshop on Functional High-Performance Computing")
-      (li ,Haskell " " ndash " Day 1"))
-      
+      (li ,Haskell " " ndash " Day 1")
+      (li ,LFMTP)
+      (li ,FHPC))
 
      (h3 "Tuesday, September 24")
      (ul
       (li ,Haskell "  " ndash " Day 2")
+      (li ,CUFP " " ndash " Day 3, Talks")
       (li "ACM SIGPLAN OCaml Workshop")
-      (li ,CUFP " " ndash " Day 3, Talks"))
+      (li ,DTP))
 
      (h3 "Wednesday, September 25 " ndash " Friday, September 27")
      (ul (li "ICFP"))
