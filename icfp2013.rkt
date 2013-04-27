@@ -187,7 +187,7 @@
       (p ((class "indent2")) (a ((href "https://www.fpcomplete.com/")) "FP Complete"))
       (p ((class "indent2")) (a ((href "http://corp.galois.com/")) "Galois"))
       (p ((class "indent2")) (a ((href "http://ccs.neu.edu/")) "Northeastern University, College of Computer and Information Science"))
-      (p ((class "indent2")) "Bronze partners")
+      (p ((class "indent1")) "Bronze partners")
       (p ((class "indent2")) (a ((href "http://www.intellifactory.com/")) "IntelliFactory"))
       (p ((class "indent2")) (a ((href "http://www.quviq.com/")) "QuviQ"))))))
 
