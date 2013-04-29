@@ -578,7 +578,7 @@ a journal version to this issue.")
    `(div
      ((class "col1"))
      (center
-      (h1 "Affilated events"))
+      (h1 "Affiliated events"))
 
      (h3 "Sunday, September 22")
      (ul 
