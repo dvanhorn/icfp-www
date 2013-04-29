@@ -227,6 +227,8 @@
          (td "Friday, 7 June, 2013"))
      (tr (td "Final copy due:")
          (td "Friday, 5 July, 2013"))
+     (tr (td "Programming contest:")
+         (td "Thursday, 8 August - Sunday, 11 August, 2013"))
      (tr (td "Conference:")
          (td "Wednesday, 25 September - Friday, 27 September, 2013")))])
 
@@ -463,6 +465,12 @@ a journal version to this issue.")
          (h3 "News")
          (ul
           (li (img ((src "img/new.gif")))
+              "The programming contest date has been chosen!  "
+              "Keep an eye on "
+              (a ((href "https://research.microsoft.com/en-us/events/icfpcontest2013/")) "the event page")
+              " for more details."
+	      (img ((src "img/new.gif"))))
+          (li (img ((src "img/new.gif")))
               "ICFP 2013 received a record setting 133 submissions!  Thanks to "
 	      "all the authors for their hard work!"
 	      (img ((src "img/new.gif"))))
@@ -471,9 +479,7 @@ a journal version to this issue.")
 	      " has been announced."
               (img ((src "img/new.gif"))))
 
-          (li (img ((src "img/new.gif")))
-              "The RiSE group at MSR Redmond has agreed to run the programming contest!"
-              (img ((src "img/new.gif"))))
+          (li "The RiSE group at MSR Redmond has agreed to run the programming contest!")
           (li "The " (a ((href "cfp.html")) "Call for Papers") " has been announced.")
           (li "Interested in sponsoring? "
               (a ((href ,(string-append "mailto:" industry-email)))
