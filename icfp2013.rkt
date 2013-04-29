@@ -562,6 +562,9 @@ a journal version to this issue.")
 (define LFMTP
   `(a ((href "http://complogic.cs.mcgill.ca/lfmtp13"))
       "ACM SIGPLAN International Workshop on Logical Frameworks and Meta-Languages: Theory and Practice"))
+(define OCAML
+  `(a ((href "http://ocaml.org/meetings/ocaml/2013/"))
+      "ACM SIGPLAN OCaml Workshop"))
 
 (define affiliated.xexpr
   (make-page
@@ -589,7 +592,7 @@ a journal version to this issue.")
      (ul
       (li ,Haskell "  " ndash " Day 2")
       (li ,CUFP " " ndash " Day 3, Talks")
-      (li "ACM SIGPLAN OCaml Workshop")
+      (li ,OCAML)
       (li ,DTP))
 
      (h3 "Wednesday, September 25 " ndash " Friday, September 27")
