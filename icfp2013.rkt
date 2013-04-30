@@ -32,6 +32,9 @@
    (person 'cc "Nikolai" "Tillmann" "Microsoft Research, Redmond" "http://research.microsoft.com/en-us/people/nikolait/")
    (person 'cc "Peli" "de Halleux" "Microsoft Research, Redmond" "http://research.microsoft.com/en-us/people/jhalleux/")))
 
+(define contest-url
+  "https://research.microsoft.com/en-us/events/icfpcontest2013/")
+
 (define greg
   (person 'gc "Greg" "Morrisett" "Harvard University" "http://www.eecs.harvard.edu/~greg/"))
 
@@ -153,8 +156,8 @@
      (li
       ((class "roomy"))
       (a ((class "navigation")
-          (href "cfp.html"))
-         "Call for papers"))
+          (href "local.html"))
+         "Local information"))        
      (li
       ((class "roomy"))
       (a ((class "navigation")
@@ -163,12 +166,18 @@
      (li
       ((class "roomy"))
       (a ((class "navigation")
-          (href "cfwp.html"))
-         "Call for workshop proposals")) 
-     #;
+          (href "cfp.html"))
+         "Call for papers"))
      (li
       ((class "roomy"))
-      "Programming contest")
+      (a ((class "navigation")
+          (href "cfwp.html"))
+         "Call for workshop proposals"))     
+     (li
+      ((class "roomy"))
+      (a ((class "navigation")
+          (href ,contest-url))
+         "Programming contest"))
      (li
       ((class "roomy"))
       (a ((class "navigation")
@@ -467,7 +476,7 @@ a journal version to this issue.")
           (li (img ((src "img/new.gif")))
               "The programming contest date has been chosen!  "
               "Keep an eye on "
-              (a ((href "https://research.microsoft.com/en-us/events/icfpcontest2013/")) "the event page")
+              (a ((href ,contest-url)) "the event page")
               " for more details."
 	      (img ((src "img/new.gif"))))
           (li (img ((src "img/new.gif")))
@@ -704,6 +713,80 @@ a journal version to this issue.")
 	,workshop-email
 	"."))))
 
+(define google-map-hotel
+  `[(iframe ((width "550")
+             (height "500")
+             (frameborder "0")
+             (scrolling "no")
+             (marginheight "0")
+             (marginwidth "0")
+             (src "https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Hilton+Boston+Logan+Airport,+1+Hotel+Drive,+Boston,+MA&aq=0&oq=hilton+boston+logan+ai&sll=42.367296,-71.023178&sspn=0.122011,0.119305&gl=us&ie=UTF8&hq=Hilton+Boston+Logan+Airport,+1+Hotel+Drive,+Boston,+MA&t=m&ll=42.391769,-71.039658&spn=0.12171,0.219727&z=12&iwloc=A&output=embed")))
+    (br)
+    (small ()
+      (a ((href "https://maps.google.com/maps/ms?msa=0&msid=217204641706693528920.0004db935c721ff3abaec&gl=us&ie=UTF8&t=m&ll=42.367383,-71.023189&spn=0.003805,0.006866&z=17&source=embed"))
+           "View Hotel on larger map"))])
+
+(define local.xexpr
+  (make-page 
+   "Local information"	     
+   `(div
+     ((class "col1"))
+     (center
+      (h1 "Local information"))
+     (h2 "Conference venue")
+     (p "The conference will take place at the "
+        (a ((href "http://www3.hilton.com/en/hotels/massachusetts/hilton-boston-logan-airport-BOSLHHH/index.html")) "Hilton Boston Logan Airport")
+        " Hotel, 1 Hotel Drive, Boston, Massachusetts, 02128.")
+     ,@google-map-hotel
+     (h2 "Accomodation")
+     (p "Hotel reservations are now being accepted.  We have made block reservations at the conference "
+        "hotel at a rate of $225 per night.  Please note that the reservation deadline is August 24. "
+        "When making a reservation, mention ACM SIGPLAN / ICFP 2013.")
+     (h2 "Access")
+     (p (a ((href "http://www.massport.com/logan-airport/Pages/Default.aspx")) "Boston Logan Airport")
+        " (BOS) offers direct flights to and from more than 100 domestic and international destinations. "
+        "The conference hotel is accessible by covered skywalks from airport terminals A and E. ")
+     (p "The " (a ((href "http://www.mbta.com/")) "Massachusetts Bay Transportation Authority")
+        " (MBTA) provides an extensive public transportation system including subway (known locally as the \"T\"), bus, ferry, "
+        " and regional commuter rail train service.  The MBTA has a convenient " 
+        (a ((href "http://www.mbta.com/rider_tools/trip_planner/")) "trip planner") " service for "
+        "finding routes and calculating fares.")
+     (p (a ((href "http://www.amtrak.com/home")) "Amtrak") " provides convenient train service throughout "
+        " most of the Northeast corridor, from Washington D.C., Philadelphia, New York, and Boston. "
+        "Trains arriving from south of Boston arrive either at South Station or Back Bay Station (and often both). "
+        "Connections to subway lines and buses are available at both stations, but South Station is closer "
+        "to the airport and conference hotel."  "Trains arrive from north of Boston arrive at North Station.")
+      (p "South Station is one of the major train, commuter rail, subway, and bus terminals in the city. "
+         "It is accessible by the Red and Silver lines of the T. "
+         "If arriving by bus, train, or commuter rail, you will likely arrive at South Station. "
+         "To get to the conference hotel, follow signs within South Station to the subway (T), "
+         "take the Silver Line Airport service to Terminal "
+         "A and walk by skywalk to the hotel.")
+
+      (p "Back Bay Station is another major train, commuter rail, subway, and bus terminals in the city. "
+         "Amtrak trains often stop at Back Bay and then South Station.  "
+         "If arriving by train, South Station is closer and more convenient to get to the conference "
+         "hotel, so you should continue on to South Station unless you have local arrangements in the Back "
+         "Bay or South End neighborhoods."
+         "But if you do need to get from Back Bay Station to the "
+         "conference hotel, take the Orange Line to State Street, "
+         "transfer to the Blue Line to Airport Station, and take the "
+         "(free) airport shuttle that services Terminal A.")
+
+
+      (p "North Station (not to be confused with South Station) is "
+         "another major train, commuter rail, subway, and bus terminals "
+         "in the city. "   
+         "Only Amtrak trains from New Hampshire and Maine and some "
+         "MBTA commuter rail trains arrive at North Station. "
+         "The rest arrive at Back Bay and South Station. "
+         "To get to the conference hotel from North Station, take the Orange Line to State Street, "
+         "transfer to the Blue Line to Airport Station, and take the (free) airport shuttle that "
+         "serves Terminal A."))))
+        
+        
+  
+
 (define (write-page xexpr fn)
   (with-output-to-file (string-append www fn)
     #:exists 'replace
@@ -716,5 +799,6 @@ a journal version to this issue.")
 (write-page cfp.xexpr "cfp.html")
 (write-page industry.xexpr "industry.html")
 (write-page affiliated.xexpr "affiliated.html")
+(write-page local.xexpr "local.html")
 
 
