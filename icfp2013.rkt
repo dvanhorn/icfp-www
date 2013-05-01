@@ -474,26 +474,21 @@ a journal version to this issue.")
          (h3 "News")
          (ul
           (li (img ((src "img/new.gif")))
+              "The " (a ((href "local.html")) "conference venue") " is now accepting reservations. "
+              (img ((src "img/new.gif"))))
+          (li (img ((src "img/new.gif")))
               "The programming contest date has been chosen!  "
               "Keep an eye on "
               (a ((href ,contest-url)) "the event page")
               " for more details."
 	      (img ((src "img/new.gif"))))
-          (li (img ((src "img/new.gif")))
-              "ICFP 2013 received a record setting 133 submissions!  Thanks to "
-	      "all the authors for their hard work!"
-	      (img ((src "img/new.gif"))))
-          (li (img ((src "img/new.gif")))
-              "The schedule of " (a ((href "affiliated.html")) "affiliated events")
-	      " has been announced."
-              (img ((src "img/new.gif"))))
-
+          (li "ICFP 2013 received a record setting 133 submissions!  Thanks to "
+	      "all the authors for their hard work!")	      
           (li "The RiSE group at MSR Redmond has agreed to run the programming contest!")
           (li "The " (a ((href "cfp.html")) "Call for Papers") " has been announced.")
           (li "Interested in sponsoring? "
               (a ((href ,(string-append "mailto:" industry-email)))
-                 "Contact the Industrial Relations Chair"))
-          (li "Dates have been chosen for ICFP and affiliated events."))
+                 "Contact the Industrial Relations Chair")))
          
          ,@important-dates
          
@@ -755,7 +750,8 @@ a journal version to this issue.")
         " most of the Northeast corridor, from Washington D.C., Philadelphia, New York, and Boston. "
         "Trains arriving from south of Boston arrive either at South Station or Back Bay Station (and often both). "
         "Connections to subway lines and buses are available at both stations, but South Station is closer "
-        "to the airport and conference hotel."  "Trains arrive from north of Boston arrive at North Station.")
+        "to the airport and conference hotel. "  "Trains arrive from north of Boston arrive at North Station.")
+      #;
       (p "South Station is one of the major train, commuter rail, subway, and bus terminals in the city. "
          "It is accessible by the Red and Silver lines of the T. "
          "If arriving by bus, train, or commuter rail, you will likely arrive at South Station. "
@@ -763,6 +759,7 @@ a journal version to this issue.")
          "take the Silver Line Airport service to Terminal "
          "A and walk by skywalk to the hotel.")
 
+      #;
       (p "Back Bay Station is another major train, commuter rail, subway, and bus terminals in the city. "
          "Amtrak trains often stop at Back Bay and then South Station.  "
          "If arriving by train, South Station is closer and more convenient to get to the conference "
@@ -774,6 +771,7 @@ a journal version to this issue.")
          "(free) airport shuttle that services Terminal A.")
 
 
+      #;
       (p "North Station (not to be confused with South Station) is "
          "another major train, commuter rail, subway, and bus terminals "
          "in the city. "   
