@@ -1,0 +1,106 @@
+=====================================================================
+                        Call for Participation
+
+                            ICFP 2013
+ 18th ACM SIGPLAN International Conference on Functional Programming
+                      and affiliated events
+
+                     September 22 - 28, 2013
+                   Boston, Massachusetts, USA
+               http://icfpconference.org/icfp2013/
+
+=====================================================================
+
+ICFP provides a forum for researchers and developers to hear
+about the latest work on the design, implementations, principles, and
+uses of functional programming. The conference covers the entire
+spectrum of work, from practice to theory, including its peripheries.
+
+A full week dedicated to functional programming:
+1 conference, 1 symposium, 12 workshops, tutorials,
+programming contest results, student research contest
+
+ * Accepted Papers:
+   http://www.icfpconference.org/icfp2013/accepted.html
+
+ * Local arrangements (including travel and accommodation):
+   http://icfpconference.org/icfp2013/local.html
+
+ * Registration is available via:
+   http://icfpconference.org/icfp2013/
+   Electronic registration will open shortly.
+
+ * Follow @icfp_conference on twitter for the latest news:
+   http://twitter.com/#!/icfp_conference
+
+There are several events affiliated with ICFP:
+
+  Sunday, September 22
+
+    ACM SIGPLAN Commercial Users of Functional Programming – Day 1,
+    Tutorials
+
+    ACM SIGPLAN Functional Programming Concepts in Domain-Specific
+    Languages
+
+    ACM SIGPLAN Haskell Implementors Workshop
+
+    ACM SIGPLAN Workshop on ML
+
+  Monday, September 23
+
+    ACM SIGPLAN Commercial Users of Functional Programming – Day 2,
+    Tutorials
+
+    ACM SIGPLAN Haskell Symposium – Day 1
+
+    ACM SIGPLAN International Workshop on Logical Frameworks and
+    Meta-Languages: Theory and Practice
+
+    ACM SIGPLAN Workshop on Functional High-Performance Computing
+
+  Tuesday, September 24
+
+    ACM SIGPLAN Haskell Symposium – Day 2
+
+    ACM SIGPLAN Commercial Users of Functional Programming – Day 3,
+    Talks
+
+    ACM SIGPLAN OCaml Workshop
+
+    ACM SIGPLAN Dependently-typed programming
+
+  Wednesday, September 25 – Friday, September 27
+    ICFP
+
+  Saturday, September 28
+
+    ACM SIGPLAN Erlang Workshop
+
+    ACM SIGPLAN Workshop on Functional Art, Music, Modeling and Design
+
+    ACM SIGPLAN Workshop on Higher-order Programming with Effects
+
+    ACM SIGPLAN Workshop on Generic Programming
+
+Conference organizers:
+  General Chair:
+    Greg Morrisett, Harvard University
+  Program Chair:
+    Tarmo Uustalu, Institute of Cybernetics
+  Industrial Relations Chair:
+    Andy Adams-Moran	
+  Workshop Co-Chairs:
+    Patrik Jansson, Chalmers University of Technology
+    Sam Tobin-Hochstadt, Northeastern University
+  Programming Contest Co-Chairs:
+    Peli de Halleux, Microsoft Research, Redmond
+    Michal Moskal, Microsoft Research, Redmond
+    Nikhil Swamy, Microsoft Research, Redmond
+    Nikolai Tillmann, Microsoft Research, Redmond
+  Publicity Chair:
+    David Van Horn, Northeastern University
+  Treasurer:
+    Jean-Baptiste Tristan, Oracle Labs
+
+=====================================================================
