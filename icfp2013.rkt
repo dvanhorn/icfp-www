@@ -744,16 +744,23 @@ a journal version to this issue.")
      (h2 "Conference venue")
      (p "The conference will take place at the "
         (a ((href "http://www3.hilton.com/en/hotels/massachusetts/hilton-boston-logan-airport-BOSLHHH/index.html")) "Hilton Boston Logan Airport")
-        " Hotel, 1 Hotel Drive, Boston, Massachusetts, 02128.")
+        " Hotel, 1 Hotel Drive, Boston, Massachusetts, 02128."
+	" Logan International Airport is centrally located in the City of Boston -- Downtown Boston"
+        " is accessible in 15 minutes by public transit, or 10 minutes by cab."
+        " Boston is a dense, walkable city with an extensive public transportation system"
+        " and bicycle sharing program, making it easy to visit any part of the city without a car.")
      ,@google-map-hotel
      (h2 "Accomodation")
-     (p "Hotel reservations are now being accepted.  We have made block reservations at the conference "
-        "hotel at a rate of $225 per night.  Please note that the reservation deadline is August 24. "
-        "When making a reservation, mention ACM SIGPLAN / ICFP 2013.")
+     (p "Hotel " (a ((href "http://www.hilton.com/en/hi/groups/personalized/B/BOSLHHH-ACM-20130917/index.jhtml?WT.mc_id=POG")) "reservations") 
+        " are now being accepted.  We have made block reservations at the conference"
+        " hotel at a rate of $225 per night.  Please note that the reservation deadline is August 24."
+        " When making a reservation, book through this "
+        (a ((href "http://www.hilton.com/en/hi/groups/personalized/B/BOSLHHH-ACM-20130917/index.jhtml?WT.mc_id=POG")) "URL") ".")
      (h2 "Access")
      (p (a ((href "http://www.massport.com/logan-airport/Pages/Default.aspx")) "Boston Logan Airport")
         " (BOS) offers direct flights to and from more than 100 domestic and international destinations. "
-        "The conference hotel is accessible by covered skywalks from airport terminals A and E. ")
+        "The conference hotel is accessible by covered skywalks from airport terminals A and E. "
+        "Downtown Boston is just a few minutes away by public transportation or cab.")
      (p "The " (a ((href "http://www.mbta.com/")) "Massachusetts Bay Transportation Authority")
         " (MBTA) provides an extensive public transportation system including subway (known locally as the \"T\"), bus, ferry, "
         " and regional commuter rail train service.  The MBTA has a convenient " 
