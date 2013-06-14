@@ -771,6 +771,21 @@ a journal version to this issue.")
         "Trains arriving from south of Boston arrive either at South Station or Back Bay Station (and often both). "
         "Connections to subway lines and buses are available at both stations, but South Station is closer "
         "to the airport and conference hotel. "  "Trains arrive from north of Boston arrive at North Station.")
+
+      (p (a ((href "http://www.thehubway.com/")) "Hubway") " is Boston's bicycle sharing system."
+         " There are over 100 Hubway " (a ((href "http://www.thehubway.com/stations")) "stations") " in the greater Boston area."
+         " 24-hour and 3-day passes are available at any Hubway station using a credit card for $6 and $12, respectively."
+	 " After purchasing your pass, you may make an unlimited number of trips for no additional cost so long"
+         " as each trip is under 30 minutes."
+         " You may return your bicyle to any Hubway station that is not full; you do not need to return to the"
+         " originating station."
+         " For more details, read about " (a ((href "http://www.thehubway.com/how-it-works")) "how it works") "."
+         " Google's " (a ((href "http://goo.gl/maps/53Ju2")) "bicycle map service") " does an excellent job"
+         " giving directions for bicyclist."
+         " Unfortunately, Boston's Logan Airport is one of the few central locations that is not easily accessible"
+         " by bicycle, so we recommend using public transporation to get from the aiport to a more bike friendly"
+         " part of the city.  There are Hubway stations at almost every T station.") 
+
       #;
       (p "South Station is one of the major train, commuter rail, subway, and bus terminals in the city. "
          "It is accessible by the Red and Silver lines of the T. "
