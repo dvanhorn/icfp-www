@@ -481,14 +481,15 @@ a journal version to this issue.")
          (h3 "News")
          (ul
           (li (img ((src "img/new.gif")))
-              "The " (a ((href "local.html")) "conference venue") " is now accepting reservations. "
+              "The " (a ((href "accepted.html")) "list of accepted papers") " is now online."
               (img ((src "img/new.gif"))))
           (li (img ((src "img/new.gif")))
-              "The programming contest date has been chosen!  "
+              "The " (a ((href "local.html")) "conference venue") " is now accepting reservations. "
+              (img ((src "img/new.gif"))))
+          (li "The programming contest date has been chosen!  "
               "Keep an eye on "
               (a ((href ,contest-url)) "the event page")
-              " for more details."
-	      (img ((src "img/new.gif"))))
+              " for more details.")
           (li "ICFP 2013 received a record setting 133 submissions!  Thanks to "
 	      "all the authors for their hard work!")	      
           (li "The RiSE group at MSR Redmond has agreed to run the programming contest!")
@@ -588,6 +589,137 @@ a journal version to this issue.")
 (define OCAML
   `(a ((href "http://ocaml.org/meetings/ocaml/2013/"))
       "ACM SIGPLAN OCaml Workshop"))
+
+(define accepted.xexpr
+  (make-page
+    "Accepted papers"
+    `(div
+      ((class "col1"))
+      (center
+       (h1 "Accepted papers"))
+
+      (dl
+
+       (dt "Wellfounded Recursion with Copatterns: A Unified Approach to Termination and Productivity")
+       (dd "Andreas Abel and Brigitte Pientka")
+       
+       (dt "Productive Coprogramming with Guarded Recursion")
+       (dd "Robert Atkey and Conor McBride")
+       
+       (dt "Using Circular Programs for Higher-Order Syntax [Functional Pearl]")
+       (dd "Emil Axelsson and Koen Claessen")
+       
+       (dt "Weak Optimality, and the Meaning of Sharing")
+       (dd "Thibaut Balabonski")
+       
+       (dt "Efficient Divide-and-Conquer Parsing of Practical Context-Free Languages")
+       (dd "Jean-Philippe Bernardy and Koen Claessen")
+       
+       (dt "Type-Theory In Color")
+       (dd "Jean-Philippe Bernardy and Guilhem Moulin")
+       
+       (dt "Programming and Reasoning with Algebraic Effects and Dependent Types")
+       (dd "Edwin Brady")
+       
+       (dt "C-SHORe: A Collapsible Approach to Verifying Higher-Order Programs")
+       (dd "Christopher Broadbent, Arnaud Carayol, Matthew Hague and Olivier Serre")
+       
+       (dt "A Practical Theory of Language-Integrated Query")
+       (dd "James Cheney, Sam Lindley and Philip Wadler")
+       
+       (dt "The Bedrock Structured Programming System: Combining Generative Metaprogramming and Hoare Logic in an Extensible Program Verifier")
+       (dd "Adam Chlipala")
+       
+       (dt "Modular Monadic Meta-Theory")
+       (dd "Benjamin Delaware, Steven Keuchel, Tom Schrijvers and Bruno Oliveira")
+       
+       (dt "Hoare-Style Reasoning with (Algebraic) Continuations")
+       (dd "Germ" aacute "n Andr" eacute "s Delbianco and Aleksandar Nanevski")
+       
+       (dt "Typed Syntactic Meta-programming")
+       (dd "Dominique Devriese and Frank Piessens")
+       
+       (dt "Fun with Semirings [Functional Pearl]")
+       (dd "Stephen Dolan")
+       
+       (dt "Complete and Easy Bidirectional Typechecking for Higher-Rank Polymorphism")
+       (dd "Joshua Dunfield and Neelakantan R. Krishnaswami")
+       
+       (dt "Calculating Threesomes, with Blame")
+       (dd "Ronald Garcia")
+       
+       (dt "Structural Recursion for Querying Ordered Graphs")
+       (dd "Soichiro Hidaka, Kazuyuki Asada, Zhenjiang Hu, Hiroyuki Kato and Keisuke Nakano")
+       
+       (dt "Unifying Structured Recursion Schemes")
+       (dd "Ralf Hinze, Nicolas Wu and Jeremy Gibbons")
+       
+       (dt "Testing Noninterference, Quickly")
+       (dd "Catalin Hritcu, John Hughes, Benjamin C. Pierce, Antal Spector-Zabusky, Dimitrios Vytiniotis, Arthur Azevedo de Amorim and Leonidas Lampropoulos")
+       
+       (dt "Functional Reactive Programming with Liveness Guarantees")
+       (dd "Alan Jeffrey")
+       
+       (dt "Correctly Optimizing Abstract Abstract Machines")
+       (dd "J. Ian Johnson, Nicholas Labich, Matthew Might and David Van Horn")
+       
+       (dt "Handlers in Action")
+       (dd "Ohad Kammar, Sam Lindley and Nicolas Oury")
+       
+       (dt "A Nanopass Framework for Commercial Compiler Development [Experience Report]")
+       (dd "Andrew Keep and R Kent Dybvig")
+       
+       (dt "Higher-Order Functional Reactive Programming without Spacetime Leaks")
+       (dd "Neelakantan Krishnaswami")
+       
+       (dt "Modular and Automated Type-Soundness Verification for Language Extensions")
+       (dd "Florian Lorenzen and Sebastian Erdweg")
+       
+       (dt "Exploiting Vector Instructions with Generalized Stream Fusion")
+       (dd "Geoffrey Mainland, Roman Leshchinskiy and Simon Peyton Jones")
+       
+       (dt "Functional Geometry and the \"Trait" eacute " de Lutherie\" [Experience Report]")
+       (dd "Harry Mairson")
+       
+       (dt "Optimising Purely Functional GPU Programs")
+       (dd "Trevor L. McDonell, Manuel Chakravarty, Gabriele Keller and Ben Lippmeier")
+       
+       (dt "A Short Cut to Parallelization Theorems")
+       (dd "Akimasa Morihata")
+       
+       (dt "Functional Programming of mHealth Applications [Experience Report]")
+       (dd "Christian Petersen, Matthias Gorges, Dustin Dunsmuir, Mark Ansermino and Guy Dumont")
+       
+       (dt "Automatic SIMD Vectorization for Haskell")
+       (dd "Leaf Petersen, Dominic Orchard and Neal Glew")
+       
+       (dt "Programming with Permissions in Mezzo")
+       (dd "Francois Pottier and Jonathan Protzenko")
+       
+       (dt "Correctness of an STM Haskell Implementation")
+       (dd "Manfred Schmidt-Schauss and David Sabel")
+       
+       (dt "The Constrained-Monad Problem")
+       (dd "Neil Sculthorpe, Jan Bracker, George Giorgidze and Andy Gill")
+       
+       (dt "Applying Random Testing to a Base Type Environment [Experience Report]")
+       (dd "Vincent St-Amour and Neil Toronto")
+       
+       (dt "Simple and Compositional Reification of Monadic Embedded Languages [Functional Pearl]")
+       (dd "Josef Svenningsson and Bo Joel Svensson")
+       
+       (dt "Verified Decision Procedures for MSO on Words Based on Derivatives of Regular Expressions [Functional Pearl]")
+       (dd "Dmitriy Traytel and Tobias Nipkow")
+       
+       (dt "Unifying Refinement and Hoare-Style Reasoning in a Logic for Higher-Order Concurrency")
+       (dd "Aaron Turon, Derek Dreyer and Lars Birkedal")
+       
+       (dt "Towards Dependently Typed Haskell: System FC with Kind Equality")
+       (dd "Stephanie Weirich, Justin Hsu and Richard A. Eisenberg")
+       
+       (dt "Mtac: A Monad for Typed Tactic Programming in Coq")
+       (dd "Beta Ziliani, Derek Dreyer, Neelakantan Krishnaswami, Aleksandar Nanevski and Viktor Vafeiadis")))))
+
 
 (define affiliated.xexpr
   (make-page
@@ -833,5 +965,6 @@ a journal version to this issue.")
 (write-page industry.xexpr "industry.html")
 (write-page affiliated.xexpr "affiliated.html")
 (write-page local.xexpr "local.html")
+(write-page accepted.xexpr "accepted.html")
 
 
