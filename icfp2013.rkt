@@ -156,6 +156,11 @@
      (li
       ((class "roomy"))
       (a ((class "navigation")
+          (href "https://regmaster3.com/2013conf/ICFP13/register.php"))
+         "Registration"))
+     (li
+      ((class "roomy"))
+      (a ((class "navigation")
           (href "local.html"))
          "Local information"))        
      (li
@@ -243,7 +248,7 @@
      (tr (td "Notification:")
          (td "Friday, 7 June, 2013"))
      (tr (td "Final copy due:")
-         (td "Friday, 5 July, 2013"))
+         (td "Wednesday, 17 July, 2013"))
      (tr (td "Programming contest:")
          (td "Thursday, 8 August - Sunday, 11 August, 2013"))
      (tr (td "Conference:")
@@ -482,19 +487,19 @@ a journal version to this issue.")
          (h3 "News")
          (ul
           (li (img ((src "img/new.gif")))
-              "The " (a ((href "accepted.html")) "list of accepted papers") " is now online."
+              "Registration is now " (a ((href "https://regmaster3.com/2013conf/ICFP13/register.php")) "open")
+              ".  The early registration deadline is August 22."
               (img ((src "img/new.gif"))))
           (li (img ((src "img/new.gif")))
-              "The " (a ((href "local.html")) "conference venue") " is now accepting reservations. "
+              "Details of the ICFP programming contest, August 8-11, have been "
+              (a ((href ,contest-url)) "released")
+              "!"
               (img ((src "img/new.gif"))))
-          (li "The programming contest date has been chosen!  "
-              "Keep an eye on "
-              (a ((href ,contest-url)) "the event page")
-              " for more details.")
+          (li "The " (a ((href "accepted.html")) "list of accepted papers") " is now online.")
+          (li "The " (a ((href "local.html")) "conference venue") " is now accepting reservations. ")
           (li "ICFP 2013 received a record setting 133 submissions!  Thanks to "
 	      "all the authors for their hard work!")	      
           (li "The RiSE group at MSR Redmond has agreed to run the programming contest!")
-          (li "The " (a ((href "cfp.html")) "Call for Papers") " has been announced.")
           (li "Interested in sponsoring? "
               (a ((href ,(string-append "mailto:" industry-email)))
                  "Contact the Industrial Relations Chair")))
@@ -565,7 +570,7 @@ a journal version to this issue.")
 		 "ACM SIGPLAN Workshop on Functional Art, Music, Modeling and Design"))
 (define Erlang `(a ((href "http://www.erlang.org/workshop/2013/"))
 		   "ACM SIGPLAN Erlang Workshop"))
-(define Haskell `(a ((href "http://www.haskell.org/haskell-symposium/"))
+(define Haskell `(a ((href "http://www.haskell.org/haskell-symposium/2013/"))
 		    "ACM SIGPLAN Haskell Symposium"))
 (define ML `(a ((href "http://research.microsoft.com/en-us/um/people/daan/mlworkshop2013/")) "ACM SIGPLAN Workshop on ML"))
 (define HIW `(a ((href "http://www.haskell.org/haskellwiki/HaskellImplementorsWorkshop"))
