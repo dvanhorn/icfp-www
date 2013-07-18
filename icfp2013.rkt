@@ -252,6 +252,8 @@
          (td "Wednesday, 17 July, 2013"))
      (tr (td "Programming contest:")
          (td "Thursday, 8 August - Sunday, 11 August, 2013"))
+     (tr (td "Early registration:")
+         (td "Thursday, 22 August, 2013"))
      (tr (td "Conference:")
          (td "Wednesday, 25 September - Friday, 27 September, 2013")))])
 
@@ -487,6 +489,10 @@ a journal version to this issue.")
 
          (h3 "News")
          (ul
+          (li (img ((src "img/new.gif")))
+              "Supplemental travel support is available from the " 
+              (a ((href "http://www.sigplan.org/PAC.htm")) "SIGPLAN Professional Activities Committee.")
+              (img ((src "img/new.gif"))))
           (li (img ((src "img/new.gif")))
               "Registration is now " (a ((href "https://regmaster3.com/2013conf/ICFP13/register.php")) "open")
               ".  The early registration deadline is August 22."
@@ -897,6 +903,14 @@ a journal version to this issue.")
         " hotel at a rate of $225 per night.  Please note that the reservation deadline is August 24."
         " When making a reservation, book through this "
         (a ((href "http://www.hilton.com/en/hi/groups/personalized/B/BOSLHHH-ACM-20130917/index.jhtml?WT.mc_id=POG")) "URL") ".")
+     (h2 "Registration")
+     (p "Register by following the instructions provided " (a ((href "https://regmaster3.com/2013conf/ICFP13/register.php")) "here") ". "
+        "The early registration deadline is August 22, 2013.")
+     (h2 "Support from the SIGPLAN Professional Activities Committee")
+     (p "The " (a ((href "http://www.sigplan.org/PAC.htm")) "SIGPLAN Professional Activities Committee") " can potentially provide supplemental financial "
+        "support for attending ICFP in the form of student grants, child-care support, companion travel "
+        "grants, and long-distance internation travel support. "
+        "To apply, follow the instructions found " (a ((href "http://www.sigplan.org/PAC.htm")) "here") ".")
      (h2 "Access")
      (p (a ((href "http://www.massport.com/logan-airport/Pages/Default.aspx")) "Boston Logan Airport")
         " (BOS) offers direct flights to and from more than 100 domestic and international destinations. "
