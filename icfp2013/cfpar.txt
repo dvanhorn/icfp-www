@@ -27,8 +27,11 @@ programming contest results, student research contest
    http://icfpconference.org/icfp2013/local.html
 
  * Registration is available via:
-   http://icfpconference.org/icfp2013/
-   Electronic registration will open shortly.
+   https://regmaster3.com/2013conf/ICFP13/register.php
+   Early registration is due 22 August, 2013.
+
+ * Programming contest, 8-11 August, 2013:
+   https://research.microsoft.com/en-us/events/icfpcontest2013/
 
  * Follow @icfp_conference on twitter for the latest news:
    http://twitter.com/#!/icfp_conference
@@ -102,5 +105,27 @@ Conference organizers:
     David Van Horn, Northeastern University
   Treasurer:
     Jean-Baptiste Tristan, Oracle Labs
+
+Sponsors:
+  Platinum partners:
+    Jane Street Capital
+  Gold partners:
+    FP Complete
+    Microsoft Research
+    National Science Foundation
+    Oracle Labs
+    Standard Chartered Bank
+  Silver partners:
+    Credit Suisse
+    Erlang Solutions
+    Galois
+    Google
+    INRIA
+    Northeastern University, 
+      College of Computer and Information Science
+    Twitter
+  Bronze partners:
+    IntelliFactory
+    QuviQ
 
 =====================================================================
