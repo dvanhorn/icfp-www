@@ -906,6 +906,20 @@ a journal version to this issue.")
      (h2 "Registration")
      (p "Register by following the instructions provided " (a ((href "https://regmaster3.com/2013conf/ICFP13/register.php")) "here") ". "
         "The early registration deadline is August 22, 2013.")
+     (h2 "Visa Support Letters")
+     (p "If you need a visa support letter in order to apply for a visa to enter the United States, you can "
+        "obtain a support letter from the ACM, follow the instructions found "
+        (a ((href "http://www.acm.org/sigs/volunteer_resources/conference_manual/visas")) "here") ". "
+        "You will need to send the following information to "
+        (a ((href "mailto:supportletters@acm.org")) "supportletters@acm.org") ":"
+        (ul
+          (li "Your name as it appears on your passport")
+          (li "Current postal mailing address")
+          (li "The name of the conference you wish to attend")
+          (li "Your Registration Confirmation Number")
+          (li "If you have any papers accepted for the conference,
+          please provide the title and indicate whether you are the
+          'sole author' or a 'co-author'")))        
      (h2 "Support from the SIGPLAN Professional Activities Committee")
      (p "The " (a ((href "http://www.sigplan.org/PAC.htm")) "SIGPLAN Professional Activities Committee") " can potentially provide supplemental financial "
         "support for attending ICFP in the form of student grants, child-care support, companion travel "
