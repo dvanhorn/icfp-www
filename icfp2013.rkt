@@ -490,6 +490,9 @@ a journal version to this issue.")
          (h3 "News")
          (ul
           (li (img ((src "img/new.gif")))
+              "A correction has been made to the CUFP " (a ((href "affiliated.html")) "schedule") "."
+              (img ((src "img/new.gif"))))
+          (li (img ((src "img/new.gif")))
               "Supplemental travel support is available from the " 
               (a ((href "http://www.sigplan.org/PAC.htm")) "SIGPLAN Professional Activities Committee.")
               (img ((src "img/new.gif"))))
@@ -746,10 +749,15 @@ a journal version to this issue.")
 
      (h3 "Sunday, September 22")
      (ul 
-      (li ,CUFP " " ndash " Day 1, Tutorials")      
+      (li ,CUFP " " ndash " Day 1, Talks")      
       (li ,FPCDSL)
       (li ,HIW)
       (li ,ML))
+
+     (em "8/15 Note: The original CUFP schedule incorrectly listed
+         tutorials on days 1 & 2 and talks on day 3, " "but talks are
+         on day 1 and tutorials are on days 2 & 3.  We apologize for
+         any inconvenience resulting from the mistake.")
 
      (h3 "Monday, September 23")
      (ul
@@ -761,7 +769,7 @@ a journal version to this issue.")
      (h3 "Tuesday, September 24")
      (ul
       (li ,Haskell "  " ndash " Day 2")
-      (li ,CUFP " " ndash " Day 3, Talks")
+      (li ,CUFP " " ndash " Day 3, Tutorials")
       (li ,OCAML)
       (li ,DTP))
 
