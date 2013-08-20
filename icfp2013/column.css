@@ -192,3 +192,15 @@ p.credit {
 .photo {
     float:center;
 }
+
+.session {
+    background-color: #E5E5E5;
+}
+
+.keynotetitle {
+    background-color: #E5E5E5;
+}
+
+.paper {
+    margin-left: 30px; 
+}
