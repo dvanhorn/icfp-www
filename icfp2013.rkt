@@ -1045,7 +1045,12 @@ a journal version to this issue.")
 
      (h2 "Accomodation")
      (h3 "Conference hotel")
-     (p "Hotel " (a ((href "http://www.hilton.com/en/hi/groups/personalized/B/BOSLHHH-ACM-20130917/index.jhtml?WT.mc_id=POG")) "reservations") 
+     (p "At this time the rooms reserved at the special conference rate have been booked in full.  You may still book a room at "
+        "the conference hotel at their standard rates.  Reservations can be made online "
+        (a ((href "http://www3.hilton.com/en/hotels/massachusetts/hilton-boston-logan-airport-BOSLHHH/index.html")) "here")
+        ".")
+     (p ((style "text-decoration: line-through")) 
+        "Hotel " (a ((href "http://www.hilton.com/en/hi/groups/personalized/B/BOSLHHH-ACM-20130917/index.jhtml?WT.mc_id=POG")) "reservations") 
         " are now being accepted.  We have made block reservations at the conference"
         " hotel at a rate of $225 per night.  Please note that the reservation deadline is August 24."
         " When making a reservation, book through this "
