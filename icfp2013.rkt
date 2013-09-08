@@ -562,7 +562,7 @@ a journal version to this issue.")
 	 (img ((class "sponsor") (src "img/google.png")))
          (img ((class "sponsor") (src "img/inria.png")))
 	 (img ((class "sponsor") (src "img/CCIS.png")))
-         (img ((class "sponsor") (src "img/twitter.png")))
+         (img ((class "sponsor") (src "img/twitter-bird-light-bgs.png")))
 	 (h4 "Bronze partners")
          (img ((class "sponsor") (src "img/IntelliFactory.png")))
          " "
