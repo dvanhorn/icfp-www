@@ -1040,6 +1040,17 @@ a journal version to this issue.")
         " is accessible in 15 minutes by public transit, or 10 minutes by cab."
         " Boston is a dense, walkable city with an extensive public transportation system"
         " and bicycle sharing program, making it easy to visit any part of the city without a car.")
+
+     (p (b "Getting to the conference: ")
+        "The conference hotel is accessible by an enclosed walkway from terminals A & E of Logan Airport. "
+        "From Terminal A & E follow signs for \"bridge to central "
+        "parking\" and \"pedestrian bridge.\" Take this walkway until "
+        "the parking elevators. Proceed to second floor and into the "
+        "Hilton Hotel via sky bridge. "
+        "By public transportation, either take the Silver Line (SL1) "
+	"to terminal A, or take the Blue Line to Airport Station and "
+	"then board a free shuttle that goes to terminal A or E.")
+        
      ,@google-map-hotel
      (h2 "Registration")
      (p "Register by following the instructions provided " (a ((href "https://regmaster3.com/2013conf/ICFP13/register.php")) "here") ". "
