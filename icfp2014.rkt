@@ -273,21 +273,23 @@
   '[(h3 "Important dates")
     (table
      ((cellpadding "5"))
-     (tr (td "Submissions due:")
-         (td (a ((href "http://www.timeanddate.com/worldclock/city.html?n=1033"))
-                "Thursday, 28 March 2013, 23:59 UTC-11 American Samoa time")))
-     (tr (td "Author response:")
+     (tr (td "Workshop proposals due:")
+         (td "Friday, 15 November 2013"))
+     (tr (td "Paper submissions due:")
+         (td ;(a ((href "http://www.timeanddate.com/worldclock/city.html?n=1033"))
+                "Saturday, 1 March 2014")) ;, 23:59 UTC-11 American Samoa time")))
+     #;(tr (td "Author response:")
          (td "Wednesday, 22 May, 2013 " ndash " Friday, 24 May, 2013"))
-     (tr (td "Notification:")
+     #;(tr (td "Notification:")
          (td "Friday, 7 June, 2013"))
-     (tr (td "Final copy due:")
+     #;(tr (td "Final copy due:")
          (td "Wednesday, 17 July, 2013"))
-     (tr (td "Programming contest:")
+     #;(tr (td "Programming contest:")
          (td "Thursday, 8 August - Sunday, 11 August, 2013"))
-     (tr (td "Early registration:")
+     #;(tr (td "Early registration:")
          (td "Thursday, 22 August, 2013"))
      (tr (td "Conference:")
-         (td "Wednesday, 25 September - Friday, 27 September, 2013")))])
+         (td "Monday, 1 September - Wednesday, 3 September 2014")))])
 
 (define (make-page title col)
   `(html
@@ -546,7 +548,7 @@ a journal version to this issue.")
               (a ((href ,(string-append "mailto:" industry-email)))
                  "Contact the Industrial Relations Chair")))
          
-         #;,@important-dates
+         ,@important-dates
          
          (h3 "Conference Organizers")
          (table
