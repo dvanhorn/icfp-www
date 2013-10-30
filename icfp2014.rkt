@@ -97,9 +97,9 @@
 (define dates '("September 1 " ndash " 3"))
 (define affiliated-dates '("August 31 " ndash " September 4 " ndash " 6"))
 (define industry-email "adams-moran@galois.com")
-(define cfwp-deadline "December X, 2013")
-(define cfwp-notification "January Y, 2014")
-(define workshop-domain "ccs.neu.edu")
+(define cfwp-deadline "November 15, 2013")
+(define cfwp-notification "December 15, 2013")
+(define workshop-domain "ugent.be")
 
 (define keywords
   @string-append{functional programming, functional programming languages, 
@@ -200,7 +200,7 @@
       (a ((class "navigation")
           (href "cfp.html"))
          "Call for papers"))
-     #;
+     
      (li
       ((class "roomy"))
       (a ((class "navigation")
@@ -605,8 +605,8 @@ a journal version to this issue.")
   
 
 (define workshop-date-par
-  '(p "The workshops are scheduled to occur on September 22-24 (the three days before ICFP) "
-      "and September 28 (the day after ICFP)."))
+  '(p "The workshops are scheduled to occur on August 31 (the day before ICFP) "
+      "and September 4-6 (the three days after ICFP)."))
 (define workshop-email
   (let ((addr (string-append "icfp" (substring year 2 4) "-workshops@" workshop-domain)))
     `(a ((href ,(string-append "mailto:" addr)))
@@ -844,7 +844,7 @@ a journal version to this issue.")
 	"with ICFP " ,year " and sponsored by "
 	(a ((href "http://acm.org/sigplan/")) "SIGPLAN")
 	".  "
-	"These events should be more informal and focused than ICFP itself, "
+	"These events should be less formal and focused than ICFP itself, "
 	"include sessions that enable interaction among the "
 	"attendees, and foster the exchange of new ideas. The preference is for "
 	"one-day events, but other schedules can also be " 
@@ -890,7 +890,7 @@ a journal version to this issue.")
 	"final report after the event has taken place that is "
 	"suitable for publication in SIGPLAN Notices. Further "
 	"information about SIGPLAN sponsorship is available "
-	(a ((href "http://www.sigplan.org/Resources/Proposals/Workshop"))
+	(a ((href "http://www.sigplan.org/Resources/Guidelines/Workshops"))
 	   "here")
 	".")
      (h3 "Selection committee")
@@ -1080,7 +1080,7 @@ a journal version to this issue.")
       (write-xexpr xexpr))))
 
 (write-page index.xexpr "index.html")
-;(write-page cfwp.xexpr "cfwp.html")
+(write-page cfwp.xexpr "cfwp.html")
 ;(write-page cfp.xexpr "cfp.html")
 ;(write-page industry.xexpr "industry.html")
 ;(write-page affiliated.xexpr "affiliated.html")
