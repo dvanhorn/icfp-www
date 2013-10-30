@@ -61,6 +61,9 @@
 (define bjorn
   (person 'local '("Bj" ouml "rn") "von Sydow" "Chalmers University" "http://www.chalmers.se/cse/EN/people/sydow-bjorn-von"))
 
+(define meng
+  (person 'src "Meng" "Wang" "Chalmers University"  "http://www.chalmers.se/cse/EN/people/wang-meng"))
+
 (define anil
   (person/email 'industry "Anil" "Madhavapeddy" "University of Cambridge" "http://anil.recoil.org/"
 		"anil@recoil.org"))
@@ -72,7 +75,7 @@
 (define people
   (append program-committee
           contest-committee
-          (list johan manuel sam tom david malcolm jean-baptiste anil bjorn)))
+          (list johan manuel sam tom david malcolm jean-baptiste anil bjorn meng)))
 
 ;; Role -> [Listof Person]
 (define (get-roles r)
@@ -560,10 +563,10 @@ a journal version to this issue.")
           ,(role-row "Industrial Relations Chair" 'industry)
           ,@(role-rows "Workshop Co-Chairs" 'wc)
           ;,@(role-rows "Programming Contest Co-Chairs" 'cc)
+          ,(role-row "Student Research Competition Chair" 'src)
           ,(role-row "Publicity Chair" 'pub)
           ;,(role-row "Video Chair" 'video)
           ;,(role-row "Treasurer" 'treasurer)
-          ;,(role-row "Student Research Competition Chair" 'src)
           )
 
          #;(h3 "Program Committee")
