@@ -611,7 +611,7 @@ a journal version to this issue.")
   '(p "The workshops are scheduled to occur on August 31 (the day before ICFP) "
       "and September 4-6 (the three days after ICFP)."))
 (define workshop-email
-  (let ((addr (string-append "icfp" (substring year 2 4) "-workshops@" workshop-domain)))
+  (let ((addr (string-append "icfp" year #;(substring year 2 4) "-workshops@" workshop-domain)))
     `(a ((href ,(string-append "mailto:" addr)))
         ,addr)))
 
