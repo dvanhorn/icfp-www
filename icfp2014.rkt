@@ -9,6 +9,27 @@
 
 (define program-committee
   (list
+   (person 'pcm "Edwin" "Brady" "University of St Andrews" "http://edwinb.wordpress.com")
+   (person 'pcm "Derek" "Dreyer" "Max Planck Institute for Software Systems" "https://www.mpi-sws.org/~dreyer/")
+   (person 'pcm "Ralf" "Hinze" "University of Oxford" "http://www.cs.ox.ac.uk/ralf.hinze/")
+   (person 'pcm "Zhenjiang" "Hu" "National Institute of Informatics" "http://research.nii.ac.jp/~hu/")
+   (person 'pcm "Patricia" "Johann" "Appalachian State University" "http://cs.appstate.edu/~johannp/")
+   (person 'pcm "Ken" "Larsen" "University of Copenhagen" "http://www.diku.dk/~kflarsen/")
+   (person 'pcm "Yukiyoshi" "Kameyama" "University of Tsukuba" "http://logic.cs.tsukuba.ac.jp/~kam/")
+   (person 'pcm "Anil" "Madhavapeddy" "University of Cambridge" "http://anil.recoil.org")
+   (person 'pcm "Geoffrey" "Mainland" "Drexel University" "https://www.cs.drexel.edu/~mainland/")
+   (person 'pcm "David" '("Mazi" egrave "res") "Stanford University" "http://www.scs.stanford.edu/~dm/")
+   (person 'pcm "Jay" "McCarthy" "Brigham Young University" "http://faculty.cs.byu.edu/~jay/home/")
+   (person 'pcm "Matthew" "Might" "University of Utah" "http://matt.might.net")
+   (person 'pcm "Ulf" "Norell" "Chalmers University of Technology" "http://www.cse.chalmers.se/~ulfn/")
+   (person 'pcm "Tiark" "Rompf" "Swiss Federal Institute of Technology in Lausanne" "http://tiarkrompf.github.io")
+   (person 'pcm "Chung-chieh" "Shan" "Indiana University" "http://homes.soic.indiana.edu/ccshan/")
+   (person 'pcm "Mary" "Sheeran" "Chalmers University of Technology" "http://www.cse.chalmers.se/~ms/")
+   (person 'pcm "Matt" "Sottile" "Galois" "http://corp.galois.com/matt-sottile/")
+   (person 'pcm "Don" "Syme" "Microsoft Research" "http://research.microsoft.com/en-us/people/dsyme/")
+   (person 'pcm "Jesse" "Tov" "Harvard University" "http://www.eecs.harvard.edu/~tov/")))
+
+#|
    (person 'pcm "Thorsten" "Altenkirch" "University of Nottingham" "http://www.cs.nott.ac.uk/~txa/")
    (person 'pcm "Olaf" "Chitil" "University of Kent" "http://www.cs.kent.ac.uk/people/staff/oc/")
    (person 'pcm "Silvia" "Ghilezan" "University of Novi Sad" "http://imft.ftn.uns.ac.rs/~silvia/")
@@ -23,7 +44,8 @@
    (person 'pcm "Sungwoo" "Park" "Pohang University of Science and Technology" "http://www.postech.ac.kr/~gla/")
    (person 'pcm "Sam" "Staton" "University of Cambridge" "http://www.cl.cam.ac.uk/~ss368/")
    (person 'pcm "Nikhil" "Swamy" "Microsoft Research, Redmond" "http://research.microsoft.com/en-us/people/nswamy/")
-   (person 'pcm "Dimitrios" "Vytiniotis" "Microsoft Research, Cambridge" "http://research.microsoft.com/en-us/people/dimitris/")))
+   (person 'pcm "Dimitrios" "Vytiniotis" "Microsoft Research, Cambridge" "http://research.microsoft.com/en-us/people/dimitris/")
+|#
 
 ;; end PC
 
@@ -115,11 +137,20 @@
       `((a ((href ,url)) ,@s))
       s))
 
+(define (listify x)
+  (if (cons? x) x (list x)))
+
+(define (person-link p)
+  (apply link (person-url p) (append (listify (person-first p))
+				     (list " ")
+				     (listify (person-last p)))))
+
 (define (row desc p)
   `(tr
     (td ((align "left")) ,desc ,@(if (string=? desc "") '() '(":")))
     (td ((align "left"))
-        ,@(let ((f  (person-first p)))
+        ,@(person-link p)
+          #;(let ((f  (person-first p)))
             (cond [(cons? f)
                    (apply link (person-url p) (append f (list " " (person-last p))))]
                   [else
@@ -197,7 +228,7 @@
       (a ((class "navigation")
           (href "program.html"))
          "Program"))
-     #;
+     
      (li
       ((class "roomy"))
       (a ((class "navigation")
@@ -276,17 +307,17 @@
   '[(h3 "Important dates")
     (table
      ((cellpadding "5"))
-     (tr (td "Workshop proposals due:")
+     #;(tr (td "Workshop proposals due:")
          (td "Friday, 15 November 2013"))
-     (tr (td "Paper submissions due:")
-         (td ;(a ((href "http://www.timeanddate.com/worldclock/city.html?n=1033"))
-                "Saturday, 1 March 2014")) ;, 23:59 UTC-11 American Samoa time")))
-     #;(tr (td "Author response:")
-         (td "Wednesday, 22 May, 2013 " ndash " Friday, 24 May, 2013"))
-     #;(tr (td "Notification:")
-         (td "Friday, 7 June, 2013"))
-     #;(tr (td "Final copy due:")
-         (td "Wednesday, 17 July, 2013"))
+     (tr (td "Submissions due:")
+         (td (a ((href "http://www.timeanddate.com/worldclock/fixedtime.html?msg=ICFP+2014+Paper+Submission&iso=20140301T2359"))
+                "Saturday, 1 March 2014, 23:59 UTC-11 (anywhere in the world)")))
+     (tr (td "Author response:")
+         (td "Wednesday, 23 April, 2014 " ndash " Friday, 25 April, 2014"))
+     (tr (td "Notification:")
+         (td "Monday, 5 May, 2014"))
+     (tr (td "Final copy due:")
+         (td "Wednesday, 11 June, 2014"))
      #;(tr (td "Programming contest:")
          (td "Thursday, 8 August - Sunday, 11 August, 2013"))
      #;(tr (td "Early registration:")
@@ -375,7 +406,7 @@ or parallelism.  Topics of interest include (but are not limited to):")
 hesitate to contact the program chair.")
      (h3 "Abbreviated instructions for authors")
      (ul
-      (li "By Thursday, 28 March 2013, 23:59 UTC-11 (American Samoa time),
+      (li "By Saturday, 1 March 2014, 23:59 UTC-11 (Samoa Standard Time),
   submit a full paper of at most 12 pages (6 pages for an Experience
   Report), including bibliography and figures."))
      (p "The deadlines will be strictly enforced and papers exceeding the page
@@ -409,7 +440,9 @@ conference web site.")
      (p "Proceedings will be published by ACM Press.  Authors of accepted
 submissions are expected to transfer the copyright to the
 ACM.  Presentations will be videotaped and released online if the
-presenter consents.")
+presenter consents. The proceedings will be freely available for 
+download from the ACM Digital Library from one week before the 
+start of the conference until two weeks after the conference.")
      (p (em "Formatting: ")
 	"Submissions must be in PDF format printable in black and
 white on US Letter sized paper and interpretable by
@@ -421,21 +454,33 @@ two columns, nine-point font on a ten-point baseline, with columns
                 "http://www.acm.org/sigs/sigplan/authorInformation.htm"))
           (p (em "Submission: ") 
              "Submissions will be accepted on the web at "
-	     (a ((href "https://www.easychair.org/conferences/?conf=icfp2013"))
-                "https://www.easychair.org/conferences/?conf=icfp2013")
-". Improved
+             (a ((href "https://www.easychair.org/conferences/?conf=icfp2014"))
+                "https://www.easychair.org/conferences/?conf=icfp2014")
+	    ". Improved
 versions of a paper may be submitted at any point before the
 submission deadline using the same web interface.")
           (p (em "Author response: ")
              "Authors will have a 72-hour period, starting at 0:00
-UTC-11 on Wednesday, 22 May 2013, to read reviews and respond to them.")
+UTC-11 on Wednesday, 23 April 2014, to read reviews and respond to them.")
 
-          (p (em "Special Journal Issue: ") 
+          #;(p (em "Special Journal Issue: ") 
              "There will be a special issue of the Journal of
 Functional Programming with papers from ICFP 2013.  The program
 committee will invite the authors of select accepted papers to submit
 a journal version to this issue.")
-          
+          (p "ACM Author-Izer is a unique service that enables ACM
+authors to generate and post links on either their home page or
+institutional repository for visitors to download the definitive
+version of their articles from the ACM Digital Library at no
+charge. Downloads through Author-Izer links are captured in official
+ACM statistics, improving the accuracy of usage and impact
+measurements. Consistently linking the definitive version of ACM
+article should reduce user confusion over article versioning. After
+your article has been published and assigned to your ACM Author
+Profile page, please visit "
+(a ((href "http://www.acm.org/publications/acm-author-izer-service")) "http://www.acm.org/publications/acm-author-izer-service")
+" to learn how
+to create your links for fee downloads from the ACM DL.")
           (h3 "Organizers")
           (table
            ((cellpadding "5")
@@ -569,8 +614,8 @@ a journal version to this issue.")
           ;,(role-row "Treasurer" 'treasurer)
           )
 
-         #;(h3 "Program Committee")
-         #;(table
+         (h3 "Program Committee")
+         (table
             ((cellpadding "5")
              (summary "PC"))
 	    ,@(map (lambda (p) (row "" p)) program-committee)
@@ -1084,7 +1129,7 @@ a journal version to this issue.")
 
 (write-page index.xexpr "index.html")
 (write-page cfwp.xexpr "cfwp.html")
-;(write-page cfp.xexpr "cfp.html")
+(write-page cfp.xexpr "cfp.html")
 ;(write-page industry.xexpr "industry.html")
 ;(write-page affiliated.xexpr "affiliated.html")
 (write-page local.xexpr "local.html")
