@@ -22,7 +22,7 @@
    (person 'pcm "Jay" "McCarthy" "Brigham Young University" "http://faculty.cs.byu.edu/~jay/home/")
    (person 'pcm "Matthew" "Might" "University of Utah" "http://matt.might.net")
    (person 'pcm "Ulf" "Norell" "Chalmers University of Technology" "http://www.cse.chalmers.se/~ulfn/")
-   (person 'pcm "Tiark" "Rompf" "Swiss Federal Institute of Technology in Lausanne" "http://tiarkrompf.github.io")
+   (person 'pcm "Tiark" "Rompf" "Oracle Labs and EPFL (Swiss Federal Institute of Technology in Lausanne)" "http://tiarkrompf.github.io")
    (person 'pcm "Chung-chieh" "Shan" "Indiana University" "http://homes.soic.indiana.edu/ccshan/")
    (person 'pcm "Mary" "Sheeran" "Chalmers University of Technology" "http://www.cse.chalmers.se/~ms/")
    (person 'pcm "Matt" "Sottile" "Galois" "http://corp.galois.com/matt-sottile/")
