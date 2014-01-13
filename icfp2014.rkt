@@ -51,7 +51,7 @@
 
 (define contest-committee
   (list
-   (person 'cc "Nicholas" "Wu" "University of Oxford" "http://www.cs.ox.ac.uk/people/nicolas.wu/")
+   (person 'cc "Nicolas" "Wu" "University of Oxford" "http://www.cs.ox.ac.uk/people/nicolas.wu/")
    (person 'cc "Duncan" "Coutts" "Well Typed LLP" "http://www.well-typed.com/people/duncan")))
 
 (define contest-url
