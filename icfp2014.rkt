@@ -51,10 +51,8 @@
 
 (define contest-committee
   (list
-   (person 'cc "Nikhil" "Swamy" "Microsoft Research, Redmond" "http://research.microsoft.com/en-us/people/nswamy/")
-   (person 'cc "Michal" "Moskal" "Microsoft Research, Redmond" "http://research.microsoft.com/en-us/um/people/moskal/")
-   (person 'cc "Nikolai" "Tillmann" "Microsoft Research, Redmond" "http://research.microsoft.com/en-us/people/nikolait/")
-   (person 'cc "Peli" "de Halleux" "Microsoft Research, Redmond" "http://research.microsoft.com/en-us/people/jhalleux/")))
+   (person 'cc "Nicholas" "Wu" "University of Oxford" "http://www.cs.ox.ac.uk/people/nicolas.wu/")
+   (person 'cc "Duncan" "Coutts" "Well Typed LLP" "http://www.well-typed.com/people/duncan")))
 
 (define contest-url
   "https://research.microsoft.com/en-us/events/icfpcontest2013/")
@@ -607,7 +605,7 @@ to create your links for fee downloads from the ACM DL.")
           ,(role-row "Local Arrangements Chair" 'local)
           ,(role-row "Industrial Relations Chair" 'industry)
           ,@(role-rows "Workshop Co-Chairs" 'wc)
-          ;,@(role-rows "Programming Contest Co-Chairs" 'cc)
+          ,@(role-rows "Programming Contest Co-Chairs" 'cc)
           ,(role-row "Student Research Competition Chair" 'src)
           ,(role-row "Publicity Chair" 'pub)
           ;,(role-row "Video Chair" 'video)
