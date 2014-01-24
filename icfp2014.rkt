@@ -10,7 +10,7 @@
 (define program-committee
   (list
    (person 'pcm "Edwin" "Brady" "University of St Andrews" "http://edwinb.wordpress.com")
-   (person 'pcm "Derek" "Dreyer" "Max Planck Institute for Software Systems" "https://www.mpi-sws.org/~dreyer/")
+   (person 'pcm "Derek" "Dreyer" "MPI-SWS" "https://www.mpi-sws.org/~dreyer/")
    (person 'pcm "Ralf" "Hinze" "University of Oxford" "http://www.cs.ox.ac.uk/ralf.hinze/")
    (person 'pcm "Zhenjiang" "Hu" "National Institute of Informatics" "http://research.nii.ac.jp/~hu/")
    (person 'pcm "Patricia" "Johann" "Appalachian State University" "http://cs.appstate.edu/~johannp/")
