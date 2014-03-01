@@ -70,7 +70,7 @@
   (person 'wc "Tom" "Schrijvers" "Ghent University" "http://users.ugent.be/~tschrijv/"))
 
 (define david
-  (person 'pub "David" "Van Horn" "University of Maryland" "http://www.ccs.neu.edu/home/dvanhorn/"))
+  (person 'pub "David" "Van Horn" "University of Maryland" "http://www.cs.umd.edu/~dvanhorn/"))
 
 (define malcolm
   (person 'video "Malcolm" "Wallace" "Standard Chartered Bank" #f))
@@ -997,6 +997,12 @@ to create your links for fee downloads from the ACM DL.")
 	(a ((href "https://maps.google.se/maps/ms?msa=0&msid=210997146033221229789.0004ef75436b30b7dddf6&ie=UTF8&t=m&ll=57.698369,11.978016&spn=0.032106,0.073128&z=13&source=embed"))
 	   "ICFP2014 locations")
 	" in a larger map.")
+
+     (h2 "Support from the SIGPLAN Professional Activities Committee")
+     (p "The " (a ((href "http://www.sigplan.org/PAC.htm")) "SIGPLAN Professional Activities Committee") " can potentially provide supplemental financial "
+        "support for attending ICFP in the form of student grants, child-care support, companion travel "
+        "grants, and long-distance internation travel support. "
+        "To apply, follow the instructions found " (a ((href "http://www.sigplan.org/PAC.htm")) "here") ".")
 
      (h2 "Getting to the venue")
      (p (ul (li "If you arrive to Gothenburg Landvetter Airport (GOT; all airlines except
