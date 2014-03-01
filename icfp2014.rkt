@@ -214,7 +214,7 @@
       (a ((class "navigation")
           (href "local.html"))
          "Local information"))        
-     #;
+     
      (li
       ((class "roomy"))
       (a ((class "navigation")
@@ -308,7 +308,7 @@
      #;(tr (td "Workshop proposals due:")
          (td "Friday, 15 November 2013"))
      (tr (td "Submissions due:")
-         (td (a ((href "http://www.timeanddate.com/worldclock/fixedtime.html?msg=ICFP+2014+Paper+Submission&iso=20140301T2359"))
+         (td (a ((href "http://www.timeanddate.com/worldclock/fixedtime.html?msg=ICFP+2014+Paper+Submission&iso=20140301T2359&p1=1890"))
                 "Saturday, 1 March 2014, 23:59 UTC-11 (anywhere in the world)")))
      (tr (td "Author response:")
          (td "Wednesday, 23 April, 2014 " ndash " Friday, 25 April, 2014"))
@@ -569,7 +569,12 @@ to create your links for fee downloads from the ACM DL.")
             peripheries.}
          
 
-         #;(h3 "News")
+         (h3 "News")
+	 (ul
+	  (li "Submit a paper via EasyChair: "
+	      (a ((href "https://www.easychair.org/conferences/?conf=icfp2014"))
+		 "https://www.easychair.org/conferences/?conf=icfp2014"))
+	  (li "The " (a ((href "affiliated.html")) "affiliated event") " schedule is now available."))
          #;(ul
 	  (li (img ((src "img/new.gif")))
 	      "The " (a ((href "program.html")) "conference program") " has been announced."
@@ -660,167 +665,49 @@ to create your links for fee downloads from the ACM DL.")
 
 
 (define CUFP `(a ((href "http://cufp.org/")) "ACM SIGPLAN Commercial Users of Functional Programming"))
-(define FARM `(a ((href "http://www.cis.upenn.edu/~byorgey/farm13/"))
+(define FARM `(a ((href "http://functional-art.org/"))
 		 "ACM SIGPLAN Workshop on Functional Art, Music, Modeling and Design"))
-(define Erlang `(a ((href "http://www.erlang.org/workshop/2013/"))
+(define Erlang `(a ((href "http://www.erlang.org/workshop/2014/"))
 		   "ACM SIGPLAN Erlang Workshop"))
-(define Haskell `(a ((href "http://www.haskell.org/haskell-symposium/2013/"))
-		    "ACM SIGPLAN Haskell Symposium"))
-(define ML `(a ((href "http://research.microsoft.com/en-us/um/people/daan/mlworkshop2013/")) "ACM SIGPLAN Workshop on ML"))
+(define Haskell 
+  "ACM SIGPLAN Haskell Symposium"
+  #;
+  `(a ((href "http://www.haskell.org/haskell-symposium/2013/"))
+      "ACM SIGPLAN Haskell Symposium"))
+(define ML   
+  "ACM SIGPLAN ML Family Workshop")
 (define HIW `(a ((href "http://www.haskell.org/haskellwiki/HaskellImplementorsWorkshop"))
 		"ACM SIGPLAN Haskell Implementors Workshop"))
+(define HRT "ACM SIGPLAN Workshop on Haskell and Rewriting Techniques")
+#;
 (define FPCDSL
   `(a ((href "http://quantum.bbn.com/FPCDSL/"))
       "ACM SIGPLAN Functional Programming Concepts in Domain-Specific Languages"))
 (define WGP
-  `(a ((href "http://www.wgp-sigplan.org/2013"))
+  `(a ((href "http://www.wgp-sigplan.org/2014"))
       "ACM SIGPLAN Workshop on Generic Programming"))
-(define HOPE
+(define HOPE 
+  "ACM SIGPLAN Workshop on Higher-order Programming with Effects"
+  #;
   `(a ((href "http://hope2013.mpi-sws.org"))
       "ACM SIGPLAN Workshop on Higher-order Programming with Effects"))
+
 (define FHPC
+  "ACM SIGPLAN Workshop on Functional High-Performance Computing"
+  #;
   `(a ((href "http://hiperfit.dk/fhpc13.html"))
       "ACM SIGPLAN Workshop on Functional High-Performance Computing"))
+#;
 (define DTP
   `(a ((href "http://www.seas.upenn.edu/~sweirich/dtp13"))
       "ACM SIGPLAN Dependently-typed programming"))
+#;
 (define LFMTP
   `(a ((href "http://complogic.cs.mcgill.ca/lfmtp13"))
       "ACM SIGPLAN International Workshop on Logical Frameworks and Meta-Languages: Theory and Practice"))
 (define OCAML
-  `(a ((href "http://ocaml.org/meetings/ocaml/2013/"))
+  `(a ((href "http://ocaml.org/meetings/ocaml/2014/"))
       "ACM SIGPLAN OCaml Workshop"))
-
-(define accepted.xexpr
-  (make-page
-    "Accepted papers"
-    `(div
-      ((class "col1"))
-      (center
-       (h1 "Accepted papers"))
-
-      (dl
-
-       (dt "Wellfounded Recursion with Copatterns: A Unified Approach to Termination and Productivity")
-       (dd "Andreas Abel and Brigitte Pientka")
-       
-       (dt "Productive Coprogramming with Guarded Recursion")
-       (dd "Robert Atkey and Conor McBride")
-       
-       (dt "Using Circular Programs for Higher-Order Syntax [Functional Pearl]")
-       (dd "Emil Axelsson and Koen Claessen")
-       
-       (dt "Weak Optimality, and the Meaning of Sharing")
-       (dd "Thibaut Balabonski")
-       
-       (dt "Efficient Divide-and-Conquer Parsing of Practical Context-Free Languages")
-       (dd "Jean-Philippe Bernardy and Koen Claessen")
-       
-       (dt "Type-Theory In Color")
-       (dd "Jean-Philippe Bernardy and Guilhem Moulin")
-       
-       (dt "Programming and Reasoning with Algebraic Effects and Dependent Types")
-       (dd "Edwin Brady")
-       
-       (dt "C-SHORe: A Collapsible Approach to Verifying Higher-Order Programs")
-       (dd "Christopher Broadbent, Arnaud Carayol, Matthew Hague and Olivier Serre")
-       
-       (dt "A Practical Theory of Language-Integrated Query")
-       (dd "James Cheney, Sam Lindley and Philip Wadler")
-       
-       (dt "The Bedrock Structured Programming System: Combining Generative Metaprogramming and Hoare Logic in an Extensible Program Verifier")
-       (dd "Adam Chlipala")
-       
-       (dt "Modular Monadic Meta-Theory")
-       (dd "Benjamin Delaware, Steven Keuchel, Tom Schrijvers and Bruno Oliveira")
-       
-       (dt "Hoare-Style Reasoning with (Algebraic) Continuations")
-       (dd "Germ" aacute "n Andr" eacute "s Delbianco and Aleksandar Nanevski")
-       
-       (dt "Typed Syntactic Meta-programming")
-       (dd "Dominique Devriese and Frank Piessens")
-       
-       (dt "Fun with Semirings [Functional Pearl]")
-       (dd "Stephen Dolan")
-       
-       (dt "Complete and Easy Bidirectional Typechecking for Higher-Rank Polymorphism")
-       (dd "Joshua Dunfield and Neelakantan R. Krishnaswami")
-       
-       (dt "Calculating Threesomes, with Blame")
-       (dd "Ronald Garcia")
-       
-       (dt "Structural Recursion for Querying Ordered Graphs")
-       (dd "Soichiro Hidaka, Kazuyuki Asada, Zhenjiang Hu, Hiroyuki Kato and Keisuke Nakano")
-       
-       (dt "Unifying Structured Recursion Schemes")
-       (dd "Ralf Hinze, Nicolas Wu and Jeremy Gibbons")
-       
-       (dt "Testing Noninterference, Quickly")
-       (dd "Catalin Hritcu, John Hughes, Benjamin C. Pierce, Antal Spector-Zabusky, Dimitrios Vytiniotis, Arthur Azevedo de Amorim and Leonidas Lampropoulos")
-       
-       (dt "Functional Reactive Programming with Liveness Guarantees")
-       (dd "Alan Jeffrey")
-       
-       (dt "Correctly Optimizing Abstract Abstract Machines")
-       (dd "J. Ian Johnson, Nicholas Labich, Matthew Might and David Van Horn")
-       
-       (dt "Handlers in Action")
-       (dd "Ohad Kammar, Sam Lindley and Nicolas Oury")
-       
-       (dt "A Nanopass Framework for Commercial Compiler Development [Experience Report]")
-       (dd "Andrew Keep and R Kent Dybvig")
-       
-       (dt "Higher-Order Functional Reactive Programming without Spacetime Leaks")
-       (dd "Neelakantan Krishnaswami")
-       
-       (dt "Modular and Automated Type-Soundness Verification for Language Extensions")
-       (dd "Florian Lorenzen and Sebastian Erdweg")
-       
-       (dt "Exploiting Vector Instructions with Generalized Stream Fusion")
-       (dd "Geoffrey Mainland, Roman Leshchinskiy and Simon Peyton Jones")
-       
-       (dt "Functional Geometry and the \"Trait" eacute " de Lutherie\" [Experience Report]")
-       (dd "Harry Mairson")
-       
-       (dt "Optimising Purely Functional GPU Programs")
-       (dd "Trevor L. McDonell, Manuel Chakravarty, Gabriele Keller and Ben Lippmeier")
-       
-       (dt "A Short Cut to Parallelization Theorems")
-       (dd "Akimasa Morihata")
-       
-       (dt "Functional Programming of mHealth Applications [Experience Report]")
-       (dd "Christian Petersen, Matthias Gorges, Dustin Dunsmuir, Mark Ansermino and Guy Dumont")
-       
-       (dt "Automatic SIMD Vectorization for Haskell")
-       (dd "Leaf Petersen, Dominic Orchard and Neal Glew")
-       
-       (dt "Programming with Permissions in Mezzo")
-       (dd "Francois Pottier and Jonathan Protzenko")
-       
-       (dt "Correctness of an STM Haskell Implementation")
-       (dd "Manfred Schmidt-Schauss and David Sabel")
-       
-       (dt "The Constrained-Monad Problem")
-       (dd "Neil Sculthorpe, Jan Bracker, George Giorgidze and Andy Gill")
-       
-       (dt "Applying Random Testing to a Base Type Environment [Experience Report]")
-       (dd "Vincent St-Amour and Neil Toronto")
-       
-       (dt "Simple and Compositional Reification of Monadic Embedded Languages [Functional Pearl]")
-       (dd "Josef Svenningsson and Bo Joel Svensson")
-       
-       (dt "Verified Decision Procedures for MSO on Words Based on Derivatives of Regular Expressions [Functional Pearl]")
-       (dd "Dmitriy Traytel and Tobias Nipkow")
-       
-       (dt "Unifying Refinement and Hoare-Style Reasoning in a Logic for Higher-Order Concurrency")
-       (dd "Aaron Turon, Derek Dreyer and Lars Birkedal")
-       
-       (dt "Towards Dependently Typed Haskell: System FC with Kind Equality")
-       (dd "Stephanie Weirich, Justin Hsu and Richard A. Eisenberg")
-       
-       (dt "Mtac: A Monad for Typed Tactic Programming in Coq")
-       (dd "Beta Ziliani, Derek Dreyer, Neelakantan Krishnaswami, Aleksandar Nanevski and Viktor Vafeiadis")))))
-
 
 (define affiliated.xexpr
   (make-page
@@ -830,41 +717,33 @@ to create your links for fee downloads from the ACM DL.")
      (center
       (h1 "Affiliated events"))
 
-     (h3 "Sunday, September 22")
+     (h3 "Sunday, August 31")
      (ul 
-      (li ,CUFP " " ndash " Day 1, Talks")      
-      (li ,FPCDSL)
-      (li ,HIW)
-      (li ,ML))
+      (li ,WGP)
+      (li ,HOPE))
 
-     (em "8/15 Note: The original CUFP schedule incorrectly listed
-         tutorials on days 1 & 2 and talks on day 3, " "but talks are
-         on day 1 and tutorials are on days 2 & 3.  We apologize for
-         any inconvenience resulting from the mistake.")
-
-     (h3 "Monday, September 23")
-     (ul
-      (li ,CUFP " " ndash " Day 2, Tutorials")
-      (li ,Haskell " " ndash " Day 1")
-      (li ,LFMTP)
-      (li ,FHPC))
-
-     (h3 "Tuesday, September 24")
-     (ul
-      (li ,Haskell "  " ndash " Day 2")
-      (li ,CUFP " " ndash " Day 3, Tutorials")
-      (li ,OCAML)
-      (li ,DTP))
-
-     (h3 "Wednesday, September 25 " ndash " Friday, September 27")
+     (h3 "Monday, September 1 " ndash " Wednesday, September 3")
      (ul (li "ICFP"))
 
-     (h3 "Saturday, September 28")
+     (h3 "Thursday, September 4")
      (ul
+      (li ,CUFP " " ndash "Day 1, Tutorials")
+      (li ,Haskell " " ndash " Day 1")
+      (li ,FHPC)
+      (li ,ML))
+
+     (h3 "Friday, September 5")
+     (ul
+      (li ,CUFP " " ndash "Day 2, Tutorials")
+      (li ,OCAML)
       (li ,Erlang)
-      (li ,FARM)
-      (li ,HOPE)
-      (li ,WGP)))))
+      (li ,HRT))
+
+     (h3 "Saturday, September 6")
+     (ul 
+      (li ,CUFP  " " ndash "Day 3, Talks")
+      (li ,HIW)
+      (li ,FARM)))))
 
 (define cfwp.xexpr
   (make-page 
@@ -1113,9 +992,177 @@ to create your links for fee downloads from the ACM DL.")
      (p "The conference will take place at the " 
         (a ((href "http://www.svenskamassan.se/en/")) "Swedish Exhibition and Congress Centre") 
         " in central Gothenburg.")
-     #;,@google-map-hotel
-     ))) 
-        
+
+     (p "View "
+	(a ((href "https://maps.google.se/maps/ms?msa=0&msid=210997146033221229789.0004ef75436b30b7dddf6&ie=UTF8&t=m&ll=57.698369,11.978016&spn=0.032106,0.073128&z=13&source=embed"))
+	   "ICFP2014 locations")
+	" in a larger map.")
+
+     (h2 "Getting to the venue")
+     (p (ul (li "If you arrive to Gothenburg Landvetter Airport (GOT; all airlines except
+    Ryanair and Wizz air), take the airport coach and get off at the first stop
+    (Korsv" auml "gen), which is immediately outside the conference venue. The bus ride
+    takes 20 minutes. Tickets cost 99 SEK and can be bought on the bus using a
+    credit card; cash is not accepted. Tickets can also be bought online in
+    advance; see the " (a ((href "http://www.flygbussarna.se/en/landvetter")) "airport bus website") 
+    " where also a timetable can be
+    found. Buses leave every 20 minutes between 6AM (10AM on weeekends) and 8PM;
+    less frequent at other times.")
+	    (li "If you arrive by train, car or to Gothenburg City Airport (GSE; Ryanair and
+    Wizz air), see directions "
+		(a ((href "http://www.svenskamassan.se/en/for-visitors/getting-here")) "here")
+		".")))
+
+     (h2 "Accommodation")
+     (p "We have made block reservations at four hotels. Prices below are per night and 
+include buffet breakfast, wireless internet access and VAT. Bookings are made at 
+the web site of the respective hotel or via phone, using the booking code below."
+	(ul (li (a ((href "http://www.gothiatowers.com/?lang=en")) "Hotel Gothia Towers") ". This hotel is
+    part of the conference venue, and thus the most convenient alternative.
+    Single room SEK 1495, double room SEK 1695. Booking code ICF310814.")
+	    (li (a ((href "http://www.scandichotels.com/Hotels/Sweden/Gothenburg/Scandic-Opalen")) "Hotel Scandic Opalen") ".
+    Located 500 m from the conference venue. Single room SEK 1290/1390. Booking
+    code BCHA310814.")
+	    (li (a ((href "https://www.nordicchoicehotels.com/quality/quality-hotel-panorama1")) "Quality Hotel Panorama") ".
+    Located 900 m from the conference venue. Single room SEK 935, double room
+    SEK 1159. Booking code 247400.")
+	    (li (a ((href "http://book.bestwestern.com/bestwestern/SE/Gothenburg-hotels/BEST-WESTERN-Hotell-Goteborg/Hotel-Overview.do?propertyCode=88162")) "Best Western Hotel G" ouml "teborg") ".
+    Located ca 2 km from the conference venue. Single room SEK 734, double room
+    SEK 935. Booking code ICFP 2014. ")))
+
+     (p "Hotel booking is open already now. Some rooms in all four hotels stay reserved 
+for ICFP participants until August 1st, but there are also checkpoints for the 
+number of reserved rooms 3 and 2 months before the conference, when some unused 
+reservations will be cancelled. Early September is a busy period for hotels in 
+Gothenburg, so we recommend you to book early. Note also that it may actually be 
+possible to get better rates through other booking sites.")
+     (p "There are many more hotels and hostels in Gothenburg that you might want to 
+explore. One suitable starting point is " (a ((href "http://www.goteborg.com/en/Stay/Stay-Startpage/")) "here") ".")
+
+     (h2 "About Gothenburg")
+     (p "Gothenburg is Sweden's second city, with a population of half
+a million in the city and almost a million in the greater Gothenburg
+area. For tourist information about Gothenburg, including information
+about accommodation, restaurants, shopping, sights, history and more,
+visit " (a ((href "http://www.goteborg.com/en/")) "goteborg.com") ".")
+
+     (p "There are two universities in Gothenburg, " (a ((href "http://www.gu.se/english")) "University of
+Gothenburg") " and " (a ((href "http://www.chalmers.se/en")) "Chalmers University of
+Technology") ". The " (a ((href "http://www.chalmers.se/cse/EN/")) "Department of Computer
+Science and Engineering") " is shared
+between the two universities.")
+
+     (p "The public transportation system includes trams, buses and
+ferries, with a common ticket system. Ticket options include single
+tickets, 1 and 3 day passes, and pay-as-you-go cards. The driver does
+not sell tickets, but on trams (not buses) there is a ticket machine
+that accepts credit cards. Tickets can be bought at various retailers
+around town e.g. Tidpunkten, Pressbyr" aring "n, 7-Eleven or from any
+other store or shop displaying the V" aring "sttrafik sign. For more
+information and a travel planner, visit the " (a ((href
+"http://www.vasttrafik.se/#!/en/")) "v" aring "sttrafik web site")
+".")
+
+     (p "There is a shared " (a ((href "http://en.goteborgbikes.se")) "bike system") " with around 1000 
+bikes at more than 70 stations around the city, including one outside the 
+conference venue. Three day passes are available.")
+
+     (p "Weather in early September in Gothenburg is highly variable. It can be sunny 
+with temperatures above 20" deg " C, but it can also be cooler with wind and rain.")
+
+
+     (h2 "Other useful information")
+
+     (dl
+      (dt "Banks and currency.")
+      (dd (p "Banks are open between 09.30/10.00 and 15.00 on
+    weekdays. Some banks in central Gothenburg are open from 09.00 to 17.00.")
+
+	  (p "The Swedish currency is the krona, with USD 1 = SEK 6.50
+    and EUR 1 = SEK 8.80 (January 2014). For current exchange rates
+    click " (a ((href
+    "http://www.x-rates.com/table/?from=SEK&amount=1")) "here")
+    ". Currency exchange offices can be found at Landvetter airport
+    (International), at the central station and in Kungsportsavenyn,
+    among other places. Cash machines (ATM's), called Bankomat, are
+    common and accept credit and debit cards. They can be found in the
+    main shopping centres, the airport and in the main streets."))
+
+      (dt "Credit cards.")
+      (dd "MasterCard and VISA cards are accepted almost everywhere,
+    including shops, hotels, restaurants and taxis. The chip and pin is the
+    common method. It is advisable to carry an identity card or some form of
+    photo identification.")
+
+      (dt "Election")
+      (dd "The ICFP week is in the most intensive period of election
+    campaign before the general elections (to the national parliament, but also
+    regional and local bodies) that take place in Sweden on Sunday, September
+    14. This will be very visible in the form of posters and campaign speeches
+    in public places, and TV debates throughout the week.")
+
+      (dt "Electricity.")
+      (dd "Electrical voltage in Sweden is 220 V/50 Hz. Round,
+    European-style two-pin plugs (Schuko, CEE 7/4) are used. Appliances designed
+    to operate on 110/120 Volts need a voltage converter and a plug adapter.")
+
+      (dt "Emergency phone number.")
+      (dd "To call ambulance, police or fire brigade, simply
+    call 112. No area code is needed, regardless of what phone you're using. The
+    number works on any mobile phone, with or without a SIM card, even if it's
+    locked.")
+
+      (dt "Health care and insurance.")
+      (dd "Ensure coverage by your own health insurance
+    and bring necessary documents. Citizens from EU/EEA countries and some other
+    countries, with which Sweden has a special agreement, are entitled to the
+    same medical services as Swedes. Citizens from North America and other
+    countries outside the EU/EEA must pay in full for medical treatment.")
+
+      (dt "Dentist.")
+      (dd "For urgent dental care, call the Emergency Dental Care.
+    Mon-Fri 08:00-20:00, Sat-Sun 08:00-16:00.
+    Tel: +46 (0)31-80 78 00.")
+
+      (dt "Medical treatment.")
+      (dd "Different options include the following."
+	  (ul
+	   (li "Phone the Medical Information Service (Sjukv" aring "rdsr" aring "dgivningen), tel +46
+        1177, 24 hours a day, 7 days a week. Registered nurses give medical
+        advice, answer questions on self-care and provide information as to what
+        to do should your condition require medical treatment.")
+
+	   (li "For medical treatment during weekdays, drop in or book an appointment at
+        Specialistkliniken Heden, Engelbrektsgatan 59
+        Mon-Thu 08:00-17:00
+        Tel: +46 (0)31-20 82 20")
+
+	   (li "During evenings and weekends, drop in at
+        Jourcentral Gamlestadstorget, Gamlestadsvägen 4 B:15
+        Mon-Fri 17:00-22:00, Sat-Sun 10:00-22:00
+        Tel: +46 (0)31-345 07 53")
+
+	   (li "Should you suddenly become very ill or seriously injured, make your way
+        to the Casualty ward (Akutmottagningen) at Sahlgrenska sjukhuset
+        (Sahlgrenska Hospital), open 24 hours a day, or phone the emergency
+        number 112.")))
+
+      (dt "Shopping.")
+      (dd (p "Most shops are open between 10:00 and 18:00; on weekends until
+    14:00. Department stores are open until 19:00 or longer on weekdays. Most
+    are also open on Sundays between noon and 16:00. VAT is always included on
+    the price tag.")
+
+	  (p "Non-EU residents are entitled to a VAT refund on all purchases (min SEK 200)
+    made in Sweden. " (a ((href "http://www.globalblue.com/destinations/sweden/tax-free-shopping-in-sweden/")) "Tax Free Shopping by Global Blue")
+    " is a simple system that puts cash in your hand when you leave the EU. You
+    get refunds of up to 19% on your purchases."))
+
+      (dt "Visas.")
+      (dd "Participants needing a visa for entry to Sweden are strongly
+    advised to make their application in their home country and well in advance.
+    If in doubt, information can be obtained from your nearest Swedish Embassy
+    or consulate, or from your travel agency.")))))
   
 
 (define (write-page xexpr fn)
@@ -1129,7 +1176,7 @@ to create your links for fee downloads from the ACM DL.")
 (write-page cfwp.xexpr "cfwp.html")
 (write-page cfp.xexpr "cfp.html")
 ;(write-page industry.xexpr "industry.html")
-;(write-page affiliated.xexpr "affiliated.html")
+(write-page affiliated.xexpr "affiliated.html")
 (write-page local.xexpr "local.html")
 ;(write-page accepted.xexpr "accepted.html")
 ;(write-page program.xexpr "program.html")
