@@ -670,9 +670,7 @@ to create your links for fee downloads from the ACM DL.")
 (define Erlang `(a ((href "http://www.erlang.org/workshop/2014/"))
 		   "ACM SIGPLAN Erlang Workshop"))
 (define Haskell 
-  "ACM SIGPLAN Haskell Symposium"
-  #;
-  `(a ((href "http://www.haskell.org/haskell-symposium/2013/"))
+  `(a ((href "http://www.haskell.org/haskell-symposium/2014/"))
       "ACM SIGPLAN Haskell Symposium"))
 (define ML   
   "ACM SIGPLAN ML Family Workshop")
@@ -733,6 +731,7 @@ to create your links for fee downloads from the ACM DL.")
      (h3 "Friday, September 5")
      (ul
       (li ,CUFP " " ndash "Day 2, Tutorials")
+      (li ,Haskell " " ndash "Day 2")
       (li ,OCAML)
       (li ,Erlang)
       (li ,HRT))
