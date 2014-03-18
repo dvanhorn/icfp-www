@@ -693,9 +693,7 @@ to create your links for fee downloads from the ACM DL.")
       "ACM SIGPLAN Workshop on Higher-order Programming with Effects"))
 
 (define FHPC
-  "ACM SIGPLAN Workshop on Functional High-Performance Computing"
-  #;
-  `(a ((href "http://hiperfit.dk/fhpc13.html"))
+  `(a ((href "https://sites.google.com/site/fhpcworkshops/fhpc-2014"))
       "ACM SIGPLAN Workshop on Functional High-Performance Computing"))
 #;
 (define DTP
