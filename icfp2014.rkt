@@ -220,6 +220,19 @@
       (a ((class "navigation")
 	  (href "affiliated.html")) 
 	 "Affiliated events"))
+
+     (li
+      ((class "roomy"))
+      (a ((class "navigation")
+          (href "src.html"))
+         "Student Research Competition"))
+
+     (li
+      ((class "roomy"))
+      (a ((class "navigation")
+          (href "student-attendance.html"))
+         "Student Attendance Programs"))
+
      #;
      (li
       ((class "roomy"))
@@ -1169,6 +1182,156 @@ with temperatures above 20" deg " C, but it can also be cooler with wind and rai
     If in doubt, information can be obtained from your nearest Swedish Embassy
     or consulate, or from your travel agency.")))))
   
+(define student-attendance.xexpr
+  (make-page 
+   "Student Attendance Program"	     
+   `(div
+     ((class "col1"))
+     (center
+      (h1 "Student Attendance Programs"))
+     (h2 "Student Support")
+     (p "There are several ways that students may receive support for participation at the conference.")
+     (dl
+      (dt (b "Volunteering"))
+      (dd "ICFP is pleased to offer a number of opportunities for "
+	  "student volunteers, who are vital to the efficient operation and "
+	  "continued success of the conference each year. The student volunteer "
+	  "program is a chance for students from around the world to participate "
+	  "in the conferences whilst assisting us in preparing and running the "
+	  "event.  Free registration, meals and banquet ticket will be "
+	  "provided. Further information will be posted shortly.")
+      (dt (b "The ACM Student Research Competition, Sponsored by Microsoft"))
+      (dd "Support will be provided for Students wishing to enter the "
+	  "competition. For more information on the Competition and how to apply, "
+	  "follow the instruction found " 
+	  (a ((href "src.html")) "here") ".")
+      (dt (b "The SIGPLAN Professional Activities Committee (PAC Fund)"))
+      (dd "The SIGPLAN Professional Activities Committee provide "
+	  "supplemental financial support for attending ICFP in the form of "
+	  "student grants, child-care support, companion travel grants and long "
+	  "distance international travel support.  To apply, follow the "
+	  "instructions found " 
+	  (a ((href "http://www.sigplan.org/PAC.htm")) "here") ".")))))
+
+(define src.xexpr
+  (make-page
+   "Student Research Competition"
+   `(div
+     ((class "col1"))
+     (center
+      (h1 "Student Research Competition"))
+     (p "This year ICFP will host a " 
+	(emph "Student Research Competition")
+	" where undergraduate and postgraduate students can "
+	"present posters. The " 
+	(a ((href "http://src.acm.org/")) "SRC")
+	" at the ICFP 2014 consists of three rounds:"
+
+	(dl (dt (b "Extended abstract round: "))
+	    (dd "All students are encouraged to submit an extended "
+		"abstract outlining their research (800 words).")
+	    (dt (b "Poster session at ICFP 2014:"))
+	    (dd "Based on the abstracts, a panel of judges will select "
+		"the most promising entrants to participate in the poster session which "
+		"will take place at ICFP. Students who make it to this round will be "
+		"eligible for some travel support to attend the conference. In the "
+		"poster session, students will have the opportunity to present their "
+		"work to the judges, who will select three finalists in each "
+		"category (graduate/undergraduate) to advance to the next round.")
+	    (dt (b "ICFP presentation:"))
+	    (dd "The last round will consist of an oral presentation "
+		"at the ICFP to compete for the final awards in each category.")))
+     (h2 "Transport of your poster")
+     (p "You can either bring your poster on your own to the "
+	"conference or mail it to the local organizers:")
+     (p	 "Attn.: Meng Wang" (br)
+	 "Chalmers University of Technology" (br)
+	 "Department of Computer Science and Engineering" (br)
+	 "SE-412 96 G" ouml "teborg, Sweden")
+     (p "If you choose to mail, please make sure that the poster will "
+	"arrive at the latest on 30th August 2014.")
+     (h2 "Prizes")
+     (ul
+      (li "Both the top three graduate and the top three "
+	  "undergraduate winners will receive prizes of $500, $300, "
+	  "and $200, respectively.")
+      (li "All six winners will receive award medals and a two-year "
+	  "complimentary ACM student membership, including a subscription to "
+	  "ACM's Digital Library.")
+      (li "The names of the winners will be posted on the SRC web site.")
+      (li "The winners in each category will be invited to participate "
+	  "in the ACM SRC Grand Finals, an on-line round of competitions among "
+	  "the winners of other conference-hosted SRCs.")
+      (li "Grand Finalists and their advisors will be invited to the "
+	  "Annual ACM Awards Banquet for an all-expenses-paid trip, where they "
+	  "will be recognized for their accomplishments along with other "
+	  "prestigious ACM award winners, including the winner of the Turing "
+	  "Award (also known as the Nobel Prize of Computing).")
+      (li "The top three graduate Grand Finalists will receive an "
+	  "additional $500, $300, and $200. Likewise, the top three undergraduate "
+	  "Grand Finalists will receive an additional $500, $300, and $200. All "
+	  "six Grand Finalists will receive Grand Finalist certificates.")
+      (li "The ACM, Microsoft Research, and our industrial partners "
+	  "provide financial support for students attending the SRC. You can find "
+	  "more information about this on the "
+	  (a ((href "http://src.acm.org/students.html")) "ACM website") 
+	  "."))
+     (h2 "Eligibility")
+     (p "The SRC is open to both undergraduate (not in a PhD program) "
+	"and graduate students (in a PhD program). Upon submission, entrants "
+	"must be enrolled as a student at their universities, and are ACM "
+	"student members.")
+     (p "Furthermore, there are some constraints on what kind of work may be submitted.")
+     (dl (dt (b "Previously published work:"))
+	 (dd "Submissions should consist of original work (not yet "
+	     "accepted for publication). If the work is a continuation of previously "
+	     "published work, the submission should focus on the contribution over "
+	     "what has already been published. We encourage students to see this as "
+	     "an opportunity to get early feedback and exposure for the work they "
+	     "plan to submit to the next ICFP or POPL.")
+	 (dt (b "Collaborative work:"))
+	 (dd "Students are encouraged to submit work they have been "
+	     "conducting in collaboration with others, including advisors, "
+	     "internship mentors, or other students. However, submissions are "
+	     "individual, so they must focus on the contributions of the student."))
+     (h2 "Submission Details")
+     (p "Each submission should include the student author's name, "
+	"institutional affiliation, e-mail address, and postal address; "
+	"research advisor's name; ACM student member number; "
+	"category (undergraduate or graduate); research title; and an extended "
+	"abstract addressing the following:")
+     (ul
+      (li "Problem and Motivation: Clearly state the problem being "
+	  "addressed and explain the reasons for seeking a solution to this "
+	  "problem.")
+      (li "Background and Related Work: Describe the "
+	  "specialized (but pertinent) background necessary to appreciate the "
+	  "work. Include references to the literature where appropriate, and "
+	  "briefly explain where your work departs from that done by others.")
+      (li "Approach and Uniqueness: Describe your approach in "
+	  "attacking the problem and clearly state how your approach is novel.")
+      (li "Results and Contributions: Clearly show how the results "
+	  "of your work contribute to computer science and explain the "
+	  "significance of those results."))
+     (p "The abstract must describe the student’s individual research "
+	"and must be authored solely by the student. If the work is "
+	"collaborative with others and/or part of a larger group project, the "
+	"abstract should make clear what the student’s role was and should "
+	"focus on that portion of the work. The extended abstract must not "
+	"exceed 800 words and must not be longer than 2 pages. The reference "
+	"list does not count towards these limits. To submit an abstract, "
+	"please register through the submission page and follow the "
+	"instructions. Abstracts submitted after the deadline may be considered "
+	"at the committee's discretion, but only after decisions have been made "
+	"on all abstracts submitted before the deadline. If you have any "
+	"problems, don't hesitate to contact the competition chair. ")
+     (h2 "Important Dates")
+     (ul
+      (li "Deadline for submission: 29th June")
+      (li "Notification of acceptance: 14th July"))
+     (h2 "Selection Committee")
+     (p "To be determined."))))
+      
 
 (define (write-page xexpr fn)
   (with-output-to-file (string-append www fn)
@@ -1183,6 +1346,8 @@ with temperatures above 20" deg " C, but it can also be cooler with wind and rai
 (write-page industry.xexpr "industry.html")
 (write-page affiliated.xexpr "affiliated.html")
 (write-page local.xexpr "local.html")
+(write-page student-attendance.xexpr "student-attendance.html")
+(write-page src.xexpr "src.html")
 ;(write-page accepted.xexpr "accepted.html")
 ;(write-page program.xexpr "program.html")
 
