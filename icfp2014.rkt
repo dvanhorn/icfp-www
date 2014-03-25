@@ -1313,10 +1313,10 @@ with temperatures above 20" deg " C, but it can also be cooler with wind and rai
       (li "Results and Contributions: Clearly show how the results "
 	  "of your work contribute to computer science and explain the "
 	  "significance of those results."))
-     (p "The abstract must describe the student’s individual research "
+     (p "The abstract must describe the student's individual research "
 	"and must be authored solely by the student. If the work is "
 	"collaborative with others and/or part of a larger group project, the "
-	"abstract should make clear what the student’s role was and should "
+	"abstract should make clear what the student's role was and should "
 	"focus on that portion of the work. The extended abstract must not "
 	"exceed 800 words and must not be longer than 2 pages. The reference "
 	"list does not count towards these limits. To submit an abstract, "
