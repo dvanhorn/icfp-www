@@ -1320,7 +1320,9 @@ with temperatures above 20" deg " C, but it can also be cooler with wind and rai
 	"focus on that portion of the work. The extended abstract must not "
 	"exceed 800 words and must not be longer than 2 pages. The reference "
 	"list does not count towards these limits. To submit an abstract, "
-	"please register through the submission page and follow the "
+	"please register through the " 
+	(a ((href "https://www.easychair.org/conferences/?conf=icfp2014src")) "submission page") 
+	" and follow the "
 	"instructions. Abstracts submitted after the deadline may be considered "
 	"at the committee's discretion, but only after decisions have been made "
 	"on all abstracts submitted before the deadline. If you have any "
