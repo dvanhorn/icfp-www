@@ -1246,7 +1246,9 @@ with temperatures above 20" deg " C, but it can also be cooler with wind and rai
 		"category (graduate/undergraduate) to advance to the next round.")
 	    (dt (b "ICFP presentation:"))
 	    (dd "The last round will consist of an oral presentation "
-		"at the ICFP to compete for the final awards in each category.")))
+		"at the ICFP to compete for the final awards in each "
+		"category and selection of an overall winner who will advance to the "
+		"ACM SRC Grand Finals.")))
      (h2 "Transport of your poster")
      (p "You can either bring your poster on your own to the "
 	"conference or mail it to the local organizers:")
@@ -1265,7 +1267,7 @@ with temperatures above 20" deg " C, but it can also be cooler with wind and rai
 	  "complimentary ACM student membership, including a subscription to "
 	  "ACM's Digital Library.")
       (li "The names of the winners will be posted on the SRC web site.")
-      (li "The winners in each category will be invited to participate "
+      (li "The overall first place winner of the SRC will be invited to participate "
 	  "in the ACM SRC Grand Finals, an on-line round of competitions among "
 	  "the winners of other conference-hosted SRCs.")
       (li "Grand Finalists and their advisors will be invited to the "
@@ -1273,10 +1275,9 @@ with temperatures above 20" deg " C, but it can also be cooler with wind and rai
 	  "will be recognized for their accomplishments along with other "
 	  "prestigious ACM award winners, including the winner of the Turing "
 	  "Award (also known as the Nobel Prize of Computing).")
-      (li "The top three graduate Grand Finalists will receive an "
-	  "additional $500, $300, and $200. Likewise, the top three undergraduate "
-	  "Grand Finalists will receive an additional $500, $300, and $200. All "
-	  "six Grand Finalists will receive Grand Finalist certificates.")
+      (li "The top three Grand Finalists will receive an "
+	  "additional $500, $300, and $200.  All "
+	  "Grand Finalists will receive Grand Finalist certificates.")
       (li "The ACM, Microsoft Research, and our industrial partners "
 	  "provide financial support for students attending the SRC. You can find "
 	  "more information about this on the "
