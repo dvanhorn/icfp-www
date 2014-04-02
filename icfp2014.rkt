@@ -284,12 +284,11 @@
       #;(p ((class "indent2")) (a ((href "http://www.standardchartered.com/")) "Standard Chartered Bank"))
       (p ((class "indent1")) "Silver partners")
       (p ((class "indent2")) (a ((href "https://www.credit-suisse.com/global/en/")) "Credit Suisse"))
+      (p ((class "indent2")) (a ((href "http://corp.galois.com/")) "Galois"))
       (p ((class "indent2")) (a ((href "http://www.lexifi.com/")) "Lexifi"))
       (p ((class "indent2")) (a ((href "http://research.microsoft.com/")) "Microsoft Research"))
-
       #;(p ((class "indent2")) (a ((href "http://www.erlang-solutions.com/")) "Erlang Solutions"))
       #;(p ((class "indent2")) (a ((href "http://www.facebook.com/")) "Facebook"))
-      #;(p ((class "indent2")) (a ((href "http://corp.galois.com/")) "Galois"))
       #;(p ((class "indent2")) (a ((href "http://google.com/")) "Google"))
       #;(p ((class "indent2")) (a ((href "http://www.inria.fr/")) "INRIA"))
       #;(p ((class "indent2")) (a ((href "http://oreilly.com/")) "O'Reilly Media"))
@@ -655,12 +654,12 @@ to create your links for fee downloads from the ACM DL.")
          #;(img ((class "sponsor") (src "img/standard-chartered.png")))
          (h4 "Silver partners")
 	 (img ((class "sponsor") (src "img/creditsuisse.png")))
+	 (img ((class "sponsor") (src "img/galois.png"))) " "
 	 (img ((class "sponsor") (src "img/lexifi.png")))
          (img ((class "sponsor") (src "img/msr.png")))         
          #;(img ((class "sponsor") (src "img/erl_solutions_logo.png")))
       	 #;(img ((class "sponsor") (src "img/fb.png")))
-         #;" "
-	 #;(img ((class "sponsor") (src "img/galois.png")))
+         #;" "	 
 	 #;(img ((class "sponsor") (src "img/google.png")))
          #;(img ((class "sponsor") (src "img/inria.png")))
 	 #;(img ((class "sponsor") (src "img/CCIS.png")))
