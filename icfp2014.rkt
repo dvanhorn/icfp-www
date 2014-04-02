@@ -230,6 +230,12 @@
      (li
       ((class "roomy"))
       (a ((class "navigation")
+          (href "sv.html"))
+         "Student Volunteer Program"))
+
+     (li
+      ((class "roomy"))
+      (a ((class "navigation")
           (href "student-attendance.html"))
          "Student Attendance Programs"))
 
@@ -1194,12 +1200,13 @@ with temperatures above 20" deg " C, but it can also be cooler with wind and rai
      (dl
       (dt (b "Volunteering"))
       (dd "ICFP is pleased to offer a number of opportunities for "
-	  "student volunteers, who are vital to the efficient operation and "
+	  (a ((href "sv.html")) "student volunteers")
+	  ", who are vital to the efficient operation and "
 	  "continued success of the conference each year. The student volunteer "
 	  "program is a chance for students from around the world to participate "
 	  "in the conferences whilst assisting us in preparing and running the "
 	  "event.  Free registration, meals and banquet ticket will be "
-	  "provided. Further information will be posted shortly.")
+	  "provided.")
       (dt (b "The ACM Student Research Competition, Sponsored by Microsoft"))
       (dd "Support will be provided for Students wishing to enter the "
 	  "competition. For more information on the Competition and how to apply, "
@@ -1333,7 +1340,106 @@ with temperatures above 20" deg " C, but it can also be cooler with wind and rai
       (li "Notification of acceptance: 14th July"))
      (h2 "Selection Committee")
      (p "To be determined."))))
-      
+
+(define sv.xexpr
+  (make-page
+   "Student Volunteer Program"
+   `(div
+     ((class "col1"))
+     (center
+      (h1 "Student Volunteer Program"))
+     (p "Sign up to be a Student Volunteer and help us make ICFP 2014 "
+	"a unique experience for all attendants!")
+     (p "ICFP is pleased to offer a number of opportunities for "
+	"student volunteers, who are vital to the efficient operation and "
+	"continued success of the conference each year. The student volunteer "
+	"program is a chance for students from around the world to participate "
+	"in the conferences whilst assisting us in preparing and running the "
+	"event.")
+     (p "Job assignments for student volunteers include assisting with "
+	"technical sessions, workshops, tutorials and panels, helping the "
+	"registration desk, operating the information desk, helping with "
+	"traffic flow, and general assistance to keep the conferences running "
+	"smoothly.")
+     (h2 "Eligibility")
+     (p "Applicants can be undergraduate, Master's, Ph.D. full- or "
+	"part-time students, of computer science or related fields.")
+     (h2 "Location")
+     (p "Gothenburg, Sweden.")
+     (h2 "Duration")
+     (p "Applicants must be available for at least three (3) full days "
+	"between 31st of August and the 6th of September 2014 in order to offer "
+	"16 hours of volunteering work. Note that we will prioritise students "
+	"who will be available the full week. Naturally presentations etc. at "
+	"workshops and technical sessions take precedence.")
+     (h2 "Compensation")
+     (ul
+      (li "A Complimentary Conference Registration, offering access "
+	  "to all open sessions (i.e., parallel paper presentations, "
+	  "demonstrations, and workshops) and conference proceedings.")
+      (li "Free lunches and refreshments during breaks.")
+      (li "Free conference banquet ticket.")
+      (li "An ICFP 2014 Student Volunteers T-shirt.")
+      (li "Please note that ICFP 2014 Student Volunteers are "
+	  "responsible for their own travel arrangements and accommodation. The "
+	  "conference organisers will do their best to provide affordable "
+	  "accommodation for student volunteers, for example in student housing."))
+     (h2 "Important Dates")
+     (p "Application Deadline:    15th June 2014")
+     (p "Initial Acceptance and Reserve List announcement:    30th June 2014")
+     (h2 "About volunteering")
+     (p "The ICFP 2014 Program for Student Volunteers gives full- or "
+	"part-time university students from around the world the opportunity to "
+	"attend and contribute to premier international conference covering all "
+	"areas of design implementation, principles and uses of functional "
+	"programming. As an ICFP 2014 Student Volunteer, you will interact "
+	"closely with researchers, academics and developers from various "
+	"disciplines and meet other students from around the world. The skills, "
+	"talents and dedication of the Student Volunteers contribute to the "
+	"overall quality of the Conference. The Student Volunteer role involves "
+	"a range of duties, including, but not limited to:"
+	(ul
+	 (li "Providing assistance to the Conference management and Registration staff.")
+	 (li "Helping and directing other Conference participants.")
+	 (li "Contributing to the overall smooth running of the "
+	     "Conference functions and social events. This also includes assisting "
+	     "during presentations and poster sessions as well as manning the "
+	     "information and registration desks.")))
+     (h2 "Qualifications")
+     (p "A Student Volunteer should:"
+	(ul
+	 (li "Be enthusiastic and highly motivated, with strong interpersonal skills,")
+	 (li "Be fluent in English, which is the language of the conference,")
+	 (li "Be reliable, punctual and organized,")
+	 (li "Be a self-starter.")))
+     (h2 "How to apply")
+     (p "To be considered as a Student Volunteer for the ICFP 2014 "
+	"Conference, you need to send an email to Ramona Enache "
+	(a ((href "mailto:icfp-sv@lambda-calcul.us")) "icfp-sv@lambda-calcul.us")
+	" with the following information: "
+	(ul
+	 (li "Your full name.")
+	 (li "Your email address.")
+	 (li "Your program of study, current status and year in "
+	     "the cycle, and current affiliation (university and/or laboratory).")
+	 (li "Contact information to your supervisor or director of "
+	     "study (name and email address).")
+	 (li "Special Food requirements (i.e Vegetarian, vegan, food "
+	     "allergies etc).")
+	 (li "Date(s) you are available to work (preferably the entire week).")
+	 (li "A short description of yourself and your motivation for attending ICFP 2014.")))
+     (h2 "Acceptance notification")
+     (p "All applications received by June 15th, 2014 will be "
+	"reviewed and volunteers selected will be notified by June 30th, "
+	"2014. A reserve list will also be drawn up upon applications received "
+	"by the preliminary registration deadline, but not initially selected.")
+     (h2 "Enquiries")
+     (p "If you have any questions, please send them via email to "
+	(a ((href "mailto:icfp-sv@lambda-calcul.us")) "Ramona Enache")
+	". We are looking forward to receiving your "
+	"application and seeing you at ICFP 2014!"))))
+
+
 
 (define (write-page xexpr fn)
   (with-output-to-file (string-append www fn)
@@ -1350,6 +1456,7 @@ with temperatures above 20" deg " C, but it can also be cooler with wind and rai
 (write-page local.xexpr "local.html")
 (write-page student-attendance.xexpr "student-attendance.html")
 (write-page src.xexpr "src.html")
+(write-page sv.xexpr "sv.html")
 ;(write-page accepted.xexpr "accepted.html")
 ;(write-page program.xexpr "program.html")
 
