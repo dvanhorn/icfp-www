@@ -696,7 +696,10 @@ to create your links for fee downloads from the ACM DL.")
   "ACM SIGPLAN ML Family Workshop")
 (define HIW `(a ((href "http://www.haskell.org/haskellwiki/HaskellImplementorsWorkshop"))
 		"ACM SIGPLAN Haskell Implementors Workshop"))
-(define HRT "ACM SIGPLAN Workshop on Haskell and Rewriting Techniques")
+(define HART 
+  `(a ((href "http://www.program-transformation.org/HART14/"))
+      "ACM SIGPLAN Workshop on Haskell and Rewriting Techniques"))
+    
 #;
 (define FPCDSL
   `(a ((href "http://quantum.bbn.com/FPCDSL/"))
@@ -754,7 +757,7 @@ to create your links for fee downloads from the ACM DL.")
       (li ,Haskell " " ndash "Day 2")
       (li ,OCAML)
       (li ,Erlang)
-      (li ,HRT))
+      (li ,HART))
 
      (h3 "Saturday, September 6")
      (ul 
