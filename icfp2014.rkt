@@ -709,9 +709,7 @@ to create your links for fee downloads from the ACM DL.")
   `(a ((href "http://www.wgp-sigplan.org/2014"))
       "ACM SIGPLAN Workshop on Generic Programming"))
 (define HOPE 
-  "ACM SIGPLAN Workshop on Higher-order Programming with Effects"
-  #;
-  `(a ((href "http://hope2013.mpi-sws.org"))
+  `(a ((href "http://hope2014.mpi-sws.org"))
       "ACM SIGPLAN Workshop on Higher-order Programming with Effects"))
 
 (define FHPC
