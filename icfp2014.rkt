@@ -1,5 +1,6 @@
 #lang at-exp racket
 (require xml)
+;; Role = Symbol | [Listof Symbol]
 ;; (person Role String String String (U #f String))
 (struct person (role first last affil url) #:transparent)
 
@@ -29,24 +30,6 @@
    (person 'pcm "Don" "Syme" "Microsoft Research" "http://research.microsoft.com/en-us/people/dsyme/")
    (person 'pcm "Jesse" "Tov" "Harvard University" "http://www.eecs.harvard.edu/~tov/")))
 
-#|
-   (person 'pcm "Thorsten" "Altenkirch" "University of Nottingham" "http://www.cs.nott.ac.uk/~txa/")
-   (person 'pcm "Olaf" "Chitil" "University of Kent" "http://www.cs.kent.ac.uk/people/staff/oc/")
-   (person 'pcm "Silvia" "Ghilezan" "University of Novi Sad" "http://imft.ftn.uns.ac.rs/~silvia/")
-   (person 'pcm "Michael" "Hanus" '("Christian-Albrechts-Universit" auml "t zu Kiel") "http://www.informatik.uni-kiel.de/~mh/")
-   (person 'pcm "Fritz" "Henglein" "University of Copenhagen" "http://www.diku.dk/~henglein/")
-   (person 'pcm "Mauro" "Jaskelioff" "Universidad Nacional de Rosario" "http://www.fceia.unr.edu.ar/~mauro/")
-   (person 'pcm "Alan" "Jeffrey" "Alcatel-Lucent Bell Labs" "http://ect.bell-labs.com/who/ajeffrey/")
-   (person 'pcm "Shin-ya" "Katsumata" "Kyoto University" "http://www.kurims.kyoto-u.ac.jp/~sinya/index-e.html")
-   (person 'pcm "Shriram" "Krishnamurthi" "Brown University" "http://cs.brown.edu/~sk/")
-   (person 'pcm "John" "Launchbury" "Galois" "http://corp.galois.com/john-launchbury")
-   (person 'pcm "Ryan" "Newton" "Indiana University" "http://www.cs.indiana.edu/~rrnewton/homepage.html")
-   (person 'pcm "Sungwoo" "Park" "Pohang University of Science and Technology" "http://www.postech.ac.kr/~gla/")
-   (person 'pcm "Sam" "Staton" "University of Cambridge" "http://www.cl.cam.ac.uk/~ss368/")
-   (person 'pcm "Nikhil" "Swamy" "Microsoft Research, Redmond" "http://research.microsoft.com/en-us/people/nswamy/")
-   (person 'pcm "Dimitrios" "Vytiniotis" "Microsoft Research, Cambridge" "http://research.microsoft.com/en-us/people/dimitris/")
-|#
-
 ;; end PC
 
 (define contest-committee
@@ -64,7 +47,7 @@
   (person 'pc "Manuel" "Chakravarty" "University of New South Wales" "http://www.cse.unsw.edu.au/~chak/"))
 
 (define sam 
-  (person 'wc "Sam" "Tobin-Hochstadt" "Indiana University" "http://samth.github.io/"))
+  (person '(wc sr) "Sam" "Tobin-Hochstadt" "Indiana University" "http://samth.github.io/"))
 
 (define tom
   (person 'wc "Tom" "Schrijvers" "Ghent University" "http://users.ugent.be/~tschrijv/"))
@@ -92,14 +75,31 @@
   (person 'unknown "???" "" "???" #f))
 
 
+(define student-research-committee
+  (list sam
+	(person 'sr "Andrew" "Kennedy" "Microsoft Research Cambridge" "http://research.microsoft.com/en-us/um/people/akenn/")
+	(person 'sr "Jeremy" "Gibbons" "University of Oxford" "http://www.cs.ox.ac.uk/jeremy.gibbons/")
+	(person 'sr "Matthieu" "Sozeau" "INRIA Paris" "http://mattam.org/")
+	(person 'sr "Stephanie" "Weirich" "University of Pennsylvania" "http://www.cis.upenn.edu/~sweirich/")))
+	
+
 (define people
-  (append program-committee
-          contest-committee
-          (list johan manuel sam tom david malcolm jean-baptiste anil bjorn meng)))
+  (set->list
+    (apply set
+	   (append program-committee
+		   contest-committee
+		   student-research-committee
+		   (list johan manuel sam tom david malcolm jean-baptiste anil bjorn meng)))))
+
+;; Person Symbol -> Boolean
+(define (has-role? p s)
+  (define r (person-role p))
+  (cond [(symbol? r) (eq? r s)]
+        [else (ormap (lambda (r) (eq? r s)) r)]))
 
 ;; Role -> [Listof Person]
 (define (get-roles r)
-  (sort (filter (λ (p) (eq? r (person-role p))) people)
+  (sort (filter (λ (p) (has-role? p r)) people)
         string-ci<?
         #:key person-last))
 
@@ -1343,7 +1343,10 @@ with temperatures above 20" deg " C, but it can also be cooler with wind and rai
       (li "Deadline for submission: 29th June")
       (li "Notification of acceptance: 14th July"))
      (h2 "Selection Committee")
-     (p "To be determined."))))
+     (table
+      ,(row "Chair" (get-role 'src))
+      ,@(map (lambda (p) (row "" p)) (get-roles 'sr))))))
+
 
 (define sv.xexpr
   (make-page
