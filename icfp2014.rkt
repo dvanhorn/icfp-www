@@ -594,9 +594,7 @@ to create your links for fee downloads from the ACM DL.")
 
          (h3 "News")
 	 (ul
-	  (li "Submit a paper via EasyChair: "
-	      (a ((href "https://www.easychair.org/conferences/?conf=icfp2014"))
-		 "https://www.easychair.org/conferences/?conf=icfp2014"))
+	  (li "The " (a ((href "src.html")) "student research competition") " has been announced.  Deadline for submission: 29 June.")
 	  (li "The " (a ((href "affiliated.html")) "affiliated event") " schedule is now available."))
          #;(ul
 	  (li (img ((src "img/new.gif")))
