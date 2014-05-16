@@ -15,7 +15,7 @@
    (person 'pcm "Ralf" "Hinze" "University of Oxford" "http://www.cs.ox.ac.uk/ralf.hinze/")
    (person 'pcm "Zhenjiang" "Hu" "National Institute of Informatics" "http://research.nii.ac.jp/~hu/")
    (person 'pcm "Patricia" "Johann" "Appalachian State University" "http://cs.appstate.edu/~johannp/")
-   (person 'pcm "Ken" "Larsen" "University of Copenhagen" "http://www.diku.dk/~kflarsen/")
+   (person 'pcm "Ken Friis" "Larsen" "University of Copenhagen" "http://www.diku.dk/~kflarsen/")
    (person 'pcm "Yukiyoshi" "Kameyama" "University of Tsukuba" "http://logic.cs.tsukuba.ac.jp/~kam/")
    (person 'pcm "Anil" "Madhavapeddy" "University of Cambridge" "http://anil.recoil.org")
    (person 'pcm "Geoffrey" "Mainland" "Drexel University" "https://www.cs.drexel.edu/~mainland/")
@@ -1226,7 +1226,11 @@ with temperatures above 20" deg " C, but it can also be cooler with wind and rai
 	  "student grants, child-care support, companion travel grants and long "
 	  "distance international travel support.  To apply, follow the "
 	  "instructions found " 
-	  (a ((href "http://www.sigplan.org/PAC.htm")) "here") ".")))))
+	  (a ((href "http://www.sigplan.org/PAC.htm")) "here") ".")
+      (dt (b "ACM-W Scholarships for Attendance at Research Conferences"))
+      (dd "ACM-W provides " (a ((href "http://women.acm.org/scholarship")) "support")
+	  " for women undergraduate and graduate students "
+	  "in Computer Science and related programs to attend research conferences.")))))
 
 (define src.xexpr
   (make-page
