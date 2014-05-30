@@ -594,6 +594,7 @@ to create your links for fee downloads from the ACM DL.")
 
          (h3 "News")
 	 (ul
+          (li "The " (a ((href "accepted.html")) "list of accepted papers") " is now online.")
 	  (li "The " (a ((href "src.html")) "student research competition") " has been announced.  Deadline for submission: 29 June.")
 	  (li "The " (a ((href "affiliated.html")) "affiliated event") " schedule is now available."))
          #;(ul
@@ -611,7 +612,6 @@ to create your links for fee downloads from the ACM DL.")
               "Registration is now " (a ((href "https://regmaster3.com/2013conf/ICFP13/register.php")) "open")
               ".  The early registration deadline is August 22."
               (img ((src "img/new.gif"))))
-          (li "The " (a ((href "accepted.html")) "list of accepted papers") " is now online.")
           (li "The " (a ((href "local.html")) "conference venue") " is now accepting reservations. ")
           (li "ICFP 2013 received a record setting 133 submissions!  Thanks to "
 	      "all the authors for their hard work!")	      
@@ -1456,6 +1456,154 @@ with temperatures above 20" deg " C, but it can also be cooler with wind and rai
 	"application and seeing you at ICFP 2014!"))))
 
 
+(define accepted.xexpr
+  (make-page
+    "Accepted papers"
+    `(div
+      ((class "col1"))
+      (center
+       (h1 "Accepted papers"))
+
+      (dl
+       (dt "On Teaching *How to Design Programs*: Observations from a Newcomer")
+       (dd (a ((href "http://www.cs.tufts.edu/~nr")) "Norman Ramsey"))
+       
+       (dt "Folding Domain-Specific Languages: Deep and Shallow Embeddings")
+       (dd (a ((href "http://www.cs.ox.ac.uk/jeremy.gibbons/")) "Jeremy Gibbons")
+	   " and "
+	   (a ((href "http://www.cs.ox.ac.uk/people/nicolas.wu/")) "Nicolas Wu"))
+       
+       (dt "Pattern matching without K")
+       (dd "Jesper Cockx, Dominique Devriese and Frank Piessens")
+
+       (dt "Settable and Non-Interfering Signal Functions for FRP")
+       (dd "Daniel Winograd-Cort and Paul Hudak")
+
+       (dt "Safe Zero-cost Coercions for Haskell")
+       (dd (a ((href "http://www.joachim-breitner.de/")) "Joachim Breitner")
+	   ", "
+	   (a ((href "http://www.cis.upenn.edu/~eir/")) "Richard A. Eisenberg")
+	   ", "
+	   (a ((href "http://research.microsoft.com/en-us/people/simonpj/")) "Simon Peyton Jones")
+	   " and "
+	   (a ((href "http://www.seas.upenn.edu/~sweirich")) "Stephanie Weirich"))
+
+       (dt "Worker/Wrapper/Makes It/Faster")
+       (dd (a ((href "http://www.cs.nott.ac.uk/~jph/")) "Jennifer Hackett")
+	   " and "
+	   (a ((href "http://www.cs.nott.ac.uk/~gmh/")) "Graham Hutton"))
+
+       (dt "Lem: reusable engineering of real-world semantics")
+       (dd "Dominic P. Mulligan, Scott Owens, Kathryn E. Gray, Tom Ridge and "
+	   (a ((href "http://www.cl.cam.ac.uk/~pes20")) "Peter Sewell"))
+
+       (dt "There is no Fork: an Abstraction for Efficient, Concurrent, and Concise Data Access")
+       (dd "Simon Marlow, Louis Brandy, Jonathan Coens and Jon Purdy")
+
+       (dt "Hindley-Milner elaboration in applicative style")
+       (dd (a ((href "http://gallium.inria.fr/~fpottier/")) "Francois Pottier"))
+
+       (dt "Building Embedded Systems with Embedded DSLs")
+       (dd (a ((href "http://www.galois.com/")) "Patrick Hickey")
+	   ", Lee Pike, Trevor Elliott, James Bielman and John Launchbury")
+
+       (dt "Compositional Semantics for Composable Continuations: From Abortive to Delimited Control")
+       (dd (a ((href "http://ix.cs.uoregon.edu/~pdownen")) "Paul Downen")
+	   " and "
+	   (a ((href "http://ix.cs.uoregon.edu/~ariola")) "Zena Ariola"))
+
+       (dt "Maximal Sharing in the Lambda Calculus with letrec")
+       (dd (a ((href "http://www.few.vu.nl/~cgr600")) "Clemens Grabmayer")
+	   " and "
+	   (a ((href "http://rochel.info/")) "Jan Rochel"))
+
+       (dt "A Theory of Gradual Effect Systems")
+       (dd "Felipe Ba" ntilde "ados Schwerter, Ronald Garcia and " Eacute "ric Tanter")
+
+       (dt "Functional Programming for Dynamic and Large Data with Self-Adjusting Computation")
+       (dd (a ((href "http://www.mpi-sws.org/~chenyan")) "Yan Chen")
+	   ", "
+	   (a ((href "http://www.umut-acar.org/")) "Umut A. Acar")
+	   " and Kanat Tangwongsan")
+
+       (dt "SeLINQ: Tracking Information Across Application-Database Boundaries")
+       (dd "Daniel Schoepe, Andrei Sabelfeld and Daniel Hedin")
+
+       (dt "Krivine Nets")
+       (dd (a ((href "http://www.cs.bham.ac.uk/~ohf162/")) "Olle Fredriksson")
+	   " and "
+	   (a ((href "http://www.cs.bham.ac.uk/~drg")) "Dan R. Ghica"))
+
+       (dt "Practical and Effective Higher-Order Optimizations")
+       (dd (a ((href "http://www.lars.com/")) "Lars Bergstrom")
+	   ", "
+	   (a ((href "http://www.cs.rit.edu/~mtf/")) "Matthew Fluet")
+	   ", "
+	   (a ((href "http://cs.uchicago.edu/~jhr")) "John Reppy")
+	   ", Nora Sandler and Matthew Le")
+
+       (dt "Distilling Abstract Machines")
+       (dd (a ((href "https://sites.google.com/site/beniaminoaccattoli/")) "Beniamino Accattoli")
+	   ", "
+	   "Pablo Barenbaum and "
+	   (a ((href "http://lipn.univ-paris13.fr/~mazza/")) "Damiano Mazza"))
+
+       (dt "Type-Based Parametric Analysis of Program Families")
+       (dd "Sheng Chen and "
+	   (a ((href "http://eecs.oregonstate.edu/~erwig")) "Martin Erwig"))
+
+       (dt "Soft Contract Verification")
+       (dd "Phuc Nguyen"
+	   ", "
+	   (a ((href "http://samth.github.io/")) "Sam Tobin-Hochstadt")
+	   " and "
+	   (a ((href "http://www.cs.umd.edu/~dvanhorn/")) "David Van Horn"))
+
+       (dt "Concurrent NetCore: From Policies to Pipelines")
+       (dd "Cole Schlesinger, Michael Greenberg and David Walker")
+
+       (dt "Homotopical Patch Theory")
+       (dd (a ((href "http://cs.cmu.edu/~cangiuli")) "Carlo Angiuli")
+	   ", "
+	   (a ((href "http://www.cs.cmu.edu/~edmo/")) "Ed Morehouse")
+	   ", "
+	   (a ((href "http://dlicata.web.wesleyan.edu/")) "Daniel Licata")
+	   " and "
+	   (a ((href "http://cs.cmu.edu/~rwh")) "Robert Harper"))
+
+       (dt "A Relational Framework for Higher-Order Shape Analysis")
+       (dd (a ((href "http://gowthamk.github.io/")) "Gowtham Kaki")
+	   " and "
+	   (a ((href "https://www.cs.purdue.edu/homes/suresh")) "Suresh Jagannathan"))
+
+       (dt "Coeffects: A calculus of context-dependent computation")
+       (dd (a ((href "http://www.cl.cam.ac.uk/~tp322")) "Tomas Petricek")
+	   ", "
+	   (a ((href "http://dorchard.co.uk/")) "Dominic Orchard")
+	   " and "
+	   (a ((href "http://www.cl.cam.ac.uk/users/am")) "Alan Mycroft"))
+
+       (dt "Refinement Types For Haskell")
+       (dd (a ((href "http://goto.ucsd.edu/~nvazou/")) "Niki Vazou")
+	   ", "
+	   (a ((href "http://www.eseidel.org/")) "Eric L. Seidel")
+	   ", "
+	   (a ((href "http://www.cs.ucsd.edu/~rjhala/")) "Ranjit Jhala")
+	   ", Dimitrios Vytiniotis and Simon Peyton-Jones")
+       
+       (dt "Romeo: a system for more flexible binding-safe programming")
+       (dd (a ((href "http://www.ccs.neu.edu/home/pauls")) "Paul Stansifer")
+	   " and " 
+	   (a ((href "http://www.ccs.neu.edu/home/wand")) "Mitchell Wand"))
+
+       (dt "How to Keep Your Neighbours in Order")
+       (dd (a ((href "http://www.strictlypositive.org/")) "Conor McBride"))
+
+       (dt "SML# in Industry: A Practical ERP System Development")
+       (dd "Atsushi Ohori, Katsuhiro Ueno, Kazunori Hoshi, Shinji Nozaki, Takashi Sato, Tasuku Makabe and Yuki Ito")
+
+       ))))
+
 
 (define (write-page xexpr fn)
   (with-output-to-file (string-append www fn)
@@ -1473,7 +1621,7 @@ with temperatures above 20" deg " C, but it can also be cooler with wind and rai
 (write-page student-attendance.xexpr "student-attendance.html")
 (write-page src.xexpr "src.html")
 (write-page sv.xexpr "sv.html")
-;(write-page accepted.xexpr "accepted.html")
+(write-page accepted.xexpr "accepted.html")
 ;(write-page program.xexpr "program.html")
 
 
