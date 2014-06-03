@@ -38,7 +38,7 @@
    (person 'cc "Duncan" "Coutts" "Well Typed LLP" "http://www.well-typed.com/people/duncan")))
 
 (define contest-url
-  "https://research.microsoft.com/en-us/events/icfpcontest2013/")
+  "http://icfpcontest.org/")
 
 (define johan
   (person 'gc "Johan" "Jeuring" "Utrecht University" "http://www.staff.science.uu.nl/~jeuri101/homepage/"))
@@ -203,11 +203,11 @@
        ((class "navigation")
         (href "index.html"))
        "Home"))
-     #;
+     
      (li
       ((class "roomy"))
       (a ((class "navigation")
-          (href "https://regmaster3.com/2013conf/ICFP13/register.php"))
+          (href "https://regmaster4.com/2014conf/ICFP14/register.php"))
          "Registration"))     
      (li
       ((class "roomy"))
@@ -257,7 +257,7 @@
       (a ((class "navigation")
           (href "cfwp.html"))
          "Call for workshop proposals"))     
-     #;
+     
      (li
       ((class "roomy"))
       (a ((class "navigation")
@@ -594,31 +594,11 @@ to create your links for fee downloads from the ACM DL.")
 
          (h3 "News")
 	 (ul
+          (li "Details of the 2014 " (a ((href "http://icfpcontest.org/")) "Programming Contest") " have been announced.  The contest starts 25 July.")
+          (li (a ((href "https://regmaster4.com/2014conf/ICFP14/register.php")) "Registration") " is now open!  Early registration ends 3 August.")
           (li "The " (a ((href "accepted.html")) "list of accepted papers") " is now online.")
 	  (li "The " (a ((href "src.html")) "student research competition") " has been announced.  Deadline for submission: 29 June.")
 	  (li "The " (a ((href "affiliated.html")) "affiliated event") " schedule is now available."))
-         #;(ul
-	  (li (img ((src "img/new.gif")))
-	      "The " (a ((href "program.html")) "conference program") " has been announced."
-	      (img ((src "img/new.gif"))))
-          (li (img ((src "img/new.gif")))
-              "A correction has been made to the CUFP " (a ((href "affiliated.html")) "schedule") "."
-              (img ((src "img/new.gif"))))
-          (li (img ((src "img/new.gif")))
-              "Supplemental travel support is available from the " 
-              (a ((href "http://www.sigplan.org/PAC.htm")) "SIGPLAN Professional Activities Committee.")
-              (img ((src "img/new.gif"))))
-          (li (img ((src "img/new.gif")))
-              "Registration is now " (a ((href "https://regmaster3.com/2013conf/ICFP13/register.php")) "open")
-              ".  The early registration deadline is August 22."
-              (img ((src "img/new.gif"))))
-          (li "The " (a ((href "local.html")) "conference venue") " is now accepting reservations. ")
-          (li "ICFP 2013 received a record setting 133 submissions!  Thanks to "
-	      "all the authors for their hard work!")	      
-          (li "The RiSE group at MSR Redmond has agreed to run the programming contest!")
-          (li "Interested in sponsoring? "
-              (a ((href ,(string-append "mailto:" industry-email)))
-                 "Contact the Industrial Relations Chair")))
          
          ,@important-dates
          
