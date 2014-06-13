@@ -299,6 +299,7 @@
       (p ((class "indent2")) (a ((href "http://twitter.com")) "Twitter"))
       (p ((class "indent1")) "Bronze partners")
       (p ((class "indent2")) (a ((href "http://www.intellifactory.com/")) "IntelliFactory"))
+      (p ((class "indent2")) (a ((href "http://www.operasoftware.com/")) "Opera Software"))
       (p ((class "indent2")) (a ((href "http://www.quviq.com/")) "QuviQ"))))))
 
 (define footers
@@ -654,7 +655,7 @@ to create your links for fee downloads from the ACM DL.")
          (img ((class "sponsor") (src "img/twitter-bird-light-bgs.png")))
 	 (h4 "Bronze partners")
          (img ((class "sponsor") (src "img/IntelliFactory.png")))
-         #;" "
+         (img ((class "sponsor") (src "img/opera.png")))
 	 (img ((class "sponsor") (src "img/quviq.jpeg"))) 
          )
 	
