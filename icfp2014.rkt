@@ -57,6 +57,8 @@
 
 (define malcolm
   (person 'video "Malcolm" "Wallace" "Standard Chartered Bank" #f))
+(define iavor
+  (person 'video "Iavor" "Diatchki" "Galois" #f))
 
 (define jean-baptiste
   (person 'treasurer "Jean-Baptiste" "Tristan" "Oracle Labs" "http://labs.oracle.com/people/tristan"))
@@ -89,7 +91,7 @@
 	   (append program-committee
 		   contest-committee
 		   student-research-committee
-		   (list johan manuel sam tom david malcolm jean-baptiste anil bjorn meng)))))
+		   (list johan manuel sam tom david malcolm iavor jean-baptiste anil bjorn meng)))))
 
 ;; Person Symbol -> Boolean
 (define (has-role? p s)
@@ -283,8 +285,8 @@
       (p ((class "indent2")) (a ((href "https://www.mozilla.org/")) "Mozilla"))
       #;(p ((class "indent2")) (a ((href "https://www.fpcomplete.com/")) "FP Complete"))      
       #;(p ((class "indent2")) (a ((href "http://nsf.gov/")) "National Science Foundation"))
-      #;(p ((class "indent2")) (a ((href "http://labs.oracle.com/")) "Oracle Labs"))
-      #;(p ((class "indent2")) (a ((href "http://www.standardchartered.com/")) "Standard Chartered Bank"))
+      (p ((class "indent2")) (a ((href "http://labs.oracle.com/")) "Oracle Labs"))
+      (p ((class "indent2")) (a ((href "http://www.standardchartered.com/")) "Standard Chartered Bank"))
       (p ((class "indent1")) "Silver partners")
       (p ((class "indent2")) (a ((href "http://www.bloomberg.com")) "Bloomberg"))
       (p ((class "indent2")) (a ((href "https://www.credit-suisse.com/global/en/")) "Credit Suisse"))
@@ -300,7 +302,8 @@
       (p ((class "indent1")) "Bronze partners")
       (p ((class "indent2")) (a ((href "http://www.intellifactory.com/")) "IntelliFactory"))
       (p ((class "indent2")) (a ((href "http://www.operasoftware.com/")) "Opera Software"))
-      (p ((class "indent2")) (a ((href "http://www.quviq.com/")) "QuviQ"))))))
+      (p ((class "indent2")) (a ((href "http://www.quviq.com/")) "QuviQ"))
+      (p ((class "indent2")) (a ((href "http://www.systorvest.no/")) "Systeor Vest AS"))))))
 
 (define footers
   `((div
@@ -615,7 +618,7 @@ to create your links for fee downloads from the ACM DL.")
           ,@(role-rows "Programming Contest Co-Chairs" 'cc)
           ,(role-row "Student Research Competition Chair" 'src)
           ,(role-row "Publicity Chair" 'pub)
-          ;,(role-row "Video Chair" 'video)
+          ,@(role-rows "Video Chair" 'video)
           ;,(role-row "Treasurer" 'treasurer)
           )
 
@@ -636,8 +639,8 @@ to create your links for fee downloads from the ACM DL.")
          (img ((class "sponsor") (src "img/mozilla.png")))
 	 #;(img ((class "sponsor") (src "img/fp-complete.png")))         
          #;(img ((class "sponsor") (src "img/nsf.png")))
-         #;(img ((class "sponsor") (src "img/ol.jpg")))
-         #;(img ((class "sponsor") (src "img/standard-chartered.png")))
+         (img ((class "sponsor") (src "img/ol.jpg")))
+         (img ((class "sponsor") (src "img/standard-chartered.png")))
          (h4 "Silver partners")
          (img ((class "sponsor") (src "img/bloomberg.png")))
 	 (img ((class "sponsor") (src "img/creditsuisse.png")))
@@ -657,6 +660,7 @@ to create your links for fee downloads from the ACM DL.")
          (img ((class "sponsor") (src "img/IntelliFactory.png")))
          (img ((class "sponsor") (src "img/opera.png")))
 	 (img ((class "sponsor") (src "img/quviq.jpeg"))) 
+	 (img ((class "sponsor") (src "img/systorvestlogo.png")))
          )
 	
         ,col2)))
