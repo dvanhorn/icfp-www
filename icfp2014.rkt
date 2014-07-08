@@ -1035,27 +1035,26 @@ to create your links for fee downloads from the ACM DL.")
 
      (h2 "Accommodation")
      (p "We have made block reservations at four hotels. Prices below are per night and 
-include buffet breakfast, wireless internet access and VAT. Bookings are made at 
-the web site of the respective hotel or via phone, using the booking code below."
+include buffet breakfast, wireless internet access and VAT."
 	(ul (li (a ((href "http://www.gothiatowers.com/?lang=en")) "Hotel Gothia Towers") ". This hotel is
     part of the conference venue, and thus the most convenient alternative.
-    Single room SEK 1495, double room SEK 1695. Booking code ICF310814.")
+    Single room SEK 1495, double room SEK 1695. Booking code ICF310814; book via phone (+46 31 750 88 10) or hotel web site.")
 	    (li (a ((href "http://www.scandichotels.com/Hotels/Sweden/Gothenburg/Scandic-Opalen")) "Hotel Scandic Opalen") ".
-    Located 500 m from the conference venue. Single room SEK 1290/1390. Booking
-    code BCHA310814.")
+    Located 500 m from the conference venue. Single room SEK 1290/1390. Booking code BCHA310814; book via phone (+46 31 751 5300) or hotel web site.")
 	    (li (a ((href "https://www.nordicchoicehotels.com/quality/quality-hotel-panorama1")) "Quality Hotel Panorama") ".
     Located 900 m from the conference venue. Single room SEK 935, double room
-    SEK 1159. Booking code 247400.")
+    SEK 1159. Booking code 247400; book via phone (+46 31 767 70 00) or mail to " (a ((href "mailto:reservation.q.panorama@choice.se")) "reservation.q.panorama@choice.se") ".")
 	    (li (a ((href "http://book.bestwestern.com/bestwestern/SE/Gothenburg-hotels/BEST-WESTERN-Hotell-Goteborg/Hotel-Overview.do?propertyCode=88162")) "Best Western Hotel G" ouml "teborg") ".
     Located ca 2 km from the conference venue. Single room SEK 734, double room
-    SEK 935. Booking code ICFP 2014. ")))
+    SEK 935. Booking code ICFP 2014; book via phone (+46 31 752 2800) or mail to " (a ((href "mailto:info@hotellgoteborg.se")) "info@hotellgoteborg.se") ".")))
 
-     (p "Hotel booking is open already now. Some rooms in all four hotels stay reserved 
-for ICFP participants until August 1st, but there are also checkpoints for the 
-number of reserved rooms 3 and 2 months before the conference, when some unused 
-reservations will be cancelled. Early September is a busy period for hotels in 
-Gothenburg, so we recommend you to book early. Note also that it may actually be 
-possible to get better rates through other booking sites.")
+     (p "Hotel booking is open. 
+Some rooms in all four hotels stay reserved for ICFP
+participants until August 1st, but there are also checkpoints for the number of reserved rooms
+3 and 2 months before the conference, when some unused reservations will be
+cancelled. Early September is a busy period for
+hotels in Gothenburg, so we recommend you to book early. Note also
+that it may actually be possible to get better rates through other booking sites.")
      (p "There are many more hotels and hostels in Gothenburg that you might want to 
 explore. One suitable starting point is " (a ((href "http://www.goteborg.com/en/Stay/Stay-Startpage/")) "here") ".")
 
