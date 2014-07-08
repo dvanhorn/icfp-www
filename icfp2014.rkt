@@ -631,6 +631,8 @@ to create your links for fee downloads from the ACM DL.")
 
          
          (h3 "Industrial Partners")
+         (img ((class "sponsor") (src "img/logos.png")))
+         #|
          (h4 "Platinum partners")
          (img ((class "sponsor") (src "img/JS.png")))
          (h4 "Gold partners")
@@ -661,6 +663,7 @@ to create your links for fee downloads from the ACM DL.")
          (img ((class "sponsor") (src "img/opera.png")))
 	 (img ((class "sponsor") (src "img/quviq.jpeg"))) 
 	 (img ((class "sponsor") (src "img/systorvestlogo.png")))
+         |#
          )
 	
         ,col2)))
@@ -1503,7 +1506,11 @@ with temperatures above 20" deg " C, but it can also be cooler with wind and rai
 	   (a ((href "http://rochel.info/")) "Jan Rochel"))
 
        (dt "A Theory of Gradual Effect Systems")
-       (dd "Felipe Ba" ntilde "ados Schwerter, Ronald Garcia and " Eacute "ric Tanter")
+       (dd (a ((href "http://pleiad.cl/people/fbanados")) "Felipe Ba" ntilde "ados Schwerter") 
+           ", "
+           (a ((href "http://www.cs.ubc.ca/~rxg/")) "Ronald Garcia") 
+           " and " 
+           (a ((href "http://pleiad.cl/people/etanter")) Eacute "ric Tanter"))
 
        (dt "Functional Programming for Dynamic and Large Data with Self-Adjusting Computation")
        (dd (a ((href "http://www.mpi-sws.org/~chenyan")) "Yan Chen")
