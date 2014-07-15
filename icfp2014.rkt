@@ -751,7 +751,7 @@ to create your links for fee downloads from the ACM DL.")
       (li ,Haskell " " ndash "Day 2")
       (li ,OCAML)
       (li ,Erlang)
-      (li ,HART))
+      #;(li ,HART))
 
      (h3 "Saturday, September 6")
      (ul 
