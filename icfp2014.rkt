@@ -300,6 +300,7 @@
       #;(p ((class "indent2")) (a ((href "http://oreilly.com/")) "O'Reilly Media"))
       (p ((class "indent2")) (a ((href "http://twitter.com")) "Twitter"))
       (p ((class "indent1")) "Bronze partners")
+      (p ((class "indent2")) (a ((href "http://www.alephcloud.com/")) "Alephcloud"))
       (p ((class "indent2")) (a ((href "http://www.intellifactory.com/")) "IntelliFactory"))
       (p ((class "indent2")) (a ((href "http://www.operasoftware.com/")) "Opera Software"))
       (p ((class "indent2")) (a ((href "http://www.quviq.com/")) "QuviQ"))
