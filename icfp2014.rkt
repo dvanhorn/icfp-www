@@ -991,7 +991,7 @@ DARPA's HACMS Program"))
 	 (dd ((class "paper")) "Olle Fredriksson (University of Birmingham); Dan Ghica (University of Birmingham)")
 	 (dt ((class "paper")) (em "Distilling Abstract Machines"))
 	 (dd ((class "paper")) "Beniamino Accattoli (University of Bologna); Pablo Barenbaum (University of Buenos Aires); Damiano Mazza (Universit" eacute " Paris 13)")
-	 (dt "17:20-17:40 Student Research Competition Awar Presentation")
+	 (dt "17:20-17:40 Student Research Competition Award Presentation")
 	 (dt "17:40-18:00 ICFP 2015 Advert & Closing")))))
 
 (define local.xexpr
