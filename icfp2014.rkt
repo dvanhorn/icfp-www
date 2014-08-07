@@ -73,6 +73,9 @@
   (person/email 'industry "Anil" "Madhavapeddy" "University of Cambridge" "http://anil.recoil.org/"
 		"anil@recoil.org"))
 
+(define reid
+  (person 'mac "Reid" "Holmes" "University of Waterloo" "https://cs.uwaterloo.ca/~rtholmes/"))
+
 (define unknown
   (person 'unknown "???" "" "???" #f))
 
@@ -91,7 +94,7 @@
 	   (append program-committee
 		   contest-committee
 		   student-research-committee
-		   (list johan manuel sam tom david malcolm iavor jean-baptiste anil bjorn meng)))))
+		   (list johan manuel sam tom david malcolm iavor jean-baptiste anil bjorn meng reid)))))
 
 ;; Person Symbol -> Boolean
 (define (has-role? p s)
@@ -637,6 +640,7 @@ DARPA's HACMS Program"))
           ,(role-row "Publicity Chair" 'pub)
           ,@(role-rows "Video Chair" 'video)
           ;,(role-row "Treasurer" 'treasurer)
+	  ,(role-row "Mobile App Chair" 'mac)
           )
 
          (h3 "Program Committee")
@@ -987,7 +991,8 @@ DARPA's HACMS Program"))
 	 (dd ((class "paper")) "Olle Fredriksson (University of Birmingham); Dan Ghica (University of Birmingham)")
 	 (dt ((class "paper")) (em "Distilling Abstract Machines"))
 	 (dd ((class "paper")) "Beniamino Accattoli (University of Bologna); Pablo Barenbaum (University of Buenos Aires); Damiano Mazza (Universit" eacute " Paris 13)")
-	 (dt "17:20-17:45 ICFP 2015 Advert & Closing")))))     
+	 (dt "17:20-17:40 Student Research Competition Awar Presentation")
+	 (dt "17:40-18:00 ICFP 2015 Advert & Closing")))))
 
 (define local.xexpr
   (make-page 
