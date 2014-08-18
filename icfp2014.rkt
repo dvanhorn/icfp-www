@@ -536,7 +536,7 @@ to create your links for fee downloads from the ACM DL.")
 		 (td "Logo on website, poster at industrial reception,
               listed in proceedings."))
 	     (tr (td (strong "Silver"))
-		 (td "$2000")
+		 (td "$2500")
 		 (td "As above plus: logo in proceedings, logo on
               publicity materials (e.g., posters, etc.)"))
 	     (tr (td (strong "Gold"))
@@ -602,6 +602,9 @@ to create your links for fee downloads from the ACM DL.")
 
          (h3 "News")
 	 (ul
+          (li "Schedules for ICFP and all affiliated event are now available in one "
+	      (a ((href "program.pdf")) "pdf document")
+	      " (will be handed out to attendees in printed form). Also includes social events to enable you to plan your stay in Gothenburg.")
           (li "August 3 is the deadline for early " (a ((href "https://regmaster4.com/2014conf/ICFP14/register.php")) "registration") ".")
           (li "The " (a ((href "program.html")) "program") " has been finalized!")
           (li "The invited speakers for ICFP 2014 are:" 
