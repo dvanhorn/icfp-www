@@ -896,6 +896,7 @@ DARPA's HACMS Program"))
      ((class "col1"))
      (center
       (h1 "Conference program"))
+     (p "The complete program for ICFP and affiliated events is also available as a " (a ((href "program.pdf")) "PDF") " document.")
      (h2 "Monday, 1 September")
      (dl (dt "8:45-9:00 Opening (General Chair)")
          (dt ((class "keynotetitle")) "9:00-10:00 Keynote: Kathleen Fisher (Tufts University)")
