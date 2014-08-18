@@ -931,7 +931,11 @@ DARPA's HACMS Program"))
 	 (dd ((class "paper")) "Paul Downen (University of Oregon); Zena M. Ariola (University of Oregon)")
 	 (dt ((class "paper")) (em "Coeffects: A Calculus of Context-Dependent Computation"))
 	 (dd ((class "paper")) "Tomas Petricek (University of Cambridge); Dominic Orchard (University of Cambridge); Alan Mycroft (University of Cambridge)")
-	 (dt "17:20-17:45 Program Chair's Report"))
+	 (dt "17:20-17:45 Program Chair's Report")
+	 (dt "17:45-19:30 Welcome reception")
+	 (dd "Immediately after the scientic program on Monday, the City of Gothenburg will host a welcome
+reception in the H lounge, just outside the ICFP lecture room."))
+
      (h2 "Tuesday, 2 September")
      (dl (dt ((class "keynotetitle")) "9:00-10:00 Keynote: Robert Bruce Findler (Northwestern University)")
          (dd "Behavioral Software Contracts")
@@ -961,7 +965,12 @@ DARPA's HACMS Program"))
 	 (dd ((class "paper")) "Yan Chen (Max Planck Institute for Software Systems); Umut Acar (Carnegie Mellon University); Kanat Tangwongsan (Mahidol University)")
 	 (dt "16:00-16:30 Tea")
 	 (dt "16:30-17:10 ICFP Contest Presentation")
-	 (dt "17:10-17:30 ICFP 2004 Most Influential Paper Award"))
+	 (dt "17:10-17:30 ICFP 2004 Most Influential Paper Award")
+	 (dt "20:00-late Banquet")
+	 (dd "The conference banquet takes place in Eriksbergshallen, on the north bank of the river. The building
+used to house the mechanical workshops of Eriksbergsvarvet, one of the main shipyards in Gothenburg
+in the 19th and 20th centuries. Buses will leave the conference centre at 19:00 to take participants to the banquet venue.
+Buses also take participants back to the city centre/conference venue after the banquet."))
      (h2 "Wednesday, 3 September")
      (dl (dt ((class "keynotetitle")) "9:00-10:00 Keynote: Stephanie Weirich (University of Pennsylvania)")
 	 (dd "Depending on Types")
@@ -996,7 +1005,11 @@ DARPA's HACMS Program"))
 	 (dt ((class "paper")) (em "Distilling Abstract Machines"))
 	 (dd ((class "paper")) "Beniamino Accattoli (University of Bologna); Pablo Barenbaum (University of Buenos Aires); Damiano Mazza (Universit" eacute " Paris 13)")
 	 (dt "17:20-17:40 Student Research Competition Award Presentation")
-	 (dt "17:40-18:00 ICFP 2015 Advert & Closing")))))
+	 (dt "17:40-18:00 ICFP 2015 Advert & Closing"))
+     (h2 "Thursday, 4 September")
+     (dl (dt "18:30-20:30 Industrial reception")
+	 (dd "The industrial reception, supported by our platinum and gold sponsors, takes place at the Museum of
+World Culture, a 200 m walk from the conference venue.")))))
 
 (define local.xexpr
   (make-page 
