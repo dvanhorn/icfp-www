@@ -603,6 +603,11 @@ to create your links for fee downloads from the ACM DL.")
 
          (h3 "News")
 	 (ul
+          (li "ICFP and affiliated events are now on " (a ((href "http://www.conferoapp.com")) "Confero")
+              " for your mobile device. Can be viewed in any web browser or in the dedicted Confero app, available on Apple App store and Google Play.")
+          (li "There will be an industrial reception, supported by "
+	      "ICFP's platinum and gold sponsors, at the Museum of World "
+	      "Culture on Thursday, 4 September starting at 18:30.  The museum is just a short walk from the conference venue.")
           (li "The " (a ((href "program.html")) "complete proceedings") " of ICFP 2014 "
 	      "are now available through the ACM Digital Library.  Free access to the proceedings "
 	      "will be granted for one year.")
@@ -1115,6 +1120,10 @@ with temperatures above 20" deg " C, but it can also be cooler with wind and rai
      (h2 "Other useful information")
 
      (dl
+      (dt "Restaurants.")
+      (dd (p "A list of recommended restaurants and pubs in Gothenburg (selected by local FP people) with locations on  a Google map is "
+          (a ((href "https://docs.google.com/document/d/1sSpFqxqvq77MmGb1Nby36f8A4ncAKhTpwS_GLLOK6XA/edit")) "here") "."))
+
       (dt "Banks and currency.")
       (dd (p "Banks are open between 09.30/10.00 and 15.00 on
     weekdays. Some banks in central Gothenburg are open from 09.00 to 17.00.")
