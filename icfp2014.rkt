@@ -308,7 +308,7 @@
       (p ((class "indent2")) (a ((href "http://www.intellifactory.com/")) "IntelliFactory"))
       (p ((class "indent2")) (a ((href "http://www.operasoftware.com/")) "Opera Software"))
       (p ((class "indent2")) (a ((href "http://www.quviq.com/")) "QuviQ"))
-      (p ((class "indent2")) (a ((href "http://www.systorvest.no/")) "Systeor Vest AS"))))))
+      (p ((class "indent2")) (a ((href "http://www.systorvest.no/")) "Systor Vest AS"))))))
 
 (define footers
   `((div
