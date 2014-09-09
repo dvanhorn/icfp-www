@@ -280,6 +280,10 @@
           (href "http://www.icfpconference.org/"))
          "More about ICFP"))
 
+     (li ((class "roomy"))
+	 (a ((class "navigation")
+	     (href "https://twitter.com/icfp_conference"))
+	    "@icfp_conference"))
      
      (li
       ((class "roomy"))
@@ -1048,6 +1052,27 @@ World Culture, a 200 m walk from the conference venue.")))))
 	(a ((href "https://maps.google.se/maps/ms?msa=0&msid=210997146033221229789.0004ef75436b30b7dddf6&ie=UTF8&t=m&ll=57.698369,11.978016&spn=0.032106,0.073128&z=13&source=embed"))
 	   "ICFP2014 locations")
 	" in a larger map.")
+
+     (h2 "SIGPLAN Conference Anti-Harassment Policy") 
+
+     (p (a ((href "http://www.sigplan.org/Resources/Policies/Anti-harassment")) 
+	   "The open exchange of ideas and the freedom of thought and "
+	"expression are central to the aims and goals of SIGPLAN")
+	"; these require "
+	"an environment that recognizes the inherent worth of every person and "
+	"group, that fosters dignity, understanding, and mutual respect, and "
+	"that embraces diversity. For these reasons, SIGPLAN is dedicated to "
+	"providing a harassment-free conference experience, and implements "
+	"the " 
+	(a ((href "http://www.acm.org/sigs/volunteer_resources/officers_manual/anti-harassment-policy")) 
+	   "ACM policy against harassment") 
+	".")
+
+     (p "Conference participants violating these standards may be "
+	"sanctioned or expelled from the conference, at the discretion of the "
+	"conference organizers. Conference organizers are requested to report "
+	"serious incidents to the SIGPLAN Vice Chair.")
+
 
      (h2 "Support from the SIGPLAN Professional Activities Committee")
      (p "The " (a ((href "http://www.sigplan.org/PAC.htm")) "SIGPLAN Professional Activities Committee") " can potentially provide supplemental financial "
