@@ -76,6 +76,9 @@
 (define reid
   (person 'mac "Reid" "Holmes" "University of Waterloo" "https://cs.uwaterloo.ca/~rtholmes/"))
 
+(define scherer
+  (person 'sv "Gabriel" "Scherer" "INRIA" "http://gallium.inria.fr/~scherer/"))
+
 (define unknown
   (person 'unknown "???" "" "???" #f))
 
@@ -95,7 +98,7 @@
 	   (append program-committee
 		   contest-committee
 		   student-research-committee
-		   (list fisher reppy wu sam tom david diatchki anil garcia kennedy reid weirich)))))
+		   (list fisher reppy wu sam tom david diatchki anil garcia kennedy reid weirich scherer)))))
 
 ;; Person Symbol -> Boolean
 (define (has-role? p s)
@@ -664,7 +667,7 @@ DARPA's HACMS Program"))
 	  ,@(role-rows "Mentoring Workshop Co-Chairs" 'mentor)
           ,(role-row "Publicity Chair" 'pub)
           ,@(role-rows "Video Chair" 'video)
-          ;,(role-row "SV Chair" 'sv)
+          ,(role-row "Student Volunteer Chair" 'sv)
 	  ,(role-row "Mobile App Chair" 'mac)
           )
 
