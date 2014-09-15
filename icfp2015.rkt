@@ -78,6 +78,8 @@
 
 (define scherer
   (person 'sv "Gabriel" "Scherer" "INRIA" "http://gallium.inria.fr/~scherer/"))
+(define banados-schwerter
+  (person 'sv "Felipe" '("Ba" ntilde "ados Schwerter") "University of British Columbia" "http://www.cs.ubc.ca/~fbanados"))
 
 (define unknown
   (person 'unknown "???" "" "???" #f))
@@ -98,7 +100,7 @@
 	   (append program-committee
 		   contest-committee
 		   student-research-committee
-		   (list fisher reppy wu sam tom david diatchki anil garcia kennedy reid weirich scherer)))))
+		   (list fisher reppy wu sam tom david diatchki anil garcia kennedy reid weirich scherer banados-schwerter)))))
 
 ;; Person Symbol -> Boolean
 (define (has-role? p s)
@@ -106,11 +108,25 @@
   (cond [(symbol? r) (eq? r s)]
         [else (ormap (lambda (r) (eq? r s)) r)]))
 
+
+;; Person -> String
+(define (person-last-normalize p)
+  (define l (person-last p))
+  (if (string? l)
+      l
+      (apply string-append 
+	     (map (lambda (s)
+		    (case s
+		      [(ntilde) "n"]
+		      [else s]))
+		  l))))
+
+
 ;; Role -> [Listof Person]
 (define (get-roles r)
   (sort (filter (λ (p) (has-role? p r)) people)
         string-ci<?
-        #:key person-last))
+        #:key person-last-normalize))
 
 ;; Role -> Person
 (define (get-role r)
@@ -667,7 +683,7 @@ DARPA's HACMS Program"))
 	  ,@(role-rows "Mentoring Workshop Co-Chairs" 'mentor)
           ,(role-row "Publicity Chair" 'pub)
           ,@(role-rows "Video Chair" 'video)
-          ,(role-row "Student Volunteer Chair" 'sv)
+          ,@(role-rows "Student Volunteer Co-Chairs" 'sv)
 	  ,(role-row "Mobile App Chair" 'mac)
           )
 
