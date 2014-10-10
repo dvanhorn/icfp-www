@@ -52,7 +52,7 @@
   (person 'sr "Sam" "Tobin-Hochstadt" "Indiana University" "http://samth.github.io/"))
 
 (define tom
-  (person 'wc "Tom" "Schrijvers" "Ghent University" "http://users.ugent.be/~tschrijv/"))
+  (person 'wc "Tom" "Schrijvers" "KU Leuven" "http://people.cs.kuleuven.be/~tom.schrijvers/"))
 
 (define david
   (person 'pub "David" "Van Horn" "University of Maryland" "http://www.cs.umd.edu/~dvanhorn/"))
