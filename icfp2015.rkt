@@ -142,12 +142,11 @@
 (define nth "20th")
 (define city-img "img/vancouver4.jpg")
 (define city '("Vancouver, British Columbia, Canada"))
-(define dates '("September 1 " ndash " 3"))
-(define affiliated-dates '("August 30 " ndash "31 and September 4 " ndash " 5"))
-(define industry-email "adams-moran@galois.com")
-(define cfwp-deadline "November 15, 2013")
-(define cfwp-notification "December 15, 2013")
-(define workshop-domain "ugent.be")
+(define dates '("August 31 " ndash " September 2"))
+(define affiliated-dates '("August 30 and September 3 " ndash " 5"))
+(define cfwp-deadline "November 16, 2014")
+(define cfwp-notification "December 15, 2014")
+(define workshop-domain "cs.kuleuven.be")
 
 (define keywords
   @string-append{functional programming, functional programming languages, 
@@ -281,7 +280,7 @@
       (a ((class "navigation")
           (href "cfp.html"))
          "Call for papers"))
-     #;
+
      (li
       ((class "roomy"))
       (a ((class "navigation")
@@ -923,7 +922,7 @@ DARPA's HACMS Program"))
 	"comprising the following members of the ICFP "
 	,year
 	" organizing committee, together with the members of the "
-	(a ((href "http://acm.org/sigplan/SigplanOfficers.htm"))
+	(a ((href "http://www.sigplan.org/ContactUs/"))
 	   "SIGPLAN executive committee"))
      (table
       ((cellpadding "5"))
@@ -1702,7 +1701,7 @@ postal address."))))
       (write-xexpr xexpr))))
 
 (write-page index.xexpr "index.html")
-#;(write-page cfwp.xexpr "cfwp.html")
+(write-page cfwp.xexpr "cfwp.html")
 #;(write-page cfp.xexpr "cfp.html")
 (write-page industry.xexpr "industry.html")
 #;(write-page affiliated.xexpr "affiliated.html")
