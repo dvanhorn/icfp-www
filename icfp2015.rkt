@@ -267,20 +267,19 @@
       (a ((class "navigation")
           (href "sv.html"))
          "Student Volunteer Program"))
-     
-     (li
-      ((class "roomy"))
-      (a ((class "navigation")
-          (href "student-attendance.html"))
-         "Student Attendance Programs"))
-
-     #;
+    
      (li
       ((class "roomy"))
       (a ((class "navigation")
           (href "cfp.html"))
          "Call for papers"))
-
+ 
+     (li
+      ((class "roomy"))
+      (a ((class "navigation")
+          (href "student-attendance.html"))
+         "Student Attendance Programs"))
+    
      (li
       ((class "roomy"))
       (a ((class "navigation")
@@ -365,16 +364,22 @@
                                           pageTracker._trackPageview();
                                           } catch(err) {}}|))
 
+(define deadline-link
+  '(a ((href "http://www.timeanddate.com/countdown/generic?p0=1033&iso=20150227T115959&year=2015&month=2&day=27&hour=11&min=59&sec=59&msg=ICFP%202015")) "Friday, February 27 2015, 23:59 (UTC-11)"))
+
+(define author-response-start
+  "Tuesday, 21 April, 2015")
+
 (define important-dates
-  '[(h3 "Important dates")
+  `[(h3 "Important dates")
     (table
      ((cellpadding "5"))
      #;(tr (td "Workshop proposals due:")
          (td "Friday, 15 November 2013"))
      (tr (td "Submissions due:")
-         (td (a ((href "http://www.timeanddate.com/countdown/generic?p0=1033&iso=20150227T115959&year=2015&month=2&day=27&hour=11&min=59&sec=59&msg=ICFP%202015")) "Friday, February 27 2015, 23:59 (American Samoa Time, UTC-11)")))
+         (td ,deadline-link))
      (tr (td "Author response:")
-         (td "Tuesday, 21 April, 2015 " ndash " Thursday, 23 April, 2015"))
+         (td ,author-response-start " " ndash " Thursday, 23 April, 2015"))
      (tr (td "Notification:")
          (td "Friday, 1 May, 2015"))
      (tr (td "Final copy due:")
@@ -426,130 +431,135 @@
      ,@important-dates         
 
      (h3 "Scope")
-     (p "ICFP " ,year " seeks original papers on the art and science of functional
-programming.  Submissions are invited on all topics from principles to
-practice, from foundations to features, and from abstraction to
-application.  The scope includes all languages that encourage
-functional programming, including both purely applicative and
-imperative languages, as well as languages with objects, concurrency,
-or parallelism.  Topics of interest include (but are not limited to):")
-     (ul
-      (li "Language Design: concurrency and distribution; modules; components
-  and composition; metaprogramming; interoperability; type systems;
-  relations to imperative, object-oriented, or logic programming")
-      (li "Implementation: abstract machines; virtual machines; interpretation;
-  compilation; compile-time and run-time optimization; memory
-  management; multi-threading; exploiting parallel hardware; interfaces
-  to foreign functions, services, components, or low-level machine
-  resources")
-      (li "Software-Development Techniques: algorithms and data structures;
-  design patterns; specification; verification; validation; proof
-  assistants; debugging; testing; tracing; profiling")
-      (li "Foundations: formal semantics; lambda calculus; rewriting; type
-  theory; monads; continuations; control; state; effects; program
-  verification; dependent types")
-      (li "Analysis and Transformation: control-flow; data-flow; abstract
-  interpretation; partial evaluation; program calculation")
-      (li "Applications and Domain-Specific Languages: symbolic computing;
-  formal-methods tools; artificial intelligence; systems programming;
-  distributed-systems and web programming; hardware design; databases;
-  XML processing; scientific and numerical computing; graphical user
-  interfaces; multimedia programming; scripting; system
-  administration; security")
-      (li "Education: teaching introductory programming; parallel programming;
-  mathematical proof; algebra")
-      (li "Functional Pearls: elegant, instructive, and fun essays on
-  functional programming")
-      (li "Experience Reports: short papers that provide evidence that
-  functional programming really works or describe obstacles that have
-  kept it from working"))
-     (p "If you are concerned about the appropriateness of some topic, do not
-hesitate to contact the program chair.")
+     (p "ICFP " ,year  " "
+	"seeks original papers on the art and science of functional "
+	"programming.  Submissions are invited on all topics from principles to "
+	"practice, from foundations to features, and from abstraction to "
+	"application.  The scope includes all languages that encourage "
+	"functional programming, including both purely applicative and "
+	"imperative languages, as well as languages with objects, concurrency, "
+	"or parallelism.  Topics of interest include (but are not limited to):"
+	(ul
+	 (li "Language Design: concurrency, parallelism, and distribution; modules; "
+	     "components and composition; metaprogramming; type systems; "
+	     "interoperability; domain-specific languages; and relations to "
+	     "imperative, object-oriented, or logic programming.")
+	 (li "Implementation: abstract machines; virtual machines; interpretation; "
+	     "compilation; compile-time and run-time optimization; garbage "
+	     "collection and memory management; multi-threading; exploiting "
+	     "parallel hardware; interfaces to foreign functions, services, "
+	     "components, or low-level machine resources.")
+	 (li "Software-Development Techniques: algorithms and data structures; "
+	     "design patterns; specification; verification; validation; proof "
+	     "assistants; debugging; testing; tracing; profiling.")
+	 (li "Foundations: formal semantics; lambda calculus; rewriting; type "
+	     "theory; monads; continuations; control; state; effects; program "
+	     "verification; dependent types.")
+	 (li "Analysis and Transformation: control-flow; data-flow; abstract "
+	     "interpretation; partial evaluation; program calculation.")
+	 (li "Applications: symbolic computing; formal-methods tools; artificial "
+	     "intelligence; systems programming; distributed-systems and web "
+	     "programming; hardware design; databases; XML processing; "
+	     "scientific and numerical computing; graphical user interfaces; "
+	     "multimedia and 3D graphics programming; scripting; system "
+	     "administration; security.")
+	 (li "Education: teaching introductory programming; parallel programming; "
+	     "mathematical proof; algebra.")
+	 (li "Functional Pearls: elegant, instructive, and fun essays on "
+	     "functional programming.")
+	 (li "Experience Reports: short papers that provide evidence that "
+	     "functional programming really works or describe obstacles that have "
+	     "kept it from working."))
+     (p "If you are concerned about the appropriateness of some topic, do not "
+	"hesitate to contact the program chair."))
      (h3 "Abbreviated instructions for authors")
      (ul
-      (li "By Saturday, 1 March 2014, 23:59 UTC-11 (Samoa Standard Time),
-  submit a full paper of at most 12 pages (6 pages for an Experience
-  Report), including bibliography and figures."))
-     (p "The deadlines will be strictly enforced and papers exceeding the page
-limits will be summarily rejected.")
-     (ul
-      (li "Authors have the option to attach supplementary material to a submission,
-  on the understanding that reviewers may choose not to look at it.")
-      (li "Each submission must adhere to SIGPLAN's republication policy, as
-  explained on the web at "
-	  (a ((href "http://www.sigplan.org/Resources/Policies/Republication"))
+      (li "By " ,deadline-link
+	  ", submit a full paper of at most 12 pages (6 pages for an Experience "
+	  "Report), in standard ACM conference format, including bibliography, "
+	  "figures, and appendices."))
+     (p "The deadlines will be strictly enforced and papers exceeding the page "
+	"limits will be summarily rejected.")
+     (ul 
+      (li "Authors have the option to attach supplementary material to a submission, "
+	  "on the understanding that reviewers may choose not to look at it.")
+      (li "Each submission must adhere to SIGPLAN's republication policy, as "
+	  "explained on the web at "
+     	  (a ((href "http://www.sigplan.org/Resources/Policies/Republication"))
 	     "http://www.sigplan.org/Resources/Policies/Republication"))
-      (li "Authors of resubmitted (but previously rejected) papers have the
-  option to attach an annotated copy of the reviews of their previous
-  submission(s), explaining how they have addressed these previous
-  reviews in the present submission.  If a reviewer identifies
-  him/herself as a reviewer of this previous submission and wishes to
-  see how his/her comments have been addressed, the program chair will
-  communicate to this reviewer the annotated copy of his/her previous
-  review.  Otherwise, no reviewer will read the annotated copies of
-  the previous reviews."))
-     (p "Overall, a submission will be evaluated according to its relevance,
-correctness, significance, originality, and clarity.  It should
-explain its contributions in both general and technical terms, clearly
-identifying what has been accomplished, explaining why it is
-significant, and comparing it with previous work.  The technical
-content should be accessible to a broad audience.  Functional Pearls
-and Experience Reports are separate categories of papers that need not
-report original research results and must be marked as such at the
-time of submission.  Detailed guidelines on both categories are on the
-conference web site.")
-     (p "Proceedings will be published by ACM Press.  Authors of accepted
-submissions are expected to transfer the copyright to the
-ACM.  Presentations will be videotaped and released online if the
-presenter consents. The proceedings will be freely available for 
-download from the ACM Digital Library from one week before the 
-start of the conference until two weeks after the conference.")
-     (p (em "Formatting: ")
-	"Submissions must be in PDF format printable in black and
-white on US Letter sized paper and interpretable by
-Ghostscript. Papers must adhere to the standard ACM conference format:
-two columns, nine-point font on a ten-point baseline, with columns
-20pc (3.33in) wide and 54pc (9in) tall, with a column gutter of 2pc
-(0.33in).  A suitable document template for LaTeX is available: "
-             (a ((href "http://www.acm.org/sigs/sigplan/authorInformation.htm"))
-                "http://www.acm.org/sigs/sigplan/authorInformation.htm"))
-          (p (em "Submission: ") 
-             "Submissions will be accepted on the web at "
-             (a ((href "https://www.easychair.org/conferences/?conf=icfp2014"))
-                "https://www.easychair.org/conferences/?conf=icfp2014")
-	    ". Improved
-versions of a paper may be submitted at any point before the
-submission deadline using the same web interface.")
-          (p (em "Author response: ")
-             "Authors will have a 72-hour period, starting at 0:00
-UTC-11 on Wednesday, 23 April 2014, to read reviews and respond to them.")
+      (li "Authors of resubmitted (but previously rejected) papers have the "
+	  "option to attach an annotated copy of the reviews of their previous "
+	  "submission(s), explaining how they have addressed these previous "
+	  "reviews in the present submission.  If a reviewer identifies "
+	  "him/herself as a reviewer of this previous submission and wishes to "
+	  "see how his/her comments have been addressed, the program chair will "
+	  "communicate to this reviewer the annotated copy of his/her previous "
+	  "review.  Otherwise, no reviewer will read the annotated copies of "
+	  "the previous reviews."))    
+     (p "Overall, a submission will be evaluated according to its relevance, "
+	"correctness, significance, originality, and clarity.  It should "
+	"explain its contributions in both general and technical terms, clearly "
+	"identifying what has been accomplished, explaining why it is "
+	"significant, and comparing it with previous work.  The technical "
+	"content should be accessible to a broad audience.  Functional Pearls "
+	"and Experience Reports are separate categories of papers that need not "
+	"report original research results and must be marked as such at the "
+	"time of submission.  Detailed guidelines on both categories are on the "
+	"conference web site.")
+     (p "Presentations will be videotaped and released online if the presenter "
+	"consents.  The proceedings will be freely available for download from "
+	"the ACM Digital Library from one week before the start of the "
+	"conference until two weeks after the conference. ")
+     (p (em "Formatting") 
+	": Submissions must be in PDF format printable in black and "
+	"white on US Letter sized paper and interpretable by "
+	"Ghostscript. Papers must adhere to the standard ACM conference format: "
+	"two columns, nine-point font on a ten-point baseline, with columns "
+	"20pc (3.33in) wide and 54pc (9in) tall, with a column gutter of 2pc "
+	"(0.33in).  A suitable document template for LaTeX is available at "
+	(a ((href "http://www.acm.org/sigs/sigplan/authorInformation.htm"))
+	   "http://www.acm.org/sigs/sigplan/authorInformation.htm")) 
+     (p (em "Submission") ": Submissions will be accepted on the web using a link " 
+	"that will be posted at "
+	(a ((href "http://icfpconference.org/icfp2015/"))
+	   "http://icfpconference.org/icfp2015/"))
+     (p "Improved versions of a paper may be submitted at any point before the "
+	" submission deadline using the same web interface.")
+     (p (em "Author response: ")
+	"Authors will have a 72-hour period, starting at 0:00 "
+	"UTC-11 on " ,author-response-start ", to read reviews and respond to them.")
+     
+     (p "ACM Author-Izer is a unique service that enables ACM "
+	"authors to generate and post links on either their home page or "
+	"institutional repository for visitors to download the definitive "
+	"version of their articles from the ACM Digital Library at no "
+	"charge. Downloads through Author-Izer links are captured in official "
+	"ACM statistics, improving the accuracy of usage and impact "
+	"measurements. Consistently linking the definitive version of ACM "
+	"article should reduce user confusion over article versioning. After "
+	"your article has been published and assigned to your ACM Author "
+	"Profile page, please visit "
+	(a ((href "http://www.acm.org/publications/acm-author-izer-service")) 
+	   "http://www.acm.org/publications/acm-author-izer-service")
+	" to learn how "
+	"to create your links for fee downloads from the ACM DL.") 
 
-          #;(p (em "Special Journal Issue: ") 
-             "There will be a special issue of the Journal of
-Functional Programming with papers from ICFP 2013.  The program
-committee will invite the authors of select accepted papers to submit
-a journal version to this issue.")
-          (p "ACM Author-Izer is a unique service that enables ACM
-authors to generate and post links on either their home page or
-institutional repository for visitors to download the definitive
-version of their articles from the ACM Digital Library at no
-charge. Downloads through Author-Izer links are captured in official
-ACM statistics, improving the accuracy of usage and impact
-measurements. Consistently linking the definitive version of ACM
-article should reduce user confusion over article versioning. After
-your article has been published and assigned to your ACM Author
-Profile page, please visit "
-(a ((href "http://www.acm.org/publications/acm-author-izer-service")) "http://www.acm.org/publications/acm-author-izer-service")
-" to learn how
-to create your links for fee downloads from the ACM DL.")
-          (h3 "Organizers")
-          (table
-           ((cellpadding "5")
-            (summary "Organizers"))
-           ,(role-row "General Chair" 'gc)
-           ,(role-row "Program Chair" 'pc)
-           (tr (td "Program Committee:"))
-           ,@(map (lambda (p) (row "" p)) program-committee)))))     
+     (p (em "Publication date")
+	": The official publication date of accepted papers "
+"is the date the proceedings are made available in the ACM Digital "
+"Library. This date may be up to two weeks prior to the first day "
+"of the conference. The official publication date affects the deadline "
+"for any patent filings related to published work.")
+
+
+     #;(h3 "Organizers")
+     (table
+      ((cellpadding "5")
+       (summary "Organizers"))
+      ,(role-row "General Chair" 'gc)
+      ,(role-row "Program Chair" 'pc)
+      (tr (td "Program Committee:"))
+      ,@(map (lambda (p) (row "" p)) program-committee)))))
 
 (define industry.xexpr
   (make-page 
@@ -1702,7 +1712,7 @@ postal address."))))
 
 (write-page index.xexpr "index.html")
 (write-page cfwp.xexpr "cfwp.html")
-#;(write-page cfp.xexpr "cfp.html")
+(write-page cfp.xexpr "cfp.html")
 (write-page industry.xexpr "industry.html")
 #;(write-page affiliated.xexpr "affiliated.html")
 (write-page local.xexpr "local.html")
