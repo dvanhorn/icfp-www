@@ -5,11 +5,35 @@
 (struct person (role first last affil url) #:transparent)
 
 (struct person/email person (email))
+(struct person/co person (country))
 
 ;; start PC
 
+(define david
+  (person/co '(pub pcm) "David" "Van Horn" "University of Maryland" "http://www.cs.umd.edu/~dvanhorn/" "USA"))
+
 (define program-committee
   (list
+   (person/co 'pcm "Amal" "Ahmed" "Northeastern University" "http://www.ccs.neu.edu/home/amal/" "USA")
+   (person/co 'pcm "Jean-Philippe" "Bernardy" "Chalmers University of Technology" "http://www.cse.chalmers.se/~bernardy/" "Sweden")
+   (person/co 'pcm "Matthias" "Blume" "Google" "http://research.google.com/pubs/author39313.html" "USA")
+   (person/co 'pcm "William" "Byrd" "University of Utah" "http://webyrd.net/" "USA")
+   (person/co 'pcm "Andy" "Gill" "University of Kansas" "https://ku-fpg.github.io/people/andygill/" "USA")
+   (person/co 'pcm "Neal" "Glew" "Google" "http://glew.org/nglew/" "USA")
+   (person/co 'pcm "Fritz" "Henglein" "University of Copenhagen" "http://www.diku.dk/~henglein/" "Denmark")
+   (person/co 'pcm "Gabriele" "Keller" "University of New South Wales and NICTA" "http://www.cse.unsw.edu.au/~keller/" "Australia")
+   (person/co 'pcm "Andrew" "Kennedy" "Microsoft Research Cambridge" "http://research.microsoft.com/en-us/um/people/akenn/" "UK")
+   (person/co 'pcm "Neelakantan" "Krishnaswami" "Birmingham University" "http://www.cs.bham.ac.uk/~krishnan/" "UK")
+   (person/co 'pcm "Daan" "Leijen" "Microsoft Research Redmond" "http://research.microsoft.com/en-us/people/daan/" "USA")
+   (person/co 'pcm "Keiko" "Nakata" "Institute of Cybernetics at Tallinn University of Technology" "http://cs.ioc.ee/~keiko/" "Estonia")
+   (person/co 'pcm "Mike" "Rainey" "INRIA Rocquencourt" "http://gallium.inria.fr/~rainey/" "France")
+   (person/co 'pcm "Andreas" "Rossberg" "Google" "http://www.mpi-sws.org/~rossberg/" "Germany")
+   (person/co 'pcm "Manuel" "Serrano" "INRIA Sophia Antipolis" "http://www-sop.inria.fr/members/Manuel.Serrano/" "France")
+   (person/co 'pcm "Simon" "Thompson" "University of Kent" "http://www.cs.kent.ac.uk/people/staff/sjt/" "UK")
+   david
+   (person/co 'pcm "Stephanie" "Weirich" "University of Pennsylvania" "http://www.cis.upenn.edu/~sweirich/" "USA")))
+
+#|
    (person 'pcm "Edwin" "Brady" "University of St Andrews" "http://edwinb.wordpress.com")
    (person 'pcm "Derek" "Dreyer" "MPI-SWS" "https://www.mpi-sws.org/~dreyer/")
    (person 'pcm "Ralf" "Hinze" "University of Oxford" "http://www.cs.ox.ac.uk/ralf.hinze/")
@@ -29,7 +53,7 @@
    (person 'pcm "Matt" "Sottile" "Galois" "http://corp.galois.com/matt-sottile/")
    (person 'pcm "Don" "Syme" "Microsoft Research" "http://research.microsoft.com/en-us/people/dsyme/")
    (person 'pcm "Jesse" "Tov" "Harvard University" "http://www.eecs.harvard.edu/~tov/")))
-
+|#
 ;; end PC
 
 (define contest-committee
@@ -40,10 +64,10 @@
   "http://icfpcontest.org/")
 
 (define fisher
-  (person 'gc "Kathleen" "Fisher" "Tufts University" "http://www.cs.tufts.edu/~kfisher/Kathleen_Fisher/Home.html"))
+  (person/co 'gc "Kathleen" "Fisher" "Tufts University" "http://www.cs.tufts.edu/~kfisher/Kathleen_Fisher/Home.html" "USA"))
 
 (define reppy
-  (person 'pc "John" "Reppy" "University of Chicago" "http://people.cs.uchicago.edu/~jhr/"))
+  (person/co 'pc "John" "Reppy" "University of Chicago" "http://people.cs.uchicago.edu/~jhr/" "USA"))
 
 (define wu
   (person 'wc "Nicolas" "Wu" "University of Oxford" "http://www.cs.ox.ac.uk/people/nicolas.wu/"))
@@ -53,9 +77,6 @@
 
 (define tom
   (person 'wc "Tom" "Schrijvers" "KU Leuven" "http://people.cs.kuleuven.be/~tom.schrijvers/"))
-
-(define david
-  (person 'pub "David" "Van Horn" "University of Maryland" "http://www.cs.umd.edu/~dvanhorn/"))
 
 (define diatchki
   (person 'video "Iavor" "Diatchki" "Galois" #f))
@@ -168,21 +189,25 @@
 				     (listify (person-last p)))))
 
 (define (row desc p)
+  (row/co desc p #f))
+
+(define (row/co desc p person-country)
   `(tr
     (td ((align "left")) ,desc ,@(if (string=? desc "") '() '(":")))
     (td ((align "left"))
-        ,@(person-link p)
-          #;(let ((f  (person-first p)))
-            (cond [(cons? f)
-                   (apply link (person-url p) (append f (list " " (person-last p))))]
-                  [else
-                   (link (person-url p) f " " (person-last p))])))
+        ,@(person-link p))
     (td ((align "left"))
         ,@(local [(define affil (person-affil p))]
-            (if (cons? affil) affil (list affil))))))
+	    (append (if (cons? affil) affil (list affil))
+                    (if person-country (list " (" (person-country p) ")") '()))))))
+
 
 (define (role-row desc r)
   (row desc (get-role r)))
+
+(define (role-row/co desc r)
+  (row/co desc (get-role r) person/co-country))
+
 
 (define (role-rows desc r)
   (define ps (get-roles r))
@@ -556,10 +581,10 @@
      (table
       ((cellpadding "5")
        (summary "Organizers"))
-      ,(role-row "General Chair" 'gc)
-      ,(role-row "Program Chair" 'pc)
+      ,(role-row/co "General Chair" 'gc)
+      ,(role-row/co "Program Chair" 'pc)
       (tr (td "Program Committee:"))
-      ,@(map (lambda (p) (row "" p)) program-committee)))))
+      ,@(map (lambda (p) (row/co "" p person/co-country)) (get-roles 'pcm))))))
 
 (define industry.xexpr
   (make-page 
