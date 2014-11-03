@@ -529,8 +529,7 @@
 	"content should be accessible to a broad audience.  Functional Pearls "
 	"and Experience Reports are separate categories of papers that need not "
 	"report original research results and must be marked as such at the "
-	"time of submission.  Detailed guidelines on both categories are on the "
-	"conference web site.")
+	"time of submission.  Detailed guidelines on both categories are given below.")
      (p "Presentations will be videotaped and released online if the presenter "
 	"consents.  The proceedings will be freely available for download from "
 	"the ACM Digital Library from one week before the start of the "
@@ -576,8 +575,114 @@
 "of the conference. The official publication date affects the deadline "
 "for any patent filings related to published work.")
 
+     (h3 "Special categories of papers")
+     (p "In addition to research papers, ICFP solicits two kinds of "
+	"papers that do not require original research contributions: Functional "
+	"Pearls, which are full papers, and Experience Reports, which are "
+	"limited to six pages. Authors submitting such papers may wish to "
+	"consider the following advice.")
+     (h4 "Functional Pearls")
+     (p "A Functional Pearl is an elegant essay about something "
+	"related to functional programming. Examples include, but are not "
+	"limited to:")
+     (ul
+      (li "a new and thought-provoking way of looking at an old idea")
+      (li "an instructive example of program calculation or proof")
+      (li "a nifty presentation of an old or new data structure")
+      (li "an interesting application of functional programming techniques")
+      (li "a novel use or exposition of functional programming in the classroom"))
+     (p "While pearls often demonstrate an idea through the "
+	"development of a short program, there is no requirement or expectation "
+	"that they do so. Thus, they encompass the notions of theoretical and "
+	"educational pearls.")
+     (p "Functional Pearls are valued as highly and judged as "
+	"rigorously as ordinary papers, but using somewhat different "
+	"criteria. In particular, a pearl is not required to report original "
+	"research, but, it should be concise, instructive, and "
+	"entertaining. Your pearl is likely to be rejected if your readers get "
+	"bored, if the material gets too complicated, if too much specialized "
+	"knowledge is needed, or if the writing is inelegant. The key to "
+	"writing a good pearl is polishing.")
+     (p "A submission you wish to have treated as a pearl must be "
+	"marked as such on the submission web page, and should contain the "
+	"words ``Functional Pearl'' somewhere in its title or subtitle. These "
+	"steps will alert reviewers to use the appropriate evaluation "
+	"criteria. Pearls will be combined with ordinary papers, however, for "
+	"the purpose of computing the conference's acceptance rate.")
+     (h4 "Experience Reports")
+     (p "The purpose of an Experience Report is to help create a body "
+	"of published, refereed, citable evidence that functional programming "
+	"really works --- or to describe what obstacles prevent it from "
+	"working.")
+     (p "Possible topics for an Experience Report include, but are not limited to:")
+     (ul 
+      (li "insights gained from real-world projects using functional programming")
+      (li "comparison of functional programming with conventional "
+	  "programming in the context of an industrial project or a university "
+	  "curriculum")
+      (li "project-management, business, or legal issues encountered "
+	  "when using functional programming in a real-world project")
+      (li "curricular issues encountered when using functional programming in education")
+      (li "real-world constraints that created special challenges for "
+	  "an implementation of a functional language or for functional "
+	  "programming in general"))
+     (p "An Experience Report is distinguished from a normal ICFP "
+	"paper by its title, by its length, and by the criteria used to "
+	"evaluate it.")
+     (ul
+      (li "Both in the proceedings and in any citations, the title of "
+	  "each accepted Experience Report must begin with the words ``Experience "
+	  "Report'' followed by a colon. The acceptance rate for Experience "
+	  "Reports will be computed and reported separately from the rate for "
+	  "ordinary papers.")
+      (li "An Experience Report is at most six pages long. Each "
+	  "accepted Experience Report will be presented at the conference, but "
+	  "depending on the number of Experience Reports and regular papers "
+	  "accepted, authors of Experience reports may be asked to give shorter "
+	  "talks.") 
+      (li "Because the purpose of Experience Reports is to enable our "
+	  "community to accumulate a body of evidence about the efficacy of "
+	  "functional programming, an acceptable Experience Report need not add "
+	  "to the body of knowledge of the functional-programming community by "
+	  "presenting novel results or conclusions. It is sufficient if the "
+	  "Report states a clear thesis and provides supporting evidence. The "
+	  "thesis must be relevant to ICFP, but it need not be novel."))
+     (p "The program committee will accept or reject Experience "
+	"Reports based on whether they judge the evidence to be "
+	"convincing. Anecdotal evidence will be acceptable provided it is well "
+	"argued and the author explains what efforts were made to gather as "
+	"much evidence as possible. Typically, more convincing evidence is "
+	"obtained from papers which show how functional programming was used "
+	"than from papers which only say that functional programming was "
+	"used. The most convincing evidence often includes comparisons of "
+	"situations before and after the introduction or discontinuation of "
+	"functional programming. Evidence drawn from a single person's "
+	"experience may be sufficient, but more weight will be given to "
+	"evidence drawn from the experience of groups of people.")
+     (p "An Experience Report should be short and to the point: make a "
+	"claim about how well functional programming worked on your project and "
+	"why, and produce evidence to substantiate your claim. If functional "
+	"programming worked for you in the same ways it has worked for others, "
+	"you need only to summarize the results---the main part of your paper "
+	"should discuss how well it worked and in what context. Most readers "
+	"will not want to know all the details of your project and its "
+	"implementation, but please characterize your project and its context "
+	"well enough so that readers can judge to what degree your experience "
+	"is relevant to their own projects. Be especially careful to highlight "
+	"any unusual aspects of your project. Also keep in mind that specifics "
+	"about your project are more valuable than generalities about "
+	"functional programming; for example, it is more valuable to say that "
+	"your team delivered its software a month ahead of schedule than it is "
+	"to say that functional programming made your team more productive.")
+     (p "If your paper not only describes experience but also presents "
+	"new technical results, or if your experience refutes cherished beliefs "
+	"of the functional-programming community, you may be better off "
+	"submitting it as a full paper, which will be judged by the usual "
+	"criteria of novelty, originality, and relevance. If you are unsure in "
+	"which category to submit, the program chair will be happy to help you "
+	"decide.")
 
-     #;(h3 "Organizers")
+     (h3 "Organizers")
      (table
       ((cellpadding "5")
        (summary "Organizers"))
