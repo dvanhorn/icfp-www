@@ -716,7 +716,7 @@
 		 (td "As above plus: named supporter of industrial reception, opportunity to include branded merchandise in participants' swag bag."))
 	     (tr (td (strong "Platinum"))
 		 (td "$10000")
-		 (td "As above plus: logo on swag bag, named supporter of whole event, logo on lanyards, badge ribbon, table/booth-like space available (in coffee break areas), other negotiated benefits (subject to ACM restrictions on commercial involvement).")))
+		 (td "As above plus: logo on swag bag, named supporter of whole event, logo on lanyards, table/booth-like space available (in coffee break areas), other negotiated benefits (subject to ACM restrictions on commercial involvement).")))
       (p "As the premier conference in the field, ICFP is the ideal venue to promote your company's interests in functional programming, and to meet with prospective employees and leading figures in the community.")
       (p "For more information, please contact " ,(role-person/email 'industry) ", the Industrial Relations Chair."))))
 	     
