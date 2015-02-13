@@ -25,7 +25,7 @@
    (person/co 'pcm "Andrew" "Kennedy" "Microsoft Research Cambridge" "http://research.microsoft.com/en-us/um/people/akenn/" "UK")
    (person/co 'pcm "Neelakantan" "Krishnaswami" "Birmingham University" "http://www.cs.bham.ac.uk/~krishnan/" "UK")
    (person/co 'pcm "Daan" "Leijen" "Microsoft Research Redmond" "http://research.microsoft.com/en-us/people/daan/" "USA")
-   (person/co 'pcm "Keiko" "Nakata" "Institute of Cybernetics at Tallinn University of Technology" "http://cs.ioc.ee/~keiko/" "Estonia")
+   (person/co 'pcm "Keiko" "Nakata" "FireEye Dresden" "http://cs.ioc.ee/~keiko/" "Germany")
    (person/co 'pcm "Mike" "Rainey" "INRIA Rocquencourt" "http://gallium.inria.fr/~rainey/" "France")
    (person/co 'pcm "Andreas" "Rossberg" "Google" "http://www.mpi-sws.org/~rossberg/" "Germany")
    (person/co 'pcm "Manuel" "Serrano" "INRIA Sophia Antipolis" "http://www-sop.inria.fr/members/Manuel.Serrano/" "France")
@@ -72,6 +72,7 @@
 (define wu
   (person 'wc "Nicolas" "Wu" "University of Oxford" "http://www.cs.ox.ac.uk/people/nicolas.wu/"))
 
+#;
 (define sam 
   (person 'sr "Sam" "Tobin-Hochstadt" "Indiana University" "http://samth.github.io/"))
 
@@ -109,10 +110,7 @@
   (person 'mentor "Stephanie" "Weirich" "University of Pennsylvania" "http://www.cis.upenn.edu/~sweirich/"))
 
 (define student-research-committee
-  (list sam
-	(person 'sr "Andrew" "Kennedy" "Microsoft Research Cambridge" "http://research.microsoft.com/en-us/um/people/akenn/")
-	(person 'sr "Jeremy" "Gibbons" "University of Oxford" "http://www.cs.ox.ac.uk/jeremy.gibbons/")
-	(person 'sr "Matthieu" "Sozeau" "INRIA Paris" "http://mattam.org/")))
+  (list kennedy))
 	
 
 (define people
@@ -121,7 +119,7 @@
 	   (append program-committee
 		   contest-committee
 		   student-research-committee
-		   (list fisher reppy wu sam tom david diatchki anil garcia kennedy reid weirich scherer banados-schwerter)))))
+		   (list fisher reppy wu tom david diatchki anil garcia kennedy reid weirich scherer banados-schwerter)))))
 
 ;; Person Symbol -> Boolean
 (define (has-role? p s)
@@ -280,7 +278,7 @@
       (a ((class "navigation")
 	  (href "affiliated.html")) 
 	 "Affiliated events"))
-     #;
+     
      (li
       ((class "roomy"))
       (a ((class "navigation")
@@ -390,7 +388,7 @@
                                           } catch(err) {}}|))
 
 (define deadline-link
-  '(a ((href "http://www.timeanddate.com/countdown/generic?p0=1033&iso=20150227T115959&year=2015&month=2&day=27&hour=11&min=59&sec=59&msg=ICFP%202015")) "Friday, February 27 2015, 23:59 (UTC-11)"))
+ '(a ((href "http://www.timeanddate.com/countdown/generic?iso=20150227T235959&p0=1033&msg=ICFP+2015")) "Friday, February 27 2015, 23:59 (UTC-11)"))
 
 (define author-response-start
   "Tuesday, 21 April, 2015")
@@ -402,7 +400,7 @@
      #;(tr (td "Workshop proposals due:")
          (td "Friday, 15 November 2013"))
      (tr (td "Submissions due:")
-         (td ,deadline-link))
+         (td ,deadline-link (br) (a ((href "https://icfp15.hotcrp.com")) "https://icfp15.hotcrp.com")))
      (tr (td "Author response:")
          (td ,author-response-start " " ndash " Thursday, 23 April, 2015"))
      (tr (td "Notification:")
@@ -543,10 +541,9 @@
 	"(0.33in).  A suitable document template for LaTeX is available at "
 	(a ((href "http://www.acm.org/sigs/sigplan/authorInformation.htm"))
 	   "http://www.acm.org/sigs/sigplan/authorInformation.htm")) 
-     (p (em "Submission") ": Submissions will be accepted on the web using a link " 
-	"that will be posted at "
-	(a ((href "http://icfpconference.org/icfp2015/"))
-	   "http://icfpconference.org/icfp2015/"))
+     (p (em "Submission") ": Submissions will be accepted at "
+     	(a ((href "https://icfp15.hotcrp.com"))
+	   "https://icfp15.hotcrp.com"))
      (p "Improved versions of a paper may be submitted at any point before the "
 	" submission deadline using the same web interface.")
      (p (em "Author response: ")
@@ -773,7 +770,10 @@
             peripheries.}
          
 
-	 #;(h3 "News")
+	 (h3 "News")
+	 (ul (li "Submissions are now being accepted.  Submit "
+		 (a ((href "https://icfp15.hotcrp.com")) "here") ".")
+	     (li "The " (a ((href "src.html")) "student research competition") " has been announced.  Deadline for submission: 29 June (provisional)."))
 	 #;(ul
           (li "There will be an industrial reception, supported by "
 	      "ICFP's platinum and gold sponsors, at the Museum of World "
@@ -802,8 +802,7 @@ DARPA's HACMS Program"))
 
           (li "Details of the 2014 " (a ((href "http://icfpcontest.org/")) "Programming Contest") " have been announced.  The contest starts 25 July.")
           (li (a ((href "https://regmaster4.com/2014conf/ICFP14/register.php")) "Registration") " is now open!  Early registration ends 3 August.")
-          (li "The " (a ((href "accepted.html")) "list of accepted papers") " is now online.")
-	  (li "The " (a ((href "src.html")) "student research competition") " has been announced.  Deadline for submission: 29 June.")
+          (li "The " (a ((href "accepted.html")) "list of accepted papers") " is now online.")	 
 	  (li "The " (a ((href "affiliated.html")) "affiliated event") " schedule is now available."))
          
          ,@important-dates
@@ -1237,8 +1236,7 @@ World Culture, a 200 m walk from the conference venue.")))))
         "support for attending ICFP in the form of student grants, child-care support, companion travel "
         "grants, and long-distance internation travel support. "
         "To apply, follow the instructions found " (a ((href "http://www.sigplan.org/PAC.htm")) "here") ".")
-
-     #|
+   #|  
      (h2 "Getting to the venue")
      (p (ul (li "If you arrive to Gothenburg Landvetter Airport (GOT; all airlines except
     Ryanair and Wizz air), take the airport coach and get off at the first stop
@@ -1468,12 +1466,12 @@ postal address."))))
 	" where undergraduate and postgraduate students can "
 	"present posters. The " 
 	(a ((href "http://src.acm.org/")) "SRC")
-	" at the ICFP 2014 consists of three rounds:"
+	" at the ICFP " ,year " consists of three rounds:"
 
 	(dl (dt (b "Extended abstract round: "))
 	    (dd "All students are encouraged to submit an extended "
 		"abstract outlining their research (800 words).")
-	    (dt (b "Poster session at ICFP 2014:"))
+	    (dt (b "Poster session at ICFP " ,year ":"))
 	    (dd "Based on the abstracts, a panel of judges will select "
 		"the most promising entrants to participate in the poster session which "
 		"will take place at ICFP. Students who make it to this round will be "
@@ -1486,15 +1484,12 @@ postal address."))))
 		"at the ICFP to compete for the final awards in each "
 		"category and selection of an overall winner who will advance to the "
 		"ACM SRC Grand Finals.")))
+
      (h2 "Transport of your poster")
-     (p "You can either bring your poster on your own to the "
-	"conference or mail it to the local organizers:")
-     (p	 "Attn.: Meng Wang" (br)
-	 "Chalmers University of Technology" (br)
-	 "Department of Computer Science and Engineering" (br)
-	 "SE-412 96 G" ouml "teborg, Sweden")
-     (p "If you choose to mail, please make sure that the poster will "
-	"arrive at the latest on 30th August 2014.")
+     (p "You will be responsible for transporting your poster to the "
+	"conference. If this will be a problem, please contact the "
+	"chair of the SRC.")
+
      (h2 "Prizes")
      (ul
       (li "Both the top three graduate and the top three "
@@ -1565,7 +1560,8 @@ postal address."))))
 	"exceed 800 words and must not be longer than 2 pages. The reference "
 	"list does not count towards these limits. To submit an abstract, "
 	"please register through the " 
-	(a ((href "https://www.easychair.org/conferences/?conf=icfp2014src")) "submission page") 
+	#;(a ((href "https://www.easychair.org/conferences/?conf=icfp2014src")) "submission page") 
+	"submission page (TBA) "
 	" and follow the "
 	"instructions. Abstracts submitted after the deadline may be considered "
 	"at the committee's discretion, but only after decisions have been made "
@@ -1573,12 +1569,14 @@ postal address."))))
 	"problems, don't hesitate to contact the competition chair. ")
      (h2 "Important Dates")
      (ul
-      (li "Deadline for submission: 29th June")
-      (li "Notification of acceptance: 14th July"))
+      (li "Deadline for submission: 29th June (provisional)")
+      (li "Notification of acceptance: 14th July (provisional)"))
      (h2 "Selection Committee")
      (table
       ,(row "Chair" (get-role 'src))
-      ,@(map (lambda (p) (row "" p)) (get-roles 'sr))))))
+      ,@(map (lambda (p) (row "" p)) (get-roles 'sr))
+      )
+     (p "The remaining members of the SRC selection committee will be announced at a later date."))))
 
 
 (define sv.xexpr
@@ -1847,7 +1845,7 @@ postal address."))))
 #;(write-page affiliated.xexpr "affiliated.html")
 (write-page local.xexpr "local.html")
 (write-page student-attendance.xexpr "student-attendance.html")
-#;(write-page src.xexpr "src.html")
+(write-page src.xexpr "src.html")
 #;(write-page sv.xexpr "sv.html")
 #;(write-page accepted.xexpr "accepted.html")
 #;(write-page program.xexpr "program.html")
