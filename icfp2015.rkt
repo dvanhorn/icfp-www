@@ -70,7 +70,7 @@
   (person/co 'pc "John" "Reppy" "University of Chicago" "http://people.cs.uchicago.edu/~jhr/" "USA"))
 
 (define wu
-  (person 'wc "Nicolas" "Wu" "University of Oxford" "http://www.cs.ox.ac.uk/people/nicolas.wu/"))
+  (person 'wc "Nicolas" "Wu" "University of Bristol" "http://www.bristol.ac.uk/engineering/departments/computerscience/people/nicolas-wu/index.html"))
 
 #;
 (define sam 
@@ -272,7 +272,7 @@
       (a ((class "navigation")
           (href "local.html"))
          "Local information"))        
-     #;
+     
      (li
       ((class "roomy"))
       (a ((class "navigation")
@@ -901,50 +901,35 @@ DARPA's HACMS Program"))
   (let ((addr (string-append "icfp" year #;(substring year 2 4) "-workshops@" workshop-domain)))
     `(a ((href ,(string-append "mailto:" addr)))
         ,addr)))
+(define ally "Ally Skills Tutorial")
+(define SFPW "Scheme and Functional Programming Workshop")
+(define PLMW "Programming Languages Mentoring Workshop")
 
-
-(define CUFP `(a ((href "http://cufp.org/")) "ACM SIGPLAN Commercial Users of Functional Programming"))
+(define CUFP `(a ((href "http://cufp.org/2015/")) "Commercial Users of Functional Programming"))
 (define FARM `(a ((href "http://functional-art.org/"))
-		 "ACM SIGPLAN Workshop on Functional Art, Music, Modeling and Design"))
-(define Erlang `(a ((href "http://www.erlang.org/workshop/2014/"))
-		   "ACM SIGPLAN Erlang Workshop"))
+		 "Functional Art, Music, Modeling and Design"))
+(define Erlang `(a ((href "http://www.erlang.org/workshop/2015/ErlangWorkshop2015.html"))
+		   "Erlang Workshop"))
 (define Haskell 
-  `(a ((href "http://www.haskell.org/haskell-symposium/2014/"))
-      "ACM SIGPLAN Haskell Symposium"))
+  `(a ((href "http://www.haskell.org/haskell-symposium/2015/"))
+      "Haskell Symposium"))
 (define ML   
-  `(a ((href "http://okmij.org/ftp/ML/ML14.html"))
-      "ACM SIGPLAN ML Family Workshop"))
+  "ML Family Workshop")
 (define HIW `(a ((href "http://www.haskell.org/haskellwiki/HaskellImplementorsWorkshop"))
-		"ACM SIGPLAN Haskell Implementors Workshop"))
+		"Haskell Implementors Workshop"))
 (define HART 
   `(a ((href "http://www.program-transformation.org/HART14/"))
-      "ACM SIGPLAN Workshop on Haskell and Rewriting Techniques"))
-    
-#;
-(define FPCDSL
-  `(a ((href "http://quantum.bbn.com/FPCDSL/"))
-      "ACM SIGPLAN Functional Programming Concepts in Domain-Specific Languages"))
+      "Workshop on Haskell and Rewriting Techniques"))
 (define WGP
-  `(a ((href "http://www.wgp-sigplan.org/2014"))
-      "ACM SIGPLAN Workshop on Generic Programming"))
+  `(a ((href "http://www.wgp-sigplan.org/farmer/doku.php?id=2015"))
+      "Workshop on Generic Programming"))
 (define HOPE 
-  `(a ((href "http://hope2014.mpi-sws.org"))
-      "ACM SIGPLAN Workshop on Higher-order Programming with Effects"))
+  "Workshop on Higher-order Programming with Effects")
 
 (define FHPC
-  `(a ((href "https://sites.google.com/site/fhpcworkshops/fhpc-2014"))
-      "ACM SIGPLAN Workshop on Functional High-Performance Computing"))
-#;
-(define DTP
-  `(a ((href "http://www.seas.upenn.edu/~sweirich/dtp13"))
-      "ACM SIGPLAN Dependently-typed programming"))
-#;
-(define LFMTP
-  `(a ((href "http://complogic.cs.mcgill.ca/lfmtp13"))
-      "ACM SIGPLAN International Workshop on Logical Frameworks and Meta-Languages: Theory and Practice"))
+  "Workshop on Functional High-Performance Computing")
 (define OCAML
-  `(a ((href "http://ocaml.org/meetings/ocaml/2014/"))
-      "ACM SIGPLAN OCaml Workshop"))
+  "OCaml Workshop")
 
 (define affiliated.xexpr
   (make-page
@@ -954,34 +939,37 @@ DARPA's HACMS Program"))
      (center
       (h1 "Affiliated events"))
 
-     (h3 "Sunday, August 31")
+     (h3 "Sunday, August 30")
      (ul 
+      (li ,HIW)
+      (li ,HOPE)
       (li ,WGP)
-      (li ,HOPE))
+      (li ,PLMW)
+      (li ,ally))
 
-     (h3 "Monday, September 1 " ndash " Wednesday, September 3")
+     (h3 "Monday, August 31 " ndash " Wednesday, September 2")
      (ul (li "ICFP"))
 
-     (h3 "Thursday, September 4")
+     (h3 "Thursday, September 3")
      (ul
-      (li ,CUFP " " ndash "Day 1, Tutorials")
-      (li ,Haskell " " ndash " Day 1")
       (li ,FHPC)
-      (li ,ML))
+      (li ,Haskell " " ndash " Day 1")
+      (li ,ML)
+      (li ,CUFP " " ndash "Day 1"))
 
-     (h3 "Friday, September 5")
+
+     (h3 "Friday, September 4")
      (ul
-      (li ,CUFP " " ndash "Day 2, Tutorials")
+      (li ,Erlang)
       (li ,Haskell " " ndash "Day 2")
       (li ,OCAML)
-      (li ,Erlang)
-      #;(li ,HART))
+      (li ,CUFP " " ndash "Day 2")
+      (li ,SFPW))
 
-     (h3 "Saturday, September 6")
+     (h3 "Saturday, September 5")
      (ul 
-      (li ,CUFP  " " ndash "Day 3, Talks")
-      (li ,HIW)
-      (li ,FARM)))))
+      (li ,FARM)
+      (li ,CUFP  " " ndash "Day 3")))))
 
 (define cfwp.xexpr
   (make-page 
@@ -1842,7 +1830,7 @@ postal address."))))
 (write-page cfwp.xexpr "cfwp.html")
 (write-page cfp.xexpr "cfp.html")
 (write-page industry.xexpr "industry.html")
-#;(write-page affiliated.xexpr "affiliated.html")
+(write-page affiliated.xexpr "affiliated.html")
 (write-page local.xexpr "local.html")
 (write-page student-attendance.xexpr "student-attendance.html")
 (write-page src.xexpr "src.html")
