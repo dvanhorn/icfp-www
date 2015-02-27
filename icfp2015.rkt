@@ -412,7 +412,7 @@
      (tr (td "Early registration:")
          (td "Monday, 3 August, 2015"))
      (tr (td "Conference:")
-         (td "Tuesday, 1 September - Thursday, 3 September 2015")))])
+         (td "Monday, 31 August - Wednesday, 2 September 2015")))])
 
 (define (make-page title col)
   `(html
@@ -895,8 +895,8 @@ DARPA's HACMS Program"))
   
 
 (define workshop-date-par
-  '(p "The workshops are scheduled to occur on August 31 (the day before ICFP) "
-      "and September 4-6 (the three days after ICFP)."))
+  '(p "The workshops are scheduled to occur on August 30 (the day before ICFP) "
+      "and September 3-5 (the three days after ICFP)."))
 (define workshop-email
   (let ((addr (string-append "icfp" year #;(substring year 2 4) "-workshops@" workshop-domain)))
     `(a ((href ,(string-append "mailto:" addr)))
