@@ -777,6 +777,12 @@
 
 	 (h3 "News")
 	 (ul 
+	  (li "The "
+	      (a ((href "https://www.cis.upenn.edu/~sweirich/icfp-plmw15/")) 
+		 "Programming Languages Mentoring Workshop")
+	      " is accepting "
+	      "applications for travel grants to attend PLMW @ ICFP. "
+	      "The deadline to apply is April 24th, 2015.")
 	  (li "The ICFP 2015 Programming Contest will take place from "
 	      "Friday 7 August 2015 at 12:00 UTC and ends on Monday 10 "
 	      "August 2015 at 12:00 UTC.  More details will be posted soon.")
@@ -1624,8 +1630,9 @@ postal address."))))
 	 (li "Access to social events, including the banquet.")))
 
      (p "To apply as a Student Volunteers, please send an email to "
-	"Gabriel Scherer and Felipe BaÃ±ados Schwerter with the "
-	"following information:")
+	"Gabriel Scherer and Felipe Ba" ntilde "ados Schwerter "
+	"at " (a ((href "mailto:icfp-sv@lambda-calcul.us")) "icfp-sv@lambda-calcul.us")
+	" with the following information:")
      (h2 "Identity")
      (p (ul 
 	 (li "your name")
