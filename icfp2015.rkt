@@ -771,8 +771,7 @@
          
 
 	 (h3 "News")
-	 (ul (li "Submissions are now being accepted.  Submit "
-		 (a ((href "https://icfp15.hotcrp.com")) "here") ".")
+	 (ul (li "Submissions are closed; ICFP 2015 received 119 submissions, the second highest number in ICFP history!")
 	     (li "The " (a ((href "src.html")) "student research competition") " has been announced.  Deadline for submission: 29 June (provisional)."))
 	 #;(ul
           (li "There will be an industrial reception, supported by "
@@ -903,7 +902,8 @@ DARPA's HACMS Program"))
         ,addr)))
 (define ally "Ally Skills Tutorial")
 (define SFPW "Scheme and Functional Programming Workshop")
-(define PLMW "Programming Languages Mentoring Workshop")
+(define PLMW `(a ((href "http://www.cis.upenn.edu/~sweirich/icfp-plmw15/")) 
+		 "Programming Languages Mentoring Workshop"))
 
 (define CUFP `(a ((href "http://cufp.org/2015/")) "Commercial Users of Functional Programming"))
 (define FARM `(a ((href "http://functional-art.org/"))
@@ -1416,6 +1416,13 @@ postal address."))))
      (h2 "Student Support")
      (p "There are several ways that students may receive support for participation at the conference.")
      (dl
+      (dt (b "The SIGPLAN Programming Languages Mentoring Workshop at ICFP"))
+      (dd "ICFP is hosting the SIGPLAN Programming Languages Mentoring Workshop "
+	  "this and there are a number travel grants available to student attendees. "
+	  "See the " 
+	  (a ((href "https://www.cis.upenn.edu/~sweirich/icfp-plmw15/"))
+	     "PLMW")
+	  " site for more details.")
       (dt (b "Volunteering"))
       (dd "ICFP is pleased to offer a number of opportunities for "
 	  (a ((href "sv.html")) "student volunteers")
