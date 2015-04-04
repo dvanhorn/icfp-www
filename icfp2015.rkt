@@ -284,7 +284,7 @@
       (a ((class "navigation")
           (href "src.html"))
          "Student Research Competition"))
-     #;
+     
      (li
       ((class "roomy"))
       (a ((class "navigation")
