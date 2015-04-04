@@ -330,11 +330,14 @@
       (a ((class "navigation")
           (href "industry.html"))
          "Industrial partners")
-
-      #|
+      
       (p ((class "indent1")) "Platinum partners")
       (p ((class "indent2")) (a ((href "http://janestreet.com/")) "Jane Street Capital"))
       (p ((class "indent1")) "Gold partners")
+      (p ((class "indent2")) "Anonymous donor")
+      (p ((class "indent2")) (a ((href "https://ahrefs.com/")) "Ahrefs"))
+      
+#|
       (p ((class "indent2")) (a ((href "https://google.com/")) "Google"))
       (p ((class "indent2")) (a ((href "http://research.microsoft.com/")) "Microsoft Research"))
       (p ((class "indent2")) (a ((href "https://www.mozilla.org/")) "Mozilla"))
@@ -342,8 +345,10 @@
       #;(p ((class "indent2")) (a ((href "http://nsf.gov/")) "National Science Foundation"))
       (p ((class "indent2")) (a ((href "http://labs.oracle.com/")) "Oracle Labs"))
       (p ((class "indent2")) (a ((href "http://www.standardchartered.com/")) "Standard Chartered Bank"))
+|#
       (p ((class "indent1")) "Silver partners")
       (p ((class "indent2")) (a ((href "http://www.bloomberg.com")) "Bloomberg"))
+#|
       (p ((class "indent2")) (a ((href "https://www.credit-suisse.com/global/en/")) "Credit Suisse"))
       (p ((class "indent2")) (a ((href "http://cyberpointllc.com/")) "CyberPoint"))
       (p ((class "indent2")) (a ((href "https://www.erlang-solutions.com/")) "Erlang Solutions"))
@@ -857,21 +862,26 @@ DARPA's HACMS Program"))
             )
 
          
-         #|
+         
          (h3 "Industrial Partners")         
-	 (img ((class "sponsor") (src "img/logos.png")))
+
+	 ;;(img ((class "sponsor") (src "img/logos.png")))
          (h4 "Platinum partners")
          (img ((class "sponsor") (src "img/JS.png")))
          (h4 "Gold partners")
-         (img ((class "sponsor") (src "img/google.png")))         
+	 (img ((class "sponsor") (src "img/Ahrefs.png"))) 
+         #|
+	 (img ((class "sponsor") (src "img/google.png")))         
          (img ((class "sponsor") (src "img/msr.png")))         
          (img ((class "sponsor") (src "img/mozilla.png")))
 	 #;(img ((class "sponsor") (src "img/fp-complete.png")))         
          #;(img ((class "sponsor") (src "img/nsf.png")))
          (img ((class "sponsor") (src "img/ol.jpg")))
          (img ((class "sponsor") (src "img/standard-chartered.png")))
-         (h4 "Silver partners")
+	 |#
+         (h4 "Silver partners")	 
          (img ((class "sponsor") (src "img/bloomberg.png")))
+	 #|
 	 (img ((class "sponsor") (src "img/creditsuisse.png")))
 	 (img ((class "sponsor") (src "img/cyberpoint.png"))) " "
 	 (img ((class "sponsor") (src "img/erl_solutions_logo.png")))
