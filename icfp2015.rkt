@@ -1227,6 +1227,7 @@ World Culture, a 200 m walk from the conference venue.")))))
      (p "The " (a ((href "http://www.sigplan.org/PAC.htm")) "SIGPLAN Professional Activities Committee") " can potentially provide supplemental financial "
         "support for attending ICFP in the form of student grants, child-care support, companion travel "
         "grants, and long-distance internation travel support. "
+	"These grants are only available to student presenters and co-authors. "
         "To apply, follow the instructions found " (a ((href "http://www.sigplan.org/PAC.htm")) "here") ".")
    #|  
      (h2 "Getting to the venue")
