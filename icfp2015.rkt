@@ -921,7 +921,8 @@ DARPA's HACMS Program"))
     `(a ((href ,(string-append "mailto:" addr)))
         ,addr)))
 (define ally "Ally Skills Tutorial")
-(define SFPW "Scheme and Functional Programming Workshop")
+(define SFPW `(a ((href "http://andykeep.com/SchemeWorkshop2015/"))
+                 "Scheme and Functional Programming Workshop"))
 (define PLMW `(a ((href "http://www.cis.upenn.edu/~sweirich/icfp-plmw15/")) 
 		 "Programming Languages Mentoring Workshop"))
 
@@ -1438,8 +1439,8 @@ postal address."))))
      (p "There are several ways that students may receive support for participation at the conference.")
      (dl
       (dt (b "The SIGPLAN Programming Languages Mentoring Workshop at ICFP"))
-      (dd "ICFP is hosting the SIGPLAN Programming Languages Mentoring Workshop "
-	  "this and there are a number travel grants available to student attendees. "
+      (dd "ICFP is hosting the SIGPLAN Programming Languages Mentoring Workshop, "
+	  "which will provide a number travel grants for student attendees. "
 	  "See the " 
 	  (a ((href "https://www.cis.upenn.edu/~sweirich/icfp-plmw15/"))
 	     "PLMW")
