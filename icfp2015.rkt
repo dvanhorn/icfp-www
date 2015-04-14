@@ -945,7 +945,8 @@ DARPA's HACMS Program"))
   `(a ((href "http://www.wgp-sigplan.org/farmer/doku.php?id=2015"))
       "Workshop on Generic Programming"))
 (define HOPE 
-  "Workshop on Higher-order Programming with Effects")
+  `(a ((href "http://users-cs.au.dk/birke/hope-2015/"))
+      "Workshop on Higher-order Programming with Effects"))
 
 (define FHPC
   "Workshop on Functional High-Performance Computing")
