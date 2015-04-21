@@ -353,7 +353,9 @@
       (p ((class "indent2")) (a ((href "http://cyberpointllc.com/")) "CyberPoint"))
       (p ((class "indent2")) (a ((href "https://www.erlang-solutions.com/")) "Erlang Solutions"))
       (p ((class "indent2")) (a ((href "http://www.facebook.com/")) "Facebook"))
+|#
       (p ((class "indent2")) (a ((href "http://corp.galois.com/")) "Galois"))
+#|
       (p ((class "indent2")) (a ((href "http://hiperfit.dk/")) "HIPERFIT"))
       (p ((class "indent2")) (a ((href "https://klarna.com/")) "Klarna")) " "
       (p ((class "indent2")) (a ((href "http://www.lexifi.com/")) "Lexifi"))            
@@ -892,7 +894,9 @@ DARPA's HACMS Program"))
 	 (img ((class "sponsor") (src "img/cyberpoint.png"))) " "
 	 (img ((class "sponsor") (src "img/erl_solutions_logo.png")))
 	 (img ((class "sponsor") (src "img/fb.png")))
-	 (img ((class "sponsor") (src "img/galois.png"))) " "
+|#
+	 (img ((class "sponsor") (src "img/galois.png")))
+#|
          (img ((class "sponsor") (src "img/klarna.png")))
 	 (img ((class "sponsor") (src "img/lexifi.png")))               	 
          #;" "	 
