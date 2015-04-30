@@ -343,7 +343,9 @@
       (p ((class "indent2")) (a ((href "https://www.mozilla.org/")) "Mozilla"))
       #;(p ((class "indent2")) (a ((href "https://www.fpcomplete.com/")) "FP Complete"))      
       #;(p ((class "indent2")) (a ((href "http://nsf.gov/")) "National Science Foundation"))
+|#
       (p ((class "indent2")) (a ((href "http://labs.oracle.com/")) "Oracle Labs"))
+#|
       (p ((class "indent2")) (a ((href "http://www.standardchartered.com/")) "Standard Chartered Bank"))
 |#
       (p ((class "indent1")) "Silver partners")
@@ -884,7 +886,9 @@ DARPA's HACMS Program"))
          (img ((class "sponsor") (src "img/mozilla.png")))
 	 #;(img ((class "sponsor") (src "img/fp-complete.png")))         
          #;(img ((class "sponsor") (src "img/nsf.png")))
+|#
          (img ((class "sponsor") (src "img/ol.jpg")))
+#|
          (img ((class "sponsor") (src "img/standard-chartered.png")))
 	 |#
          (h4 "Silver partners")	 
@@ -939,7 +943,8 @@ DARPA's HACMS Program"))
   `(a ((href "http://www.haskell.org/haskell-symposium/2015/"))
       "Haskell Symposium"))
 (define ML   
-  "ML Family Workshop")
+  `(a ((href "http://www.mlworkshop.org/ml2015/")) "ML Family Workshop"))
+
 (define HIW `(a ((href "http://www.haskell.org/haskellwiki/HaskellImplementorsWorkshop"))
 		"Haskell Implementors Workshop"))
 (define HART 
@@ -953,9 +958,15 @@ DARPA's HACMS Program"))
       "Workshop on Higher-order Programming with Effects"))
 
 (define FHPC
-  "Workshop on Functional High-Performance Computing")
+  `(a ((href "https://sites.google.com/site/fhpcworkshops/")) 
+      "Workshop on Functional High-Performance Computing"))
+
 (define OCAML
-  "OCaml Workshop")
+  `(a ((href "https://ocaml.org/meetings/ocaml/2015/")) "OCaml Workshop"))
+
+
+
+
 
 (define affiliated.xexpr
   (make-page
