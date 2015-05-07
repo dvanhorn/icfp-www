@@ -357,6 +357,7 @@
       (p ((class "indent2")) (a ((href "http://www.facebook.com/")) "Facebook"))
 |#
       (p ((class "indent2")) (a ((href "http://corp.galois.com/")) "Galois"))
+      (p ((class "indent2")) (a ((href "http://www.uchicago.edu/")) "The University of Chicago"))
 #|
       (p ((class "indent2")) (a ((href "http://hiperfit.dk/")) "HIPERFIT"))
       (p ((class "indent2")) (a ((href "https://klarna.com/")) "Klarna")) " "
@@ -900,6 +901,7 @@ DARPA's HACMS Program"))
 	 (img ((class "sponsor") (src "img/fb.png")))
 |#
 	 (img ((class "sponsor") (src "img/galois.png")))
+	 (img ((class "sponsor") (src "img/UChicago.png")))
 #|
          (img ((class "sponsor") (src "img/klarna.png")))
 	 (img ((class "sponsor") (src "img/lexifi.png")))               	 
