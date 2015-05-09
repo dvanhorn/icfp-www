@@ -1740,7 +1740,7 @@ postal address."))))
 	   "Amr Sabry (Indiana University), "
 	   "and Sam Tobin-Hochstadt (Indiana University)")
 
-       (dt "Functional Pearl: Let splay structures do the trick")
+       (dt "Functional Pearl: Functional Pearl: A Smart View on Datatypes")
        (dd "Mauro Jaskelioff (CIFASIS - CONICET) "
 	   "and Exequiel Rivas (CIFASIS - CONICET)")
 
