@@ -782,6 +782,7 @@
 
 	 (h3 "News")
 	 (ul 
+          (li "The " (a ((href "accepted.html")) "list of accepted papers") " is now online.")	 
 	  (li "The "
 	      (a ((href "https://www.cis.upenn.edu/~sweirich/icfp-plmw15/")) 
 		 "Programming Languages Mentoring Workshop")
@@ -821,7 +822,6 @@ DARPA's HACMS Program"))
 
           (li "Details of the 2014 " (a ((href "http://icfpcontest.org/")) "Programming Contest") " have been announced.  The contest starts 25 July.")
           (li (a ((href "https://regmaster4.com/2014conf/ICFP14/register.php")) "Registration") " is now open!  Early registration ends 3 August.")
-          (li "The " (a ((href "accepted.html")) "list of accepted papers") " is now online.")	 
 	  (li "The " (a ((href "affiliated.html")) "affiliated event") " schedule is now available."))
          
          ,@important-dates
@@ -1685,148 +1685,174 @@ postal address."))))
        (h1 "Accepted papers"))
 
       (dl
-       (dt "On Teaching *How to Design Programs*: Observations from a Newcomer")
-       (dd (a ((href "http://www.cs.tufts.edu/~nr")) "Norman Ramsey"))
-       
-       (dt "Folding Domain-Specific Languages: Deep and Shallow Embeddings")
-       (dd (a ((href "http://www.cs.ox.ac.uk/jeremy.gibbons/")) "Jeremy Gibbons")
-	   " and "
-	   (a ((href "http://www.cs.ox.ac.uk/people/nicolas.wu/")) "Nicolas Wu"))
-       
-       (dt "Pattern matching without K")
-       (dd "Jesper Cockx, Dominique Devriese and Frank Piessens")
+       (dt "Foundational Extensible Corecursion: A Proof Assistant Perspective")
+       (dd "Jasmin Christian Blanchette (Inria & LORIA, Nancy), "
+	   "Andrei Popescu (Middlesex University), "
+	   "and Dmitriy Traytel (TU M" uuml "nchen)")
 
-       (dt "Settable and Non-Interfering Signal Functions for FRP")
-       (dd "Daniel Winograd-Cort and Paul Hudak")
+       (dt "Noninterference for Free")
+       (dd "William J. Bowman (Northeastern University CCIS) "
+	   "and Amal Ahmed (Northeastern University CCIS)")
 
-       (dt "Safe Zero-cost Coercions for Haskell")
-       (dd (a ((href "http://www.joachim-breitner.de/")) "Joachim Breitner")
-	   ", "
-	   (a ((href "http://www.cis.upenn.edu/~eir/")) "Richard A. Eisenberg")
-	   ", "
-	   (a ((href "http://research.microsoft.com/en-us/people/simonpj/")) "Simon Peyton Jones")
-	   " and "
-	   (a ((href "http://www.seas.upenn.edu/~sweirich")) "Stephanie Weirich"))
+       (dt "Adaptive Lock-Free Data: Purely-Functional to Scalable")
+       (dd "Peter Fogg (Indiana University), "
+	   "Ali Varamesh (Indiana University), "
+	   "and Ryan R. Newton (Indiana University)")
 
-       (dt "Worker/Wrapper/Makes It/Faster")
-       (dd (a ((href "http://www.cs.nott.ac.uk/~jph/")) "Jennifer Hackett")
-	   " and "
-	   (a ((href "http://www.cs.nott.ac.uk/~gmh/")) "Graham Hutton"))
+       (dt "Efficient Communication and Collection with Compact Normal Forms")
+       (dd "Abhishek Kulkarni (Indiana University), "
+	   "Ahmed El-Hassany (Indiana University), "
+	   "Edward Z. Yang (Stanford University), "
+	   "Giovanni Campagna (Stanford University), "
+	   "Ryan Newton (Indiana University), "
+	   "and " Ouml "mer S. A" 287 "acan (Indiana University)")
 
-       (dt "Lem: reusable engineering of real-world semantics")
-       (dd "Dominic P. Mulligan, Scott Owens, Kathryn E. Gray, Tom Ridge and "
-	   (a ((href "http://www.cl.cam.ac.uk/~pes20")) "Peter Sewell"))
+       (dt "Partial Aborts for Transactions via First-Class Continuations")
+       (dd "Matthew Le (Rochester Institute of Technology) "
+	   "and Matthew Fluet (Rochester Institute of Technology)")
 
-       (dt "There is no Fork: an Abstraction for Efficient, Concurrent, and Concise Data Access")
-       (dd "Simon Marlow, Louis Brandy, Jonathan Coens and Jon Purdy")
+       (dt "Blame Assignment for Higher-Order Contracts with Intersection and Union")
+       (dd "Matthias Keil (University of Freiburg) "
+	   "and Peter Thiemann (University of Freiburg)")
 
-       (dt "Hindley-Milner elaboration in applicative style")
-       (dd (a ((href "http://gallium.inria.fr/~fpottier/")) "Francois Pottier"))
+       (dt "1ML - Core and modules united (F-ing first-class modules)")
+       (dd "Andreas Rossberg (Google)")
 
-       (dt "Building Embedded Systems with Embedded DSLs")
-       (dd (a ((href "http://www.galois.com/")) "Patrick Hickey")
-	   ", Lee Pike, Trevor Elliott, James Bielman and John Launchbury")
+       (dt "RRB Vector: A Practical General Purpose Immutable Sequence")
+       (dd "Nicolas Stucki (EPFL, Switzerland), "
+	   "Tiark Rompf (Purdue University), "
+	   "and Vlad Ureche (EPFL, Switzerland)")
 
-       (dt "Compositional Semantics for Composable Continuations: From Abortive to Delimited Control")
-       (dd (a ((href "http://ix.cs.uoregon.edu/~pdownen")) "Paul Downen")
-	   " and "
-	   (a ((href "http://ix.cs.uoregon.edu/~ariola")) "Zena Ariola"))
+       (dt "Pycket: A Tracing JIT For a Functional Language")
+       (dd "Spenser Bauman (Indiana University), "
+	   "Carl Friedrich Bolz (Kings College, London), "
+	   "Robert Hirschfeld (Hassno-Plattner-Institut, Potsdam), "
+	   "Vasily Krilichev (Hassno-Plattner-Institut, Potsdam), "
+	   "Tobias Pape (Hassno-Plattner-Institut, Potsdam), "
+	   "Jeremy G. Siek (Indiana University), "
+	   "and Sam Tobin-Hochstadt (Indiana University)")
 
-       (dt "Maximal Sharing in the Lambda Calculus with letrec")
-       (dd (a ((href "http://www.few.vu.nl/~cgr600")) "Clemens Grabmayer")
-	   " and "
-	   (a ((href "http://rochel.info/")) "Jan Rochel"))
+       (dt "An Optimizing Compiler for a Purely Functional Web-Application Language")
+       (dd "Adam Chlipala (MIT CSAIL)")
 
-       (dt "A Theory of Gradual Effect Systems")
-       (dd (a ((href "http://pleiad.cl/people/fbanados")) "Felipe Ba" ntilde "ados Schwerter") 
-           ", "
-           (a ((href "http://www.cs.ubc.ca/~rxg/")) "Ronald Garcia") 
-           " and " 
-           (a ((href "http://pleiad.cl/people/etanter")) Eacute "ric Tanter"))
+       (dt "Expressing Contract Monitors as Patterns of Communication")
+       (dd "Cameron Swords (Indiana University), "
+	   "Amr Sabry (Indiana University), "
+	   "and Sam Tobin-Hochstadt (Indiana University)")
 
-       (dt "Functional Programming for Dynamic and Large Data with Self-Adjusting Computation")
-       (dd (a ((href "http://www.mpi-sws.org/~chenyan")) "Yan Chen")
-	   ", "
-	   (a ((href "http://www.umut-acar.org/")) "Umut A. Acar")
-	   " and Kanat Tangwongsan")
+       (dt "Functional Pearl: Let splay structures do the trick")
+       (dd "Mauro Jaskelioff (CIFASIS - CONICET) "
+	   "and Exequiel Rivas (CIFASIS - CONICET)")
 
-       (dt "SeLINQ: Tracking Information Across Application-Database Boundaries")
-       (dd "Daniel Schoepe, Daniel Hedin and Andrei Sabelfeld")
+       (dt "Elaborating Evaluation-Order Polymorphism")
+       (dd "Joshua Dunfield (University of British Columbia)")
 
-       (dt "Krivine Nets")
-       (dd (a ((href "http://www.cs.bham.ac.uk/~ohf162/")) "Olle Fredriksson")
-	   " and "
-	   (a ((href "http://www.cs.bham.ac.uk/~drg")) "Dan R. Ghica"))
+       (dt "Bounded Refinement Types")
+       (dd "Niki Vazou (UC San Diego), "
+	   "Alexander Bakst (UC San Diego), "
+	   "and Ranjit Jhala (UC San Diego)")
 
-       (dt "Practical and Effective Higher-Order Optimizations")
-       (dd (a ((href "http://www.lars.com/")) "Lars Bergstrom")
-	   ", "
-	   (a ((href "http://www.cs.rit.edu/~mtf/")) "Matthew Fluet")
-	   ", "
-	   (a ((href "http://cs.uchicago.edu/~jhr")) "John Reppy")
-	   ", Nora Sandler and Matthew Le")
+       (dt "XQuery and Static Typing: Tackling the Problem of Backward Axes")
+       (dd "Pierre Genev" egrave  "s (CNRS) "
+	   "and Nils Gesbert (Universit" eacute " Grenoble Alpes)")
 
-       (dt "Distilling Abstract Machines")
-       (dd (a ((href "https://sites.google.com/site/beniaminoaccattoli/")) "Beniamino Accattoli")
-	   ", "
-	   "Pablo Barenbaum and "
-	   (a ((href "http://lipn.univ-paris13.fr/~mazza/")) "Damiano Mazza"))
+       (dt "Certified Symbolic Management of Financial Multi-Party Contracts")
+       (dd "Patrick Bahr (University of Copenhagen), "
+	   "Jost Berthold (University of Copenhagen), "
+	   "and Martin Elsman (University of Copenhagen)")
 
-       (dt "Type-Based Parametric Analysis of Program Families")
-       (dd "Sheng Chen and "
-	   (a ((href "http://eecs.oregonstate.edu/~erwig")) "Martin Erwig"))
+       (dt "GADTs meet their match")
+       (dd "Georgios Karachalias (Ghent University), "
+	   "Tom Schrijvers (KU Leuven), "
+	   "Dimitrios Vytiniotis (Microsoft Research Cambridge), "
+	   "and Simon Peyton Jones (Microsoft Research Cambridge)")
 
-       (dt "Soft Contract Verification")
-       (dd "Phuc Nguyen"
-	   ", "
-	   (a ((href "http://samth.github.io/")) "Sam Tobin-Hochstadt")
-	   " and "
-	   (a ((href "http://www.cs.umd.edu/~dvanhorn/")) "David Van Horn"))
+       (dt "Denotational cost semantics for functional languages with inductive types")
+       (dd "Norman Danner (Wesleyan University), "
+	   "Daniel R. Licata (Wesleyan University), "
+	   "and Ramyaa Ramyaa (Wesleyan University)")
 
-       (dt "Concurrent NetCore: From Policies to Pipelines")
-       (dd "Cole Schlesinger, Michael Greenberg and David Walker")
+       (dt "Bidirectional Programming in a More Applicative Style")
+       (dd "Kazutaka Matsuda (The University of Tokyo) "
+	   "and Meng Wang (University of Kent)")
 
-       (dt "Homotopical Patch Theory")
-       (dd (a ((href "http://cs.cmu.edu/~cangiuli")) "Carlo Angiuli")
-	   ", "
-	   (a ((href "http://www.cs.cmu.edu/~edmo/")) "Ed Morehouse")
-	   ", "
-	   (a ((href "http://dlicata.web.wesleyan.edu/")) "Daniel Licata")
-	   " and "
-	   (a ((href "http://cs.cmu.edu/~rwh")) "Robert Harper"))
+       (dt "A Predictable Unification Algorithm for Coq Featuring Universe Polymorphism and Overloading")
+       (dd "Beta Ziliani (MPI-SWS) "
+	   "and Matthieu Sozeau (Inria & PPS, Universit" eacute " Paris Diderot)")
 
-       (dt "A Relational Framework for Higher-Order Shape Analysis")
-       (dd (a ((href "http://gowthamk.github.io/")) "Gowtham Kaki")
-	   " and "
-	   (a ((href "https://www.cs.purdue.edu/homes/suresh")) "Suresh Jagannathan"))
+       (dt "Practical Principled FRP: Forget the past, change the future, FRPNow!")
+       (dd "Atze van der Ploeg (Chalmers University of Technology) "
+	   "and Koen Claessen (Chalmers University of Technology)")
 
-       (dt "Coeffects: A calculus of context-dependent computation")
-       (dd (a ((href "http://www.cl.cam.ac.uk/~tp322")) "Tomas Petricek")
-	   ", "
-	   (a ((href "http://dorchard.co.uk/")) "Dominic Orchard")
-	   " and "
-	   (a ((href "http://www.cl.cam.ac.uk/users/am")) "Alan Mycroft"))
+       (dt "Analysing the Complexity of Functional Programs: Higher-Order Meets First-Order")
+       (dd "Martin Avanzini (University of Bologna, Italy & Inria, France), "
+	   "Ugo Dal Lago (University of Bologna, Italy & Inria, France), "
+	   "and Georg Moser (University of Innsbruck)")
 
-       (dt "Refinement Types For Haskell")
-       (dd (a ((href "http://goto.ucsd.edu/~nvazou/")) "Niki Vazou")
-	   ", "
-	   (a ((href "http://www.eseidel.org/")) "Eric L. Seidel")
-	   ", "
-	   (a ((href "http://www.cs.ucsd.edu/~rjhala/")) "Ranjit Jhala")
-	   ", Dimitrios Vytiniotis and Simon Peyton-Jones")
-       
-       (dt "Romeo: a system for more flexible binding-safe programming")
-       (dd (a ((href "http://www.ccs.neu.edu/home/pauls")) "Paul Stansifer")
-	   " and " 
-	   (a ((href "http://www.ccs.neu.edu/home/wand")) "Mitchell Wand"))
+       (dt "Generating Performance Portable Code using Rewrite Rules: From High-level Functional Expressions to High-Performance OpenCL Code")
 
-       (dt "How to Keep Your Neighbours in Order")
-       (dd (a ((href "http://www.strictlypositive.org/")) "Conor McBride"))
+       (dd "Michel Steuwer (The University of Edinburgh, UK), "
+	   "Christian Fensch (Heriot-Watt University, UK), "
+	   "Sam Lindley (The University of Edinburgh, UK), "
+	   "and Christophe Dubach (The University of Edinburgh, UK)")
 
-       (dt "SML# in Industry: A Practical ERP System Development")
-       (dd "Atsushi Ohori, Katsuhiro Ueno, Kazunori Hoshi, Shinji Nozaki, Takashi Sato, Tasuku Makabe and Yuki Ito")
+       (dt "Hygienic Resugaring of Compositional Desugaring")
+       (dd "Justin Pombrio (Brown University) "
+	   "and Shriram Krishnamurthi (Brown University)")
 
-       ))))
+       (dt "Functional Pearl: Two can keep a secret, if one of them uses Haskell")
+       (dd "Alejandro Russo (Chalmers University of Technology)")
+
+       (dt "Which simple types have a unique inhabitant?")
+       (dd "Gabriel Scherer (INRIA) "
+	   "and Didier R" egrave "my (INRIA)")
+
+       (dt "HLIO: Mixing Static and Dynamic Typing for Information-Flow Control in Haskell")
+       (dd "Pablo Buiras (Chalmers University of Technology), "
+	   "Dimitrios Vytiniotis (Microsoft Research), "
+	   "and Alejandro Russo (Chalmers University of Technology)")
+
+       (dt "Algebras and Coalgebras in the Light Affine Lambda Calculus")
+       (dd "Marco Gaboardi (University of Dundee and Harvard University) "
+	   "and Romain P" eacute "choux (Universit" egrave " de Lorraine)")
+
+       (dt "Functional Pearl: A SQL to C Compiler in 500 Lines of Code")
+       (dd "Tiark Rompf (Purdue University) "
+	   "and Nada Amin (EPFL)")
+
+       (dt "A Fast Compiler for NetKAT")
+       (dd "Steffen Smolka (Cornell University), "
+	   "Spiridon Eliopoulos (Inhabited Type), "
+	   "Nate Foster (Cornell University), "
+	   "and Arjun Guha (University of Massachusetts Amherst) ")
+
+       (dt "Structures for structural recursion")
+       (dd "Paul Downen (University of Oregon), "
+	   "Philip Johnson-Freyd (University of Oregon), "
+	   "and Zena M. Ariola (University of Oregon)")
+
+       (dt "Automatic Refunctionalization to a Language with Copattern Matching: With Applications to the Expression Problem")
+       (dd "Tillmann Rendel (University of T" uuml "bingen), "
+	   "Julia Trieflinger (University of T" uuml "bingen), "
+	   "and Klaus Ostermann (University of T" uuml "bingen)")
+
+       (dt "Pilsner: A Compositionally Verified Compiler for a Higher-Order Imperative Language")
+       (dd "Georg Neis (MPI-SWS, Germany), "
+	   "Chung-Kil Hur (Seoul National University), "
+	   "Jan-Oliver Kaiser (MPI-SWS, Germany), "
+	   "Craig McLaughlin (University of Glasgow), "
+	   "Derek Dreyer (MPI-SWS, Germany), "
+	   "and Viktor Vafeiadis (MPI-SWS, Germany)")
+
+       (dt "Practical SMT-Based Type Error Localization")
+       (dd "Zvonimir Pavlinovic (New York University), "
+	   "Tim King (Verimag), "
+	   "and Thomas Wies (New York University)")
+
+       (dt "Learning Refinement Types")
+       (dd "He Zhu (Purdue University), "
+	   "Aditya V. Nori (Microsoft Research), "
+	   "and Suresh Jagannathan (Purdue University)")))))
 
 
 (define (write-page xexpr fn)
@@ -1845,7 +1871,7 @@ postal address."))))
 (write-page student-attendance.xexpr "student-attendance.html")
 (write-page src.xexpr "src.html")
 (write-page sv.xexpr "sv.html")
-#;(write-page accepted.xexpr "accepted.html")
+(write-page accepted.xexpr "accepted.html")
 #;(write-page program.xexpr "program.html")
 
 
