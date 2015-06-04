@@ -258,12 +258,11 @@
       (a ((class "navigation")
           (href "program.html"))
          "Program"))
-     
-     #;
+          
      (li
       ((class "roomy"))
       (a ((class "navigation")
-          (href "https://regmaster4.com/2014conf/ICFP14/register.php"))
+          (href "https://regmaster4.com/2015conf/ICFP15/register.php"))
          "Registration"))     
 
      
@@ -336,11 +335,10 @@
       (p ((class "indent1")) "Gold partners")
       (p ((class "indent2")) "Anonymous donor")
       (p ((class "indent2")) (a ((href "https://ahrefs.com/")) "Ahrefs"))
-      
+      (p ((class "indent2")) (a ((href "https://www.mozilla.org/en-US/research/")) "Mozilla Research"))
 #|
       (p ((class "indent2")) (a ((href "https://google.com/")) "Google"))
       (p ((class "indent2")) (a ((href "http://research.microsoft.com/")) "Microsoft Research"))
-      (p ((class "indent2")) (a ((href "https://www.mozilla.org/")) "Mozilla"))
       #;(p ((class "indent2")) (a ((href "https://www.fpcomplete.com/")) "FP Complete"))      
       #;(p ((class "indent2")) (a ((href "http://nsf.gov/")) "National Science Foundation"))
 |#
@@ -350,10 +348,10 @@
 |#
       (p ((class "indent1")) "Silver partners")
       (p ((class "indent2")) (a ((href "http://www.bloomberg.com")) "Bloomberg"))
+      (p ((class "indent2")) (a ((href "http://www.tsurucapital.com/en/")) "Tsuru Capital"))
 #|
       (p ((class "indent2")) (a ((href "https://www.credit-suisse.com/global/en/")) "Credit Suisse"))
       (p ((class "indent2")) (a ((href "http://cyberpointllc.com/")) "CyberPoint"))
-      (p ((class "indent2")) (a ((href "https://www.erlang-solutions.com/")) "Erlang Solutions"))
       (p ((class "indent2")) (a ((href "http://www.facebook.com/")) "Facebook"))
 |#
       (p ((class "indent2")) (a ((href "http://corp.galois.com/")) "Galois"))
@@ -365,7 +363,13 @@
       #;(p ((class "indent2")) (a ((href "http://www.inria.fr/")) "INRIA"))
       #;(p ((class "indent2")) (a ((href "http://oreilly.com/")) "O'Reilly Media"))
       (p ((class "indent2")) (a ((href "http://twitter.com")) "Twitter"))
+|#
       (p ((class "indent1")) "Bronze partners")
+      (p ((class "indent2")) (a ((href "https://www.erlang-solutions.com/")) "Erlang Solutions"))
+      (p ((class "indent2")) (a ((href "https://www.fireeye.com/")) "FireEye"))
+      (p ((class "indent2")) "PivotCloud")
+
+#|
       (p ((class "indent2")) (a ((href "http://www.alephcloud.com/")) "Alephcloud"))
       (p ((class "indent2")) (a ((href "http://www.intellifactory.com/")) "IntelliFactory"))
       (p ((class "indent2")) (a ((href "http://www.operasoftware.com/")) "Opera Software"))
@@ -782,6 +786,8 @@
 
 	 (h3 "News")
 	 (ul 
+	  (li (a ((href "https://regmaster4.com/2015conf/ICFP15/register.php")) "Registration")
+	      " is now open.")
           (li "The " (a ((href "accepted.html")) "list of accepted papers") " is now online.")	 
 	  (li "The "
 	      (a ((href "https://www.cis.upenn.edu/~sweirich/icfp-plmw15/")) 
@@ -881,10 +887,10 @@ DARPA's HACMS Program"))
          (img ((class "sponsor") (src "img/JS.png")))
          (h4 "Gold partners")
 	 (img ((class "sponsor") (src "img/Ahrefs.png"))) 
+         (img ((class "sponsor") (src "img/moz.png")))
          #|
 	 (img ((class "sponsor") (src "img/google.png")))         
          (img ((class "sponsor") (src "img/msr.png")))         
-         (img ((class "sponsor") (src "img/mozilla.png")))
 	 #;(img ((class "sponsor") (src "img/fp-complete.png")))         
          #;(img ((class "sponsor") (src "img/nsf.png")))
 |#
@@ -894,10 +900,10 @@ DARPA's HACMS Program"))
 	 |#
          (h4 "Silver partners")	 
          (img ((class "sponsor") (src "img/bloomberg.png")))
+         (img ((class "sponsor") (src "img/tsuru.png")))
 	 #|
 	 (img ((class "sponsor") (src "img/creditsuisse.png")))
 	 (img ((class "sponsor") (src "img/cyberpoint.png"))) " "
-	 (img ((class "sponsor") (src "img/erl_solutions_logo.png")))
 	 (img ((class "sponsor") (src "img/fb.png")))
 |#
 	 (img ((class "sponsor") (src "img/galois.png")))
@@ -911,7 +917,12 @@ DARPA's HACMS Program"))
 	 #;(img ((class "sponsor") (src "img/CCIS.png")))
          #;(img ((class "sponsor") (src "img/oreilly.png")))
          (img ((class "sponsor") (src "img/twitter-bird-light-bgs.png")))
+|#
 	 (h4 "Bronze partners")
+         (img ((class "sponsor") (src "img/erl_solutions_logo.png")))
+         (img ((class "sponsor") (src "img/fireeye.png")))
+	 (img ((class "sponsor") (src "img/pivotcloud.png")))
+#|
          (img ((class "sponsor") (src "img/IntelliFactory.png")))
          (img ((class "sponsor") (src "img/opera.png")))
 	 (img ((class "sponsor") (src "img/quviq.jpeg"))) 
