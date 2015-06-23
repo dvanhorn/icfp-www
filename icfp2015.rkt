@@ -10,7 +10,7 @@
 ;; start PC
 
 (define david
-  (person/co '(pub pcm) "David" "Van Horn" "University of Maryland" "http://www.cs.umd.edu/~dvanhorn/" "USA"))
+  (person/co '(pub pcm sr) "David" "Van Horn" "University of Maryland" "http://www.cs.umd.edu/~dvanhorn/" "USA"))
 
 (define program-committee
   (list
@@ -35,7 +35,6 @@
 
 #|
    (person 'pcm "Edwin" "Brady" "University of St Andrews" "http://edwinb.wordpress.com")
-   (person 'pcm "Derek" "Dreyer" "MPI-SWS" "https://www.mpi-sws.org/~dreyer/")
    (person 'pcm "Ralf" "Hinze" "University of Oxford" "http://www.cs.ox.ac.uk/ralf.hinze/")
    (person 'pcm "Zhenjiang" "Hu" "National Institute of Informatics" "http://research.nii.ac.jp/~hu/")
    (person 'pcm "Patricia" "Johann" "Appalachian State University" "http://cs.appstate.edu/~johannp/")
@@ -109,8 +108,11 @@
 (define weirich
   (person 'mentor "Stephanie" "Weirich" "University of Pennsylvania" "http://www.cis.upenn.edu/~sweirich/"))
 
+(define dreyer
+  (person 'sr "Derek" "Dreyer" "MPI-SWS, Saarbrucken" "http://www.mpi-sws.org/~dreyer/"))
+
 (define student-research-committee
-  (list kennedy))
+  (list kennedy dreyer))
 	
 
 (define people
@@ -786,6 +788,11 @@
 
 	 (h3 "News")
 	 (ul 
+	  (li (a ((href "src.html")) "Student Research Competition")
+	      " submissions are due 29th June.  Submit "
+	      (a ((href "https://www.easychair.org/conferences/?conf=icfp2015src"))
+		 "here")
+	      ".")
 	  (li (a ((href "https://regmaster4.com/2015conf/ICFP15/register.php")) "Registration")
 	      " is now open.")
           (li "The " (a ((href "accepted.html")) "list of accepted papers") " is now online.")	 
@@ -1539,14 +1546,14 @@ postal address."))))
 
      (h2 "Prizes")
      (ul
-      (li "Both the top three graduate and the top three "
+      (li "The top three graduate and the top three "
 	  "undergraduate winners will receive prizes of $500, $300, "
 	  "and $200, respectively.")
       (li "All six winners will receive award medals and a two-year "
 	  "complimentary ACM student membership, including a subscription to "
 	  "ACM's Digital Library.")
       (li "The names of the winners will be posted on the SRC web site.")
-      (li "The overall first place winner of the SRC will be invited to participate "
+      (li "The first place winners of the SRC will be invited to participate "
 	  "in the ACM SRC Grand Finals, an on-line round of competitions among "
 	  "the winners of other conference-hosted SRCs.")
       (li "Grand Finalists and their advisors will be invited to the "
@@ -1581,6 +1588,8 @@ postal address."))))
 	     "internship mentors, or other students. However, submissions are "
 	     "individual, so they must focus on the contributions of the student."))
      (h2 "Submission Details")
+     (p (center (a ((href "https://www.easychair.org/conferences/?conf=icfp2015src"))
+		   "https://www.easychair.org/conferences/?conf=icfp2015src")))
      (p "Each submission should include the student author's name, "
 	"institutional affiliation, e-mail address, and postal address; "
 	"research advisor's name; ACM student member number; "
@@ -1607,8 +1616,8 @@ postal address."))))
 	"exceed 800 words and must not be longer than 2 pages. The reference "
 	"list does not count towards these limits. To submit an abstract, "
 	"please register through the " 
-	#;(a ((href "https://www.easychair.org/conferences/?conf=icfp2014src")) "submission page") 
-	"submission page (TBA) "
+	(a ((href "https://www.easychair.org/conferences/?conf=icfp2015src"))
+	   "submission page") 
 	" and follow the "
 	"instructions. Abstracts submitted after the deadline may be considered "
 	"at the committee's discretion, but only after decisions have been made "
@@ -1616,8 +1625,8 @@ postal address."))))
 	"problems, don't hesitate to contact the competition chair. ")
      (h2 "Important Dates")
      (ul
-      (li "Deadline for submission: 29th June (provisional)")
-      (li "Notification of acceptance: 14th July (provisional)"))
+      (li "Deadline for submission: 29th June")
+      (li "Notification of acceptance: 14th July"))
      (h2 "Selection Committee")
      (table
       ,(row "Chair" (get-role 'src))
