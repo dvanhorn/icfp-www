@@ -308,8 +308,7 @@
       ((class "roomy"))
       (a ((class "navigation")
           (href "cfwp.html"))
-         "Call for workshop proposals"))     
-     #;
+         "Call for workshop proposals"))          
      (li
       ((class "roomy"))
       (a ((class "navigation")
@@ -788,6 +787,9 @@
 
 	 (h3 "News")
 	 (ul 
+	  (li "The ICFP 2015 "  (a ((href "http://www.icfpcontest.org/")) "Programming Contest") " will take place from "
+	      "Friday 7 August 2015 at 12:00 UTC and ends on Monday 10 "
+	      "August 2015 at 12:00 UTC.")
 	  (li (a ((href "src.html")) "Student Research Competition")
 	      " submissions are due 29th June.  Submit "
 	      (a ((href "https://www.easychair.org/conferences/?conf=icfp2015src"))
@@ -802,9 +804,6 @@
 	      " is accepting "
 	      "applications for travel grants to attend PLMW @ ICFP. "
 	      "The deadline to apply is April 24th, 2015.")
-	  (li "The ICFP 2015 Programming Contest will take place from "
-	      "Friday 7 August 2015 at 12:00 UTC and ends on Monday 10 "
-	      "August 2015 at 12:00 UTC.  More details will be posted soon.")
 	  (li "Submissions are closed; ICFP 2015 received 119 submissions, the second highest number in ICFP history!")
 	     (li "The " (a ((href "src.html")) "student research competition") " has been announced.  Deadline for submission: 29 June (provisional)."))
 	 #;(ul
