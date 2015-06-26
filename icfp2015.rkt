@@ -1270,6 +1270,50 @@ World Culture, a 200 m walk from the conference venue.")))))
 	(a ((href "http://vancouver.hyatt.com/en/hotel/home.html")) "Hyatt Regency Vancouver") 
 	" in Vancouver BC Canada.")
 
+     (p "Hyatt Regency Vancouver" (br)       
+	"655 Burrard Street" (br)
+	"Vancouver, British Columbia, Canada, V6C 2R7")
+
+     (p "Book your room here: " (a ((href "https://resweb.passkey.com/go/acmicfp2015conf"))
+				   "https://resweb.passkey.com/go/acmicfp2015conf"))
+
+     (p "If you prefer to call in, please dial 1-888-421-1442 (North America) or 1-402-592-6464 (International)")
+
+     (h3 "Getting to the hotel")
+
+     (p "To / From Vancouver International Airport:")
+
+     (p "Canada Line:")
+
+     (p "The Canada Line connects Vancouver International Airport to
+downtown Vancouver in under 30 minutes. Cost is $3.75 for adults and
+$2.50 for children during peak hours each way, plus a $5.00 surcharge
+for all trips originating at the airport. Hyatt Regency Vancouver is
+located at the Burrard Street station and will require a transfer at
+either Granville Station or Waterfront Station.You can also take the
+train to Vancouver City Centre, exit onto Georgia Street and take a
+left, we are located two short blocks away at 655 Burrard
+Street. Please visit www.translink.ca for more information.")
+
+     (p "Taxi:")
+
+     (p "Taxis are available at the airport 24 hours a day, including wheelchair accessible vans. Taxi queue areas are located at both the domestic and international arrivals terminals. There is a flat rate from the Airport to the Hyatt of $31.00 CAD, and is approximately $35.00 CAD from the Hyatt to the Airport as a metered fare. ")
+
+ 
+     (p "To / From the Cruise Ship Dock:")
+     
+     (p "Taxi services are available to and from Canada Place or Ballantyne Pier to our hotel. Cost is approximately $10.00 CAD to $20.00 CAD. Please see our concierge for arrangements.")
+
+ 
+     (p "Via Rail and Amtrak:")
+
+     (p "Both Via Rail and Amtrak serve Vancouver. Taxi to Pacific Central Station is approximately $12.00 CAD. Service is also available on Skytrain (three stops away).")
+
+ 
+     (p "Around the city:")
+
+     (p "Skytrain – this fast and effective transportation system will get you to your destination quickly and easily. The Burrard Station is located across the street from Hyatt Regency Vancouver. Single trip and Day Passes are available.")
+
      #;
      (p "View "
 	(a ((href "https://maps.google.se/maps/ms?msa=0&msid=210997146033221229789.0004ef75436b30b7dddf6&ie=UTF8&t=m&ll=57.698369,11.978016&spn=0.032106,0.073128&z=13&source=embed"))
