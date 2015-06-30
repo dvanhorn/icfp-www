@@ -31,7 +31,7 @@
    (person/co 'pcm "Manuel" "Serrano" "INRIA Sophia Antipolis" "http://www-sop.inria.fr/members/Manuel.Serrano/" "France")
    (person/co 'pcm "Simon" "Thompson" "University of Kent" "http://www.cs.kent.ac.uk/people/staff/sjt/" "UK")
    david
-   (person/co 'pcm "Stephanie" "Weirich" "University of Pennsylvania" "http://www.cis.upenn.edu/~sweirich/" "USA")))
+   (person/co '(pcm sr mentor) "Stephanie" "Weirich" "University of Pennsylvania" "http://www.cis.upenn.edu/~sweirich/" "USA")))
 
 #|
    (person 'pcm "Edwin" "Brady" "University of St Andrews" "http://edwinb.wordpress.com")
@@ -105,14 +105,14 @@
 (define unknown
   (person 'unknown "???" "" "???" #f))
 
-(define weirich
-  (person 'mentor "Stephanie" "Weirich" "University of Pennsylvania" "http://www.cis.upenn.edu/~sweirich/"))
-
 (define dreyer
   (person 'sr "Derek" "Dreyer" "MPI-SWS, Saarbrucken" "http://www.mpi-sws.org/~dreyer/"))
 
+(define lindley
+  (person 'sr "Sam" "Lindley" "University of Edinburgh" "http://homepages.inf.ed.ac.uk/slindley/"))
+
 (define student-research-committee
-  (list kennedy dreyer))
+  (list kennedy dreyer lindley))
 	
 
 (define people
@@ -121,7 +121,7 @@
 	   (append program-committee
 		   contest-committee
 		   student-research-committee
-		   (list fisher reppy wu tom david diatchki anil garcia kennedy reid weirich scherer banados-schwerter)))))
+		   (list fisher reppy wu tom david diatchki anil garcia kennedy reid scherer banados-schwerter)))))
 
 ;; Person Symbol -> Boolean
 (define (has-role? p s)
@@ -787,14 +787,15 @@
 
 	 (h3 "News")
 	 (ul 
+	  (li "The deadline for " (a ((href "src.html")) "Student Research Competition")
+	      " submissions has been extended until 6th July.  Submit "
+	      (a ((href "https://www.easychair.org/conferences/?conf=icfp2015src"))
+		 "here")
+	      ".  Submissions from undergraduates are encouraged!  Travel funding is provided, too!")
+	  (li "Book your room " (a ((href "https://resweb.passkey.com/go/acmicfp2015conf")) "here") ".")
 	  (li "The ICFP 2015 "  (a ((href "http://www.icfpcontest.org/")) "Programming Contest") " will take place from "
 	      "Friday 7 August 2015 at 12:00 UTC and ends on Monday 10 "
 	      "August 2015 at 12:00 UTC.")
-	  (li (a ((href "src.html")) "Student Research Competition")
-	      " submissions are due 29th June.  Submit "
-	      (a ((href "https://www.easychair.org/conferences/?conf=icfp2015src"))
-		 "here")
-	      ".")
 	  (li (a ((href "https://regmaster4.com/2015conf/ICFP15/register.php")) "Registration")
 	      " is now open.")
           (li "The " (a ((href "accepted.html")) "list of accepted papers") " is now online.")	 
@@ -1607,7 +1608,7 @@ postal address."))))
       (li "The top three Grand Finalists will receive an "
 	  "additional $500, $300, and $200.  All "
 	  "Grand Finalists will receive Grand Finalist certificates.")
-      (li "The ACM, Microsoft Research, and our industrial partners "
+      (li ((style "color: red")) "The ACM, Microsoft Research, and our industrial partners "
 	  "provide financial support for students attending the SRC. You can find "
 	  "more information about this on the "
 	  (a ((href "http://src.acm.org/students.html")) "ACM website") 
@@ -1661,14 +1662,14 @@ postal address."))))
 	"please register through the " 
 	(a ((href "https://www.easychair.org/conferences/?conf=icfp2015src"))
 	   "submission page") 
-	" and follow the "
-	"instructions. Abstracts submitted after the deadline may be considered "
+	", and put all information requested above in the PDF that you submit, ignoring the field marked 'Abstract'. "
+	"Abstracts submitted after the deadline may be considered "
 	"at the committee's discretion, but only after decisions have been made "
 	"on all abstracts submitted before the deadline. If you have any "
 	"problems, don't hesitate to contact the competition chair. ")
      (h2 "Important Dates")
      (ul
-      (li "Deadline for submission: 29th June")
+      (li ((style "color: red")) "Deadline for submission: 6th July (extended)")
       (li "Notification of acceptance: 14th July"))
      (h2 "Selection Committee")
      (table
