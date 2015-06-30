@@ -336,9 +336,9 @@
       (p ((class "indent1")) "Gold partners")
       (p ((class "indent2")) "Anonymous donor")
       (p ((class "indent2")) (a ((href "https://ahrefs.com/")) "Ahrefs"))
+      (p ((class "indent2")) (a ((href "https://google.com/")) "Google"))
       (p ((class "indent2")) (a ((href "https://www.mozilla.org/en-US/research/")) "Mozilla Research"))
 #|
-      (p ((class "indent2")) (a ((href "https://google.com/")) "Google"))
       (p ((class "indent2")) (a ((href "http://research.microsoft.com/")) "Microsoft Research"))
       #;(p ((class "indent2")) (a ((href "https://www.fpcomplete.com/")) "FP Complete"))      
       #;(p ((class "indent2")) (a ((href "http://nsf.gov/")) "National Science Foundation"))
@@ -368,14 +368,14 @@
       (p ((class "indent1")) "Bronze partners")
       (p ((class "indent2")) (a ((href "https://www.erlang-solutions.com/")) "Erlang Solutions"))
       (p ((class "indent2")) (a ((href "https://www.fireeye.com/")) "FireEye"))
+      (p ((class "indent2")) (a ((href "http://www.intellifactory.com/")) "IntelliFactory"))
       (p ((class "indent2")) "PivotCloud")
+      (p ((class "indent2")) (a ((href "http://www.systorvest.no/")) "Systor Vest"))
 
 #|
       (p ((class "indent2")) (a ((href "http://www.alephcloud.com/")) "Alephcloud"))
-      (p ((class "indent2")) (a ((href "http://www.intellifactory.com/")) "IntelliFactory"))
       (p ((class "indent2")) (a ((href "http://www.operasoftware.com/")) "Opera Software"))
       (p ((class "indent2")) (a ((href "http://www.quviq.com/")) "QuviQ"))
-      (p ((class "indent2")) (a ((href "http://www.systorvest.no/")) "Systeor Vest AS"))
       |#
       ))))
 
@@ -894,9 +894,9 @@ DARPA's HACMS Program"))
          (img ((class "sponsor") (src "img/JS.png")))
          (h4 "Gold partners")
 	 (img ((class "sponsor") (src "img/Ahrefs.png"))) 
+	 (img ((class "sponsor") (src "img/google.png")))         
          (img ((class "sponsor") (src "img/moz.png")))
          #|
-	 (img ((class "sponsor") (src "img/google.png")))         
          (img ((class "sponsor") (src "img/msr.png")))         
 	 #;(img ((class "sponsor") (src "img/fp-complete.png")))         
          #;(img ((class "sponsor") (src "img/nsf.png")))
@@ -919,7 +919,7 @@ DARPA's HACMS Program"))
          (img ((class "sponsor") (src "img/klarna.png")))
 	 (img ((class "sponsor") (src "img/lexifi.png")))               	 
          #;" "	 
-	 #;(img ((class "sponsor") (src "img/google.png")))
+	 #;
          #;(img ((class "sponsor") (src "img/inria.png")))
 	 #;(img ((class "sponsor") (src "img/CCIS.png")))
          #;(img ((class "sponsor") (src "img/oreilly.png")))
@@ -928,12 +928,12 @@ DARPA's HACMS Program"))
 	 (h4 "Bronze partners")
          (img ((class "sponsor") (src "img/erl_solutions_logo.png")))
          (img ((class "sponsor") (src "img/fireeye.png")))
-	 (img ((class "sponsor") (src "img/pivotcloud.png")))
-#|
          (img ((class "sponsor") (src "img/IntelliFactory.png")))
+	 (img ((class "sponsor") (src "img/pivotcloud.png")))
+	 (img ((class "sponsor") (src "img/systorvestlogo.png")))
+#|
          (img ((class "sponsor") (src "img/opera.png")))
 	 (img ((class "sponsor") (src "img/quviq.jpeg"))) 
-	 (img ((class "sponsor") (src "img/systorvestlogo.png")))
          |#
          )
 	
