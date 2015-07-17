@@ -254,7 +254,6 @@
         (href "index.html"))
        "Home"))
 
-     #;
      (li
       ((class "roomy"))
       (a ((class "navigation")
@@ -1142,122 +1141,255 @@ DARPA's HACMS Program"))
      ((class "col1"))
      (center
       (h1 "Conference program"))
-     (p "The complete program for ICFP and affiliated events is also available as a " (a ((href "program.pdf")) "PDF") " document.")
-     (p "The " (a ((href "http://dl.acm.org/citation.cfm?id=2628136")) "complete proceedings") 
-	" of ICFP 2014 are available from the ACM Digital Library for free for one year.")
-     (h2 "Monday, 1 September")
+     (h2 "Monday, 30 August")
      (dl (dt "8:45-9:00 Opening (General Chair)")
-         (dt ((class "keynotetitle")) "9:00-10:00 Keynote: Kathleen Fisher (Tufts University)")
-         (dd (a ((href "http://dl.acm.org/authorize?N87643")) "Using Formal Methods to Enable More Secure Vehicles: DARPA's HACMS Program"))
+         (dt ((class "keynotetitle")) "9:00-10:00 Keynote: Ras Bodik (University of Washington)")
+         (dd "Program Synthesis: Opportunities for the next Decade")
          (dt "10:00-10:30 Coffee")
-         (dt ((class "session")) "10:30-11:20 Session 1: Domain Specific Languages I")
-         (dt ((class "paper")) (a ((href "http://dl.acm.org/authorize?N87644")) (em "Building Embedded Systems with Embedded DSLs (Experience Report)")))
-         (dd ((class "paper")) "Patrick Hickey (Galois Inc); Lee Pike (Galois Inc); Trevor Elliott (Galois Inc); James Bielman (Galois Inc); John Launchbury (Galois Inc)")
-         (dt ((class "paper")) (a ((href "http://dl.acm.org/authorize?N87755")) (em "Concurrent NetCore: From Policies to Pipelines")))
-         (dd ((class "paper")) "Cole Schlesinger (Princeton University); Michael Greenberg (Princeton University); David Walker (Princeton University)")
-         (dt "11:20-11:40 Break")
-         (dt ((class "session")) "11:40-12:30 Session 2: Static Analysis")
-         (dt ((class "paper")) (a ((href "http://dl.acm.org/authorize?N87756")) (em "SeLINQ: Tracking Information Across Application-Database Boundaries")))
-         (dd ((class "paper")) "Daniel Schoepe (Chalmers University of Technology); Daniel Hedin (Chalmers University of Technology); Andrei Sabelfeld (Chalmers University of Technology)")
-         (dt ((class "paper")) (a ((href "http://dl.acm.org/authorize?N87757")) (em "Type-Based Parametric Analysis of Program Families")))
-         (dd ((class "paper")) "Sheng Chen (Oregon State University); Martin Erwig (Oregon State University)")
-         (dt "12:30-14:00 Lunch")
-         (dt ((class "session")) "14:00-14:50 Session 3: Binding Structure")
-         (dt ((class "paper")) (a ((href "http://dl.acm.org/authorize?N87758")) (em "Romeo: A System for More Flexible Binding-Safe Programming")))
-         (dd ((class "paper")) "Paul Stansifer (Northeastern University);Mitchell Wand (Northeastern University)")
-         (dt ((class "paper")) (a ((href "http://dl.acm.org/authorize?N87759")) (em "Maximal Sharing in the Lambda Calculus with letrec")))
-         (dd ((class "paper")) "Clemens Grabmayer (VU University Amsterdam); Jan Rochel (Universiteit Utrecht)")
-	 (dt "14:50-15:10 Break")
-         (dt ((class "session")) "15:10-16:00 Session 4: Program Optimisation")
-	 (dt ((class "paper")) (a ((href "http://dl.acm.org/authorize?N87750")) (em "Practical and Effective Higher-Order Optimizations")))
-	 (dd ((class "paper")) "Lars Bergstrom (Mozilla Research); Matthew Fluet (Rochester Institute of Technology); John Reppy University of Chicago); Nora Sandler (University of Chicago); Matthew Le (Rochester Institute of Technology)")
-	 (dt ((class "paper")) (a ((href "http://dl.acm.org/authorize?N87751")) (em "Worker/Wrapper/Makes It/Faster")))
-	 (dd ((class "paper")) "Jennifer Hackett (University of Nottingham); Graham Hutton (University of Nottingham)")
-	 (dt "16:00-16:30 Tea")
-	 (dt ((class "session")) "16:30-17:20 Session 5: Context Dependence")
-	 (dt ((class "paper")) (a ((href "http://dl.acm.org/authorize?N87752")) (em "Compositional Semantics for Composable Continuations: From Abortive to Delimited Control")))
-	 (dd ((class "paper")) "Paul Downen (University of Oregon); Zena M. Ariola (University of Oregon)")
-	 (dt ((class "paper")) (a ((href "http://dl.acm.org/authorize?N87753")) (em "Coeffects: A Calculus of Context-Dependent Computation")))
-	 (dd ((class "paper")) "Tomas Petricek (University of Cambridge); Dominic Orchard (University of Cambridge); Alan Mycroft (University of Cambridge)")
-	 (dt "17:20-17:45 Program Chair's Report")
-	 (dt "17:45-19:30 Welcome reception")
-	 (dd "Immediately after the scientic program on Monday, the City of Gothenburg will host a welcome
-reception in the H lounge, just outside the ICFP lecture room."))
+         (dt ((class "session")) "10:30-11:30 Session 1: Compilers I")
+         (dt ((class "paper")) (em "Functional Pearl: A SQL to C Compiler in 500 Lines of Code"))
+	 (dd ((class "paper")) "Tiark Rompf, Purdue University (USA); Nada Amin, EPFL (Switzerland)")
+         (dt ((class "paper")) (em "An Optimizing Compiler for a Purely Functional Web-Application Language"))
+         (dd ((class "paper")) "Adam Chlipala, MIT CSAIL (USA)")
+	 (dt ((class "paper")) (em "Pycket: A Tracing JIT For a Functional Language"))
+         (dd ((class "paper")) 
+	     "Spenser Bauman, Indiana University (USA); "
+	     "Carl Friedrich Bolz, Kings College, London (UK); "
+	     "Robert Hirschfeld, Hassno-Plattner-Institut, Potsdam (Germany); "
+	     "Vasily Krilichev, Hassno-Plattner-Institut, Potsdam (Germany); "
+	     "Tobias Pape, Hassno-Plattner-Institut, Potsdam (Germany); "
+	     "Jeremy G. Siek, Indiana University (USA); "
+	     "Sam Tobin-Hochstadt, Indiana University (USA)")
+	 
+         (dt "11:30-11:50 Break")
+         (dt ((class "session")) "11:50-12:30 Session 2: Types")
+         (dt ((class "paper")) (em "1ML - Core and modules united (F-ing first-class modules)"))
+         (dd ((class "paper")) "Andreas Rossberg, Google (Germany)")
+         (dt ((class "paper")) (em "Bounded Refinement Types"))
+         (dd ((class "paper")) 
+	     "Niki Vazou, UC San Diego (USA); "
+	     "Alexander Bakst, UC San Diego (USA); "
+	     "Ranjit Jhala, UC San Diego (USA)")
 
-     (h2 "Tuesday, 2 September")
-     (dl (dt ((class "keynotetitle")) "9:00-10:00 Keynote: Robert Bruce Findler (Northwestern University)")
-         (dd (a ((href "http://dl.acm.org/authorize?N87754")) "Behavioral Software Contracts"))
-	 (dt "10:00-10:30 Coffee")
-	 (dt ((class "session")) "10:30-11:20 Session 6: Contracts " amp " Scheme")
-	 (dt ((class "paper")) (a ((href "http://dl.acm.org/authorize?N87765")) (em "Soft Contract Verification")))
-	 (dd ((class "paper")) "Phuc Nguyen (University of Maryland); Sam Tobin-Hochstadt (Indiana University); David Van Horn (University of Maryland)")
-	 (dt ((class "paper")) (a ((href "http://dl.acm.org/authorize?N87766")) (em "On Teaching " (bold "How to Design Programs") ": Observations from a Newcomer")))
-	 (dd ((class "paper")) "Norman Ramsey (Tufts University)")
-	 (dt "11:20-11:40 Break")
-	 (dt ((class "session")) "11:40-12:30 Session 7: Tools Used in Anger")
-	 (dt ((class "paper")) (a ((href "http://dl.acm.org/authorize?N87767")) (em "SML# in Industry: A Practical ERP System Development (Experience Report)")))
-         (dd ((class "paper")) "Atsushi Ohori (Tohoku University); Katsuhiro Ueno (Tohoku University); Kazunori Hoshi (NEC Software Tohoku, Ltd.); Shinji Nozaki (NEC Software Tohoku, Ltd.); Takashi Sato (NEC Software Tohoku, Ltd.); Tasuku Makabe (NEC Software Tohoku, Ltd.); Yuki Ito (NEC Software Tohoku, Ltd.)")
-	 (dt ((class "paper")) (a ((href "http://dl.acm.org/authorize?N87768")) (em "Lem: Reusable Engineering of Real-World Semantics")))
-	 (dd ((class "paper")) "Dominic P. Mulligan (University of Cambridge); Scott Owens (University of Kent); Kathryn E. Gray (University of Cambridge); Tom Ridge (University of Leicester); Peter Sewell (University of Cambridge)")
+         (dt "12:30-14:00 Lunch")
+
+
+         (dt ((class "session")) "14:00-14:50 Session 3: Miscellaneous")
+	 (dt ((class "paper")) (em "Applicative Bidirectional Programming with Lenses"))
+	 (dd ((class "paper")) 
+	     "Kazutaka Matsuda, Tohoku University (Japan); "
+	     "Meng Wang, University of Kent (UK)")
+	 (dt ((class "paper")) (em "Hygienic Resugaring of Compositional Desugaring"))
+	 (dd ((class "paper")) 
+	     "Justin Pombrio, Brown University (USA); "
+	     "Shriram Krishnamurthi, Brown University (USA)")
+	 (dt ((class "paper")) (em "XQuery and Static Typing: Tackling the Problem of Backward Axes"))
+	 (dd ((class "paper")) 
+	     "Pierre Genev" egrave "s, CNRS (France); "
+	     "Nils Gesbert, Universit" eacute " Grenoble Alpes (France)")
+
+	 (dt "15:00-15:20 Break")
+
+         (dt ((class "session")) "15:20-16:20 Session 4: Foundations I")
+	 
+	 (dt ((class "paper")) (em "Noninterference for Free"))
+	 (dd ((class "paper")) 
+	     "William J. Bowman, Northeastern University CCIS (USA); "
+	     "Amal Ahmed, Northeastern University CCIS (USA)")
+	 (dt ((class "paper")) (em "Algebras and Coalgebras in the Light Affine Lambda Calculus"))
+	 (dd ((class "paper")) 
+	     "Marco Gaboardi, University of Dundee (UK) and Harvard University (USA); "
+	     "Romain P" eacute "choux, Universit" eacute " de Lorraine (France)")
+	 (dt ((class "paper")) (em "Structures for structural recursion"))
+	 (dd ((class "paper")) 
+	     "Paul Downen, University of Oregon (USA); "
+	     "Philip Johnson-Freyd, University of Oregon (USA); "
+	     "Zena M. Ariola, University of Oregon (USA)")
+
+	 (dt "16:20-16:50 Tea")
+
+	 (dt ((class "session")) "16:50-17:30 Session 5: Cost analysis")
+
+	 (dt ((class "paper")) (em "Denotational cost semantics for functional languages with inductive types"))
+	 (dd ((class "paper")) 
+	     "Norman Danner, Wesleyan University (USA); "
+	     "Daniel R. Licata, Wesleyan University (USA); "
+	     "Ramyaa Ramyaa, Wesleyan University (USA)")
+	 (dt ((class "paper")) (em "Analysing the Complexity of Functional Programs: Higher-Order Meets First-Order"))
+	 (dd ((class "paper")) 
+	     "Martin Avanzini, University of Bologna (Italy) & INRIA (France); "
+	     "Ugo Dal Lago, University of Bologna (Italy) & INRIA (France); "
+	     "Georg Moser, University of Innsbruck (Austria)")
+
+	 (dt "17:35-18:05 Program Chair's Report"))
+	 
+     (h2 "Tuesday, 1 September")
+     (dl (dt ((class "keynotetitle")) "9:00-10:00 Keynote: Mary Sheeran, Chalmers University of Technology (Sweden)")     
+	 (dd "Functional Programming and Hardware Design: Still Interesting after All These Years")
+
+         (dt "10:00-10:30 Coffee")
+	
+	 (dt ((class "session")) "10:30-11:30 Session 6: Theorem provers")
+
+	 (dt ((class "paper")) (em "Pilsner: A Compositionally Verified Compiler for a Higher-Order Imperative Language"))
+	 (dd ((class "paper")) 
+	     "Georg Neis, MPI-SWS (Germany); "
+	     "Chung-Kil Hur, Seoul National University (Republic of Korea); "
+	     "Jan-Oliver Kaiser, MPI-SWS (Germany); "
+	     "Craig McLaughlin, University of Glasgow (UK); "
+	     "Derek Dreyer, MPI-SWS (Germany); "
+	     "Viktor Vafeiadis, MPI-SWS (Germany)")
+	 (dt ((class "paper")) (em "A Unification Algorithm for Coq Featuring Universe Polymorphism and Overloading"))
+	 (dd ((class "paper")) 
+	     "Beta Ziliani, MPI-SWS (Germany); "
+	     "Matthieu Sozeau, INRIA & PPS, Universit" eacute " Paris Diderot (France)")
+	 (dt ((class "paper")) (em "Foundational Extensible Corecursion: A Proof Assistant Perspective"))
+	 (dd ((class "paper")) 
+	     "Jasmin Christian Blanchette, INRIA & LORIA, Nancy (France); "
+	     "Andrei Popescu, Middlesex University. London (UK); "
+	     "Dmitriy Traytel, TU München (Germany)")
+
+	 (dt "11:30-11:50 Break")
+	 (dt ((class "session")) "11:50-12:30 Student Research Competition I")
+
 	 (dt "12:30-14:00 Lunch")
-	 (dt ((class "session")) "14:00 Session 8: Type Systems")
-	 (dt ((class "paper")) (a ((href "http://dl.acm.org/authorize?N87769")) (em "Safe Zero-Cost Coercions for Haskell")))
-	 (dd ((class "paper")) "Joachim Breitner (Karlsruhe Institute of Technology); Richard A. Eisenberg (University of Pennsylvania); Simon Peyton Jones (Microsoft Research); Stephanie Weirich (University of Pennsylvania)")
-	 (dt ((class "paper")) (a ((href "http://dl.acm.org/authorize?N87760")) (em "Hindley-Milner Elaboration in Applicative Style (Functional Pearl)")))
-	 (dd ((class "paper")) "Francois Pottier (INRIA)")
-	 (dt "14:50-15:10 Break")
-	 (dt ((class "session")) "15:10-16:00 Session 9: Incremental Computing")
-	 (dt ((class "paper")) (a ((href "http://dl.acm.org/authorize?N87761")) (em "Settable and Non-Interfering Signal Functions for FRP")))
-	 (dd ((class "paper")) "Daniel Winograd-Cort (Yale University); Paul Hudak (Yale University)")
-	 (dt ((class "paper")) (a ((href "http://dl.acm.org/authorize?N87762")) (em "Functional Programming for Dynamic and Large Data with Self-Adjusting Computation")))
-	 (dd ((class "paper")) "Yan Chen (Max Planck Institute for Software Systems); Umut Acar (Carnegie Mellon University); Kanat Tangwongsan (Mahidol University)")
-	 (dt "16:00-16:30 Tea")
-	 (dt "16:30-17:10 ICFP Contest Presentation")
-	 (dt "17:10-17:30 ICFP 2004 Most Influential Paper Award")
-	 (dt "20:00-late Banquet")
-	 (dd "The conference banquet takes place in Eriksbergshallen, on the north bank of the river. The building
-used to house the mechanical workshops of Eriksbergsvarvet, one of the main shipyards in Gothenburg
-in the 19th and 20th centuries. Buses will leave the conference centre at 19:00 to take participants to the banquet venue.
-Buses also take participants back to the city centre/conference venue after the banquet."))
-     (h2 "Wednesday, 3 September")
-     (dl (dt ((class "keynotetitle")) "9:00-10:00 Keynote: Stephanie Weirich (University of Pennsylvania)")
-	 (dd (a ((href "http://dl.acm.org/authorize?N87763")) "Depending on Types"))
+
+	 (dt ((class "session")) "14:00-15:00 Session 7: Parallel")
+
+	 (dt ((class "paper")) (em "Generating Performance Portable Code using Rewrite Rules: From High-level Functional Expressions to High-Performance OpenCL Code"))
+	 (dd ((class "paper")) 
+	     "Michel Steuwer, The University of Edinburgh (UK); "
+	     "Christian Fensch, Heriot-Watt University (UK); "
+	     "Sam Lindley, The University of Edinburgh (UK); "
+	     "Christophe Dubach, The University of Edinburgh (UK)")
+	 (dt ((class "paper")) (em "Adaptive Lock-Free Maps: Purely-Functional to Scalable"))
+	 (dd ((class "paper")) 
+	     "Ryan R. Newton, Indiana University (USA); "
+	     "Peter Fogg, Indiana University (USA); "
+	     "Ali Varamesh, Indiana University (USA)")
+	 (dt ((class "paper")) (em "Partial Aborts for Transactions via First-Class Continuations"))
+	 (dd ((class "paper")) 
+	     "Matthew Le, Rochester Institute of Technology (USA); "
+	     "Matthew Fluet, Rochester Institute of Technology (USA)")
+
+	 (dt "15:00-15:20 Break")
+	 
+	 (dt ((class "session")) "15:20-16:20 Session 8: Foundations II")
+
+	 (dt ((class "paper")) (em "Which simple types have a unique inhabitant?"))
+	 (dd ((class "paper")) 
+	     "Gabriel Scherer, INRIA (France); "
+	     "Didier R" eacute "my, INRIA (France)")
+	 (dt ((class "paper")) (em "Elaborating Evaluation-Order Polymorphism"))
+	 (dd ((class "paper")) 
+	     "Joshua Dunfield, University of British Columbia (Canada)")
+	 (dt ((class "paper")) (em "Automatic Refunctionalization to a Language with Copattern Matching: With Applications to the Expression Problem"))
+	 (dd ((class "paper")) 
+	     "Tillmann Rendel, University of T" uuml "bingen (Germany); "
+	     "Julia Trieflinger, University of T" uuml "bingen (Germany); "
+	     "Klaus Ostermann, University of T" uuml "bingen (Germany)")
+
+	 (dt "16:20-16:50 Tea")
+
+	 (dt ((class "session")) "10:30-11:20 Session 9: Information flow")
+
+	 (dt ((class "paper")) (em "Functional Pearl: Two can keep a secret, if one of them uses Haskell"))
+	 (dd ((class "paper")) 
+	     "Alejandro Russo, Chalmers University of Technology (Sweden)")
+	 (dt ((class "paper")) (em "HLIO: Mixing Static and Dynamic Typing for Information-Flow Control in Haskell"))
+	 (dd ((class "paper")) 
+	     "Pablo Buiras, Chalmers University of Technology (Sweden); "
+	     "Dimitrios Vytiniotis, Microsoft Research (UK); "
+	     "Alejandro Russo, Chalmers University of Technology (Sweden)")
+
+	 (dt "17:35-18:05 ICFP Contest Presentation"))
+	 
+	 
+     (h2 "Wednesday, 2 September")
+
+     (dl (dt ((class "keynotetitle")) "9:00-10:00 Keynote: John Hughes, Chalmers University of Technology (Sweden) and John Peterson, Western State Colorado University (USA)")     
+	 (dd "Tribute to Paul Hudak")
+
 	 (dt "10:00-10:30 Coffee")
-	 (dt ((class "session")) "10:30-11:20 Session 10: Homotopy Type Theory")
-	 (dt ((class "paper")) (a ((href "http://dl.acm.org/authorize?N87764")) (em "Homotopical Patch Theory")))
-	 (dd ((class "paper")) "Carlo Angiuli (Carnegie Mellon University); Ed Morehouse (Carnegie Mellon University); Daniel Licata (Wesleyan University); Robert Harper (Carnegie Mellon University)")
-	 (dt ((class "paper")) (a ((href "http://dl.acm.org/authorize?N87775")) (em "Pattern Matching without K")))
-	 (dd ((class "paper")) "Jesper Cockx (KU Leuven); Dominique Devriese (KU Leuven); Frank Piessens (KU Leuven)")
-	 (dt "11:20-11:40 Break")
-	 (dt ((class "session")) "11:40-12:30 Session 11: Abstract Interpretation")
-	 (dt ((class "paper")) (a ((href "http://dl.acm.org/authorize?N87776")) (em "Refinement Types For Haskell")))
-	 (dd ((class "paper")) "Niki Vazou (UC San Diego); Eric L. Seidel (UC San Diego); Ranjit Jhala (UC San Diego); Dimitrios Vytiniotis (Microsoft Research); Simon Peyton-Jones (Microsoft Research)")
-	 (dt ((class "paper")) (a ((href "http://dl.acm.org/authorize?N87777")) (em "A Theory of Gradual Effect Systems")))
-	 (dd ((class "paper")) "Felipe Bañados Schwerter (University of Chile); Ronald Garcia (University of British Columbia); " Eacute "ric Tanter (University of Chile)")
+
+	 (dt ((class "session")) "10:30-11:30 Session 10: Domain-specific languages")
+
+	 (dt ((class "paper")) (em "Practical Principled FRP: Forget the past, change the future, FRPNow!"))
+	 (dd ((class "paper")) 
+	     "Atze van der Ploeg, Chalmers University of Technology (Sweden); "
+	     "Koen Claessen, Chalmers University of Technology (Sweden)")
+	 (dt ((class "paper")) (em "Certified Symbolic Management of Financial Multi-Party Contracts"))
+	 (dd ((class "paper")) 
+	     "Patrick Bahr, University of Copenhagen (Denmark); "
+	     "Jost Berthold, Commonwealth Bank of Australia (Australia); "
+	     "Martin Elsman, University of Copenhagen (Denmark)")
+	 (dt ((class "paper")) (em "A Fast Compiler for NetKAT"))
+	 (dd ((class "paper")) 
+	     "Steffen Smolka, Cornell University (USA); "
+	     "Spiridon Eliopoulos, Inhabited Type LLC (USA); "
+	     "Nate Foster, Cornell University (USA); "
+	     "Arjun Guha, University of Massachusetts Amherst (USA)")
+
+	 (dt ((class "session")) "11:50-12:30 Student Research Competition II")
+
 	 (dt "12:30-14:00 Lunch")
-	 (dt ((class "session")) "14:00-14:50 Session 12: Dependent Types")
-	 (dt ((class "paper")) (a ((href "http://dl.acm.org/authorize?N87778")) (em "How to Keep Your Neighbours in Order")))
-	 (dd ((class "paper")) "Conor McBride (University of Strathclyde)")
-	 (dt ((class "paper")) (a ((href "http://dl.acm.org/authorize?N87779")) (em "A Relational Framework for Higher-Order Shape Analysis")))
-	 (dd ((class "paper")) "Gowtham Kaki (Purdue); Suresh Jagannathan (Purdue)")
-	 (dt "14:50-15:10 Break")
-	 (dt ((class "session")) "15:10-16:00 Session 13: Domain Specific Languages II")
-	 (dt ((class "paper")) (a ((href "http://dl.acm.org/authorize?N87770")) (em "There is no Fork: an Abstraction for Efficient, Concurrent, and Concise Data Access")))
-	 (dd ((class "paper")) "Simon Marlow (Facebook); Louis Brandy (Facebook); Jonathan Coens (Facebook); Jon Purdy (Facebook)")
-	 (dt ((class "paper")) (a ((href "http://dl.acm.org/authorize?N87771")) (em "Folding Domain-Specific Languages: Deep and Shallow Embeddings (Functional Pearl)")))
-	 (dd ((class "paper")) "Jeremy Gibbons (University of Oxford); Nicolas Wu (University of Oxford)")
-	 (dt "16:00-16:30 Tea")
-	 (dt ((class "session")) "16:30-17:20 Session 14: Abstract Machines")
-	 (dt ((class "paper")) (a ((href "http://dl.acm.org/authorize?N87772")) (em "Krivine Nets")))
-	 (dd ((class "paper")) "Olle Fredriksson (University of Birmingham); Dan Ghica (University of Birmingham)")
-	 (dt ((class "paper")) (a ((href "http://dl.acm.org/authorize?N87773")) (em "Distilling Abstract Machines")))
-	 (dd ((class "paper")) "Beniamino Accattoli (University of Bologna); Pablo Barenbaum (University of Buenos Aires); Damiano Mazza (Universit" eacute " Paris 13)")
-	 (dt "17:20-17:40 Student Research Competition Award Presentation")
-	 (dt "17:40-18:00 ICFP 2015 Advert & Closing"))
-     (h2 "Thursday, 4 September")
-     (dl (dt "18:30-20:30 Industrial reception")
-	 (dd "The industrial reception, supported by our platinum and gold sponsors, takes place at the Museum of
-World Culture, a 200 m walk from the conference venue.")))))
+
+	 (dt ((class "session")) "14:00-15:00 Session 11: Data structures")
+
+	 (dt ((class "paper")) (em "RRB Vector: A Practical General Purpose Immutable Sequence"))
+	 (dd ((class "paper")) 
+	     "Nicolas Stucki, EPFL (Switzerland); "
+	     "Tiark Rompf, Purdue University (USA); "
+	     "Vlad Ureche, EPFL (Switzerland)")
+	 (dt ((class "paper")) (em "Functional Pearl: A Smart View on Datatypes"))
+	 (dd ((class "paper")) 
+	     "Mauro Jaskelioff, CIFASIS - CONICET (Argentina); "
+	     "Exequiel Rivas, CIFASIS - CONICET (Argentina)")
+	 (dt ((class "paper")) (em "Efficient Communication and Collection with Compact Normal Forms"))
+	 (dd ((class "paper")) 
+	     "Abhishek Kulkarni, Indiana University (USA); "
+	     "Ahmed El-Hassany, Indiana University (USA); "
+	     "Edward Z. Yang, Stanford University (USA); "
+	     "Giovanni Campagna, Stanford University (USA); "
+	     "Ryan Newton, Indiana University (USA); "
+	     Ouml "mer S. A" 287 "acan, Indiana University (USA)")
+
+
+	 (dt "15:00-15:20 Break")
+
+	 (dt ((class "session")) "15:20-16:20 Session 12: Contracts")
+
+	 (dt ((class "paper")) (em "Blame Assignment for Higher-Order Contracts with Intersection and Union"))
+	 (dd ((class "paper")) 
+	     "Matthias Keil, University of Freiburg (Germany); "
+	     "Peter Thiemann, University of Freiburg (Germany)")
+	 (dt ((class "paper")) (em "Expressing Contract Monitors as Patterns of Communication"))
+	 (dd ((class "paper")) 
+	     "Cameron Swords, Indiana University (USA); "
+	     "Amr Sabry, Indiana University (USA); "
+	     "Sam Tobin-Hochstadt, Indiana University (USA)")
+	 (dt ((class "paper")) (em "Learning Refinement Types"))
+	 (dd ((class "paper")) 
+	     "He Zhu, Purdue University (USA); "
+	     "Aditya V. Nori, Microsoft Research (USA); "
+	     "Suresh Jagannathan, Purdue University (USA)")
+
+	 (dt "16:20-16:50 Tea")
+	 (dt ((class "session")) "16:50-17:30 Session 13: Type checking")
+
+	 (dt ((class "paper")) (em "Practical SMT-Based Type Error Localization"))
+	 (dd ((class "paper")) 
+	     "Zvonimir Pavlinovic, New York University (USA); "
+	     "Tim King, Verimag (France); "
+	     "Thomas Wies, New York University (USA)")
+	 (dt ((class "paper")) (em "GADTs Meet their Match: Pattern-Matching Warnings That Account for GADTs, Guards, and Laziness"))
+	 (dd ((class "paper")) 
+	     "Georgios Karachalias, Ghent University (Belgium); "
+	     "Tom Schrijvers, KU Leuven (Belgium); "
+	     "Dimitrios Vytiniotis, Microsoft Research Cambridge (UK); "
+	     "Simon Peyton Jones, Microsoft Research Cambridge (UK)")
+
+	 (dt "17:35-17:55 Closing")))))
 
 (define local.xexpr
   (make-page 
@@ -1936,6 +2068,6 @@ postal address."))))
 (write-page src.xexpr "src.html")
 (write-page sv.xexpr "sv.html")
 (write-page accepted.xexpr "accepted.html")
-#;(write-page program.xexpr "program.html")
+(write-page program.xexpr "program.html")
 
 
