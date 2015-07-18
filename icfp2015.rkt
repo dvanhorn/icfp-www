@@ -1454,6 +1454,11 @@ Street. Please visit www.translink.ca for more information.")
 	   "ICFP2014 locations")
 	" in a larger map.")
 
+     (h3 "Restaurants")
+
+     (p "There is a " (a ((href "https://www.google.com/maps/d/edit?mid=z9qwa7h0iGE0.kN2QLuYO25Q4&usp=sharing")) "map")
+	" of nearby restaurants.")
+
      (h2 "Support from the SIGPLAN Professional Activities Committee")
      (p "The " (a ((href "http://www.sigplan.org/PAC.htm")) "SIGPLAN Professional Activities Committee") " can potentially provide supplemental financial "
         "support for attending ICFP in the form of student grants, child-care support, companion travel "
