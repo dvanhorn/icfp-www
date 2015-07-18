@@ -786,6 +786,7 @@
 
 	 (h3 "News")
 	 (ul 
+	  (li "The " (a ((href "program.html")) "program") " for ICFP 2015 has been finalized.")
 	  (li "The deadline for " (a ((href "src.html")) "Student Research Competition")
 	      " submissions has been extended until 6th July.  Submit "
 	      (a ((href "https://www.easychair.org/conferences/?conf=icfp2015src"))
