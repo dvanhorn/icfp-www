@@ -1142,7 +1142,7 @@ DARPA's HACMS Program"))
      ((class "col1"))
      (center
       (h1 "Conference program"))
-     (h2 "Monday, 30 August")
+     (h2 "Monday, 31 August")
      (dl (dt "8:45-9:00 Opening (General Chair)")
          (dt ((class "keynotetitle")) "9:00-10:00 Keynote: Ras Bodik (University of Washington)")
          (dd "Program Synthesis: Opportunities for the next Decade")
