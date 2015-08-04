@@ -1425,6 +1425,9 @@ DARPA's HACMS Program"))
 	". "
 	"The hotel rate is CAD $185 / night + tax.")
 
+     (p ((style "color: red")) "The hotel block is currently booked.  We are negotiating "
+	"with the hotel to expand the block.  More details will be posted soon.  (4 Aug)")
+
      (p "If you prefer to call in, please dial 1-888-421-1442 (North America) or 1-402-592-6464 (International)")
 
      (h3 "Getting to the hotel")
