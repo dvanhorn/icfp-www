@@ -1147,7 +1147,7 @@ DARPA's HACMS Program"))
          (dt ((class "keynotetitle")) "9:00-10:00 Keynote: Ras Bodik (University of Washington)")
          (dd "Program Synthesis: Opportunities for the next Decade")
          (dt "10:00-10:30 Coffee")
-         (dt ((class "session")) "10:30-11:30 Session 1: Compilers I")
+         (dt ((class "session")) "10:30-11:30 Session 1: Compilers")
          (dt ((class "paper")) (em "Functional Pearl: A SQL to C Compiler in 500 Lines of Code"))
 	 (dd ((class "paper")) "Tiark Rompf, Purdue University (USA); Nada Amin, EPFL (Switzerland)")
          (dt ((class "paper")) (em "An Optimizing Compiler for a Purely Functional Web-Application Language"))
@@ -1222,7 +1222,8 @@ DARPA's HACMS Program"))
 	     "Ugo Dal Lago, University of Bologna (Italy) & INRIA (France); "
 	     "Georg Moser, University of Innsbruck (Austria)")
 
-	 (dt "17:35-18:05 Program Chair's Report"))
+	 (dt "17:35-18:05 Program Chair's Report")
+	 (dt ((class "session")) "18:15-19:45 Poster Session / Welcome Reception: Hyatt Regency"))
 	 
      (h2 "Tuesday, 1 September")
      (dl (dt ((class "keynotetitle")) "9:00-10:00 Keynote: Mary Sheeran, Chalmers University of Technology (Sweden)")     
@@ -1255,7 +1256,7 @@ DARPA's HACMS Program"))
 
 	 (dt "12:30-14:00 Lunch")
 
-	 (dt ((class "session")) "14:00-15:00 Session 7: Parallel")
+	 (dt ((class "session")) "14:00-15:00 Session 7: Parallelism")
 
 	 (dt ((class "paper")) (em "Generating Performance Portable Code using Rewrite Rules: From High-level Functional Expressions to High-Performance OpenCL Code"))
 	 (dd ((class "paper")) 
@@ -1292,7 +1293,7 @@ DARPA's HACMS Program"))
 
 	 (dt "16:20-16:50 Tea")
 
-	 (dt ((class "session")) "10:30-11:20 Session 9: Information flow")
+	 (dt ((class "session")) "16:50-17:30 Session 9: Information flow")
 
 	 (dt ((class "paper")) (em "Functional Pearl: Two can keep a secret, if one of them uses Haskell"))
 	 (dd ((class "paper")) 
@@ -1303,7 +1304,10 @@ DARPA's HACMS Program"))
 	     "Dimitrios Vytiniotis, Microsoft Research (UK); "
 	     "Alejandro Russo, Chalmers University of Technology (Sweden)")
 
-	 (dt "17:35-18:05 ICFP Contest Presentation"))
+	 (dt "17:35-18:05 ICFP Contest Presentation")
+
+	 (dt ((class "session")) "20:00-22:30 Banquet: Vancouver Aquarium")
+	 (dd "Busses depart from Hyatt Regency 19:30"))
 	 
 	 
      (h2 "Wednesday, 2 September")
@@ -1390,7 +1394,15 @@ DARPA's HACMS Program"))
 	     "Dimitrios Vytiniotis, Microsoft Research Cambridge (UK); "
 	     "Simon Peyton Jones, Microsoft Research Cambridge (UK)")
 
-	 (dt "17:35-17:55 Closing")))))
+	 (dt "17:35-17:55 Closing")
+
+	 (dt ((class "session")) "18:30--20:30 " (a ((href "http://www.meetup.com/PolyglotVancouver/events/222208655/"))
+						    "Polyglot meetup")
+	     ", Hootsuite Headquarters 5 East 8th Avenue, Vancouver, BC"))
+
+     (h2 "Thursday, 3 September")
+
+     (dl (dt ((class "session")) "Industrial reception")))))
 
 (define local.xexpr
   (make-page 
@@ -1409,7 +1421,9 @@ DARPA's HACMS Program"))
 	"Vancouver, British Columbia, Canada, V6C 2R7")
 
      (p "Book your room here: " (a ((href "https://resweb.passkey.com/go/acmicfp2015conf"))
-				   "https://resweb.passkey.com/go/acmicfp2015conf"))
+				   "https://resweb.passkey.com/go/acmicfp2015conf")
+	". "
+	"The hotel rate is CAD $185 / night + tax.")
 
      (p "If you prefer to call in, please dial 1-888-421-1442 (North America) or 1-402-592-6464 (International)")
 
