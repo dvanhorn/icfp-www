@@ -786,6 +786,9 @@
 
 	 (h3 "News")
 	 (ul 
+	  (li "The hotel reservation block ends 8 August.  See "
+	      (a ((href "local.html")) "local information") 
+	      " for more details.")
 	  (li "The " (a ((href "program.html")) "program") " for ICFP 2015 has been finalized.")
 	  (li "The deadline for " (a ((href "src.html")) "Student Research Competition")
 	      " submissions has been extended until 6th July.  Submit "
