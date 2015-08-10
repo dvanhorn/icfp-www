@@ -1307,7 +1307,8 @@ DARPA's HACMS Program"))
 	     "Dimitrios Vytiniotis, Microsoft Research (UK); "
 	     "Alejandro Russo, Chalmers University of Technology (Sweden)")
 
-	 (dt "17:35-18:05 ICFP Contest Presentation")
+	 (dt "17:35-17:50 ICFP Award ceremony")
+	 (dt "17:50-18:20 ICFP Contest Presentation")
 
 	 (dt ((class "session")) "20:00-22:30 Banquet: Vancouver Aquarium")
 	 (dd "Busses depart from Hyatt Regency 19:30"))
