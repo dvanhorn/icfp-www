@@ -1443,16 +1443,31 @@ DARPA's HACMS Program"))
 
      (p "Canada Line:")
 
-     (p "The Canada Line connects Vancouver International Airport to
-downtown Vancouver in under 30 minutes. Cost is $3.75 for adults and
-$2.50 for children during peak hours each way, plus a $5.00 surcharge
-for all trips originating at the airport. Hyatt Regency Vancouver is
-located at the Burrard Street station and will require a transfer at
-either Granville Station or Waterfront Station.You can also take the
-train to Vancouver City Centre, exit onto Georgia Street and take a
-left, we are located two short blocks away at 655 Burrard
-Street. Please visit www.translink.ca for more information.")
+     (p
+      (a ((href "http://www.translink.ca")) "TransLink")
+      " operates trains on the Canada Line, which takes you from Vancouver
+International Airport (YVR) "
+      "to downtown Vancouver in about 30 minutes. "
+      "The conference hotel is three blocks from Vancouver City Centre
+station on the Canada Line. "
+      "To get even closer, change to the Expo/Millennium Line at Waterfront,
+and ride one stop to Burrard.")
+      
+     (p "The regular adult fare from the airport is $9 ($4 + $5 airport surcharge). "
+	"After 6:30pm (18:30) Monday-Friday, and anytime Saturday-Sunday, the
+fare is $7.75 ($2.75 + $5 airport surcharge)."
+	)
 
+     (p "Tickets expire 90 minutes after purchase. "
+	"Fares are checked by police throughout the system, with large "
+	"fines (over $150) for fare evasion.")
+
+     (p "For more information, see "
+	(a ((href "http://www.translink.ca/en/Fares-and-Passes/Single-Fares.aspx"))
+	   "TransLink fares") 
+	". "
+	"The airport surcharge does not apply to trips " (i "to") " the airport.")
+     
      (p "Taxi:")
 
      (p "Taxis are available at the airport 24 hours a day, including wheelchair accessible vans. Taxi queue areas are located at both the domestic and international arrivals terminals. There is a flat rate from the Airport to the Hyatt of $31.00 CAD, and is approximately $35.00 CAD from the Hyatt to the Airport as a metered fare. ")
@@ -1469,19 +1484,36 @@ Street. Please visit www.translink.ca for more information.")
 
  
      (p "Around the city:")
-
-     (p "Skytrain – this fast and effective transportation system will get you to your destination quickly and easily. The Burrard Station is located across the street from Hyatt Regency Vancouver. Single trip and Day Passes are available.")
-
      #;
      (p "View "
 	(a ((href "https://maps.google.se/maps/ms?msa=0&msid=210997146033221229789.0004ef75436b30b7dddf6&ie=UTF8&t=m&ll=57.698369,11.978016&spn=0.032106,0.073128&z=13&source=embed"))
 	   "ICFP2014 locations")
 	" in a larger map.")
 
+     (p "TransLink also operates dozens of bus lines throughout Metro Vancouver. "
+	"On buses, you need to pay the fare ($2.75 for trips within the city "
+	"of Vancouver) using coins; "
+	"bus drivers cannot make change.  If you expect to pay 8 or more fares during "
+	"your visit, you can save money (and fumbling with coins) by buying "
+	(a ((href "http://www.translink.ca/en/Fares-and-Passes/FareSaver-Tickets.aspx"))
+	   "FareSavers")
+	"---books of 10 tickets---from drugstores and convenience stores, "
+	"such as London Drugs, Shoppers Drug Mart, and 7-Eleven.")
+
+     (p "The TransLink site has a decent "
+	(a ((href "http://tripplanning.translink.ca")) "trip planner") ". "
+	"Useful bus lines include the 19 from the Kingsway and Main Street to "
+	"Stanley Park, "
+	"and the 99 express bus on Broadway (take the Canada Line to "
+	"Broadway-City Hall station).")
+     
+
      (h3 "Restaurants")
 
      (p "There is a " (a ((href "https://www.google.com/maps/d/edit?mid=z9qwa7h0iGE0.kN2QLuYO25Q4&usp=sharing")) "map")
 	" of nearby restaurants.")
+
+
 
      (h2 "Support from the SIGPLAN Professional Activities Committee")
      (p "The " (a ((href "http://www.sigplan.org/PAC.htm")) "SIGPLAN Professional Activities Committee") " can potentially provide supplemental financial "
