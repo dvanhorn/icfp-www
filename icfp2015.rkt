@@ -370,6 +370,7 @@
       (p ((class "indent2")) (a ((href "http://www.intellifactory.com/")) "IntelliFactory"))
       (p ((class "indent2")) "PivotCloud")
       (p ((class "indent2")) (a ((href "http://www.systorvest.no/")) "Systor Vest"))
+      (p ((class "indent2")) (a ((href "http://unbounce.com/")) "Unbounce"))
 
 #|
       (p ((class "indent2")) (a ((href "http://www.alephcloud.com/")) "Alephcloud"))
@@ -934,6 +935,7 @@ DARPA's HACMS Program"))
          (img ((class "sponsor") (src "img/IntelliFactory.png")))
 	 (img ((class "sponsor") (src "img/pivotcloud.png")))
 	 (img ((class "sponsor") (src "img/systorvestlogo.png")))
+	 (img ((class "sponsor") (src "img/unbounce.png")))
 #|
          (img ((class "sponsor") (src "img/opera.png")))
 	 (img ((class "sponsor") (src "img/quviq.jpeg"))) 
