@@ -787,6 +787,9 @@
 
 	 (h3 "News")
 	 (ul 
+	  (li "The conference hotel is booked.  A new hotel block has been reserved at "
+	      "the nearby Metropolitan Hotel.  Reservations "
+	      "can be made " (a ((href "http://tiny.cc/metvan_ICFP2015")) "here") ".")
 	  (li "The hotel reservation block ends 8 August.  See "
 	      (a ((href "local.html")) "local information") 
 	      " for more details.")
@@ -1404,7 +1407,7 @@ DARPA's HACMS Program"))
 
 	 (dt ((class "session")) "18:30--20:30 " (a ((href "http://www.meetup.com/PolyglotVancouver/events/222208655/"))
 						    "Polyglot meetup")
-	     ", Hootsuite Headquarters 5 East 8th Avenue, Vancouver, BC"))
+	     ", Unbounce, Suite #400 - 401 W. Georgia St."))
 
      (h2 "Thursday, 3 September")
 
@@ -1426,20 +1429,26 @@ DARPA's HACMS Program"))
 	"655 Burrard Street" (br)
 	"Vancouver, British Columbia, Canada, V6C 2R7")
 
-     (p "Book your room here: " (a ((href "https://resweb.passkey.com/go/acmicfp2015conf"))
+     (p ((style "color: red")) "Accomodations at the conference hotel are fully booked at this point.")
+     (p "A second hotel block has been reserved at the very nearby (1 block away) Metropolitan "
+	"Hotel Vancouver.")
+     (p "Book your room " (a ((href "http://tiny.cc/metvan_ICFP2015")) "here") " for the "
+	"discounted rate of $189 + tax.")
+
+     #;(p "Book your room here: " (a ((href "https://resweb.passkey.com/go/acmicfp2015conf"))
 				   "https://resweb.passkey.com/go/acmicfp2015conf")
 	". "
 	(span ((style "text-decoration:line-through")) "The hotel rate is CAD $185 / night + tax."))
 
-     (p ((style "color: red")) "The hotel block of standard rooms is fully booked. "
+     #;(p ((style "color: red")) "The hotel block of standard rooms is fully booked. "
 	"The hotel has a block of balcony / view rooms at a rate of "
  	"CAD $235, or approximately USD $178, per night. "
 	"The cut-off date for this block is August 8th.")
 
 
-     (p "If you prefer to call in, please dial 1-888-421-1442 (North America) or 1-402-592-6464 (International)")
+     #;(p "If you prefer to call in, please dial 1-888-421-1442 (North America) or 1-402-592-6464 (International)")
 
-     (h3 "Getting to the hotel")
+     (h3 "Getting to the conference hotel")
 
      (p "To / From Vancouver International Airport:")
 
