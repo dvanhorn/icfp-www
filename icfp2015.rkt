@@ -787,6 +787,7 @@
 
 	 (h3 "News")
 	 (ul 
+	  (li "The full proceedings are now " (a ((href "toc.html")) "available") ".")
 	  (li "The conference hotel is booked.  A new hotel block has been reserved at "
 	      "the nearby Metropolitan Hotel.  Reservations "
 	      "can be made " (a ((href "http://tiny.cc/metvan_ICFP2015")) "here") ".")
@@ -1150,6 +1151,8 @@ DARPA's HACMS Program"))
      ((class "col1"))
      (center
       (h1 "Conference program"))
+     (p "See the ACM Digital Library " (a ((href "toc.html")) "Table of Contents")
+	" for access to papers.")
      (h2 "Monday, 31 August")
      (dl (dt "8:45-9:00 Opening (General Chair)")
          (dt ((class "keynotetitle")) "9:00-10:00 Keynote: Ras Bodik (University of Washington)")
