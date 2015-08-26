@@ -1233,7 +1233,7 @@ DARPA's HACMS Program"))
 	     "Ugo Dal Lago, University of Bologna (Italy) & INRIA (France); "
 	     "Georg Moser, University of Innsbruck (Austria)")
 
-	 (dt "17:35-18:05 Program Chair's Report")
+	 (dt "17:30-18:00 Program Chair's Report (John Reppy)")
 	 (dt ((class "session")) "18:15-19:45 Poster Session / Welcome Reception: Hyatt Regency"))
 	 
      (h2 "Tuesday, 1 September")
@@ -1315,8 +1315,9 @@ DARPA's HACMS Program"))
 	     "Dimitrios Vytiniotis, Microsoft Research (UK); "
 	     "Alejandro Russo, Chalmers University of Technology (Sweden)")
 
-	 (dt "17:35-17:50 ICFP Award ceremony")
-	 (dt "17:50-18:20 ICFP Contest Presentation")
+	 (dt "17:30-18:15 ICFP Award Ceremony and Contest Presentation")
+	 (dd "17:30 ICFP Award Ceremony")
+	 (dd "17:45 ICFP Contest Presentation")
 
 	 (dt ((class "session")) "20:00-22:30 Banquet: Vancouver Aquarium")
 	 (dd "Busses depart from Hyatt Regency 19:30"))
@@ -1324,8 +1325,8 @@ DARPA's HACMS Program"))
 	 
      (h2 "Wednesday, 2 September")
 
-     (dl (dt ((class "keynotetitle")) "9:00-10:00 Keynote: John Hughes, Chalmers University of Technology (Sweden) and John Peterson, Western State Colorado University (USA)")     
-	 (dd "Tribute to Paul Hudak")
+     (dl (dt ((class "keynotetitle")) "9:00-10:00 Tribute to Paul Hudak")
+	 (dd "John Hughes, Chalmers University of Technology (Sweden) and John Peterson, Western State Colorado University (USA)")     
 
 	 (dt "10:00-10:30 Coffee")
 
@@ -1346,6 +1347,7 @@ DARPA's HACMS Program"))
 	     "Spiridon Eliopoulos, Inhabited Type LLC (USA); "
 	     "Nate Foster, Cornell University (USA); "
 	     "Arjun Guha, University of Massachusetts Amherst (USA)")
+	 (dt "11:30-11:50 Break")
 
 	 (dt ((class "session")) "11:50-12:30 Student Research Competition II")
 
@@ -1406,9 +1408,9 @@ DARPA's HACMS Program"))
 	     "Dimitrios Vytiniotis, Microsoft Research Cambridge (UK); "
 	     "Simon Peyton Jones, Microsoft Research Cambridge (UK)")
 
-	 (dt "17:35-17:55 Closing")
+	 (dt ((class "session")) "17:30-18:10 SRC Awards presentation - ICFP 2015 Closing - ICFP 2016 Presentation")
 
-	 (dt ((class "session")) "18:30--20:30 " (a ((href "http://www.meetup.com/PolyglotVancouver/events/222208655/"))
+	 (dt ((class "session")) "18:30-20:30 " (a ((href "http://www.meetup.com/PolyglotVancouver/events/222208655/"))
 						    "Polyglot meetup")
 	     ", Unbounce, Suite #400 - 401 W. Georgia St."))
 
