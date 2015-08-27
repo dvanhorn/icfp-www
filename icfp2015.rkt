@@ -789,10 +789,10 @@
 	 (ul 
 	  (li "Don't miss the many ICFP social events: the opening "
 	      "reception and poster session on Monday night (18:15) at "
-	      "the Hyatt Regency, the banquet dinner on Tuesday "
+	      "the Regency Foyer of the conference hotel, the banquet dinner on Tuesday "
 	      "night (22:00) at the "
 	      "Vancouver Aquarium, and the industrial reception "
-	      "on Thursday.  These events are made possible by the "
+	      "on Thursday night (18:00) in the Regency C ballroom of the conference hotel.  These events are made possible by the "
 	      "generous support from our industrial partners.")
 
 	  (li "The full proceedings are now " (a ((href "toc.html")) "available") ".")
@@ -1161,6 +1161,10 @@ DARPA's HACMS Program"))
       (h1 "Conference program"))
      (p "See the ACM Digital Library " (a ((href "toc.html")) "Table of Contents")
 	" for access to papers.")
+
+     (p "See the " (a ((href "affiliated.html")) "affiliated events") " page "
+	"for information about ICFP co-located events.")
+
      (h2 "Monday, 31 August")
      (dl (dt "8:45-9:00 Opening (General Chair)")
          (dt ((class "keynotetitle")) "9:00-10:00 Keynote: Ras Bodik (University of Washington)")
@@ -1242,7 +1246,7 @@ DARPA's HACMS Program"))
 	     "Georg Moser, University of Innsbruck (Austria)")
 
 	 (dt "17:30-18:00 Program Chair's Report (John Reppy)")
-	 (dt ((class "session")) "18:15-19:45 Poster Session / Welcome Reception: Hyatt Regency"))
+	 (dt ((class "session")) "18:15-19:45 Poster Session / Welcome Reception: Hyatt Regency, Regency Foyer"))
 	 
      (h2 "Tuesday, 1 September")
      (dl (dt ((class "keynotetitle")) "9:00-10:00 Keynote: Mary Sheeran, Chalmers University of Technology (Sweden)")     
@@ -1268,7 +1272,7 @@ DARPA's HACMS Program"))
 	 (dd ((class "paper")) 
 	     "Jasmin Christian Blanchette, INRIA & LORIA, Nancy (France); "
 	     "Andrei Popescu, Middlesex University. London (UK); "
-	     "Dmitriy Traytel, TU München (Germany)")
+	     "Dmitriy Traytel, TU M" uuml "nchen (Germany)")
 
 	 (dt "11:30-11:50 Break")
 	 (dt ((class "session")) "11:50-12:30 Student Research Competition I")
@@ -1424,7 +1428,7 @@ DARPA's HACMS Program"))
 
      (h2 "Thursday, 3 September")
 
-     (dl (dt ((class "session")) "Industrial reception")))))
+     (dl (dt ((class "session")) "18:00-19:45 Industrial reception, Regency C ballroom, Hyatt Regency")))))
 
 (define local.xexpr
   (make-page 
