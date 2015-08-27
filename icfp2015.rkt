@@ -787,6 +787,14 @@
 
 	 (h3 "News")
 	 (ul 
+	  (li "Don't miss the many ICFP social events: the opening "
+	      "reception and poster session on Monday night (18:15) at "
+	      "the Hyatt Regency, the banquet dinner on Tuesday "
+	      "night (22:00) at the "
+	      "Vancouver Aquarium, and the industrial reception "
+	      "on Thursday.  These events are made possible by the "
+	      "generous support from our industrial partners.")
+
 	  (li "The full proceedings are now " (a ((href "toc.html")) "available") ".")
 	  (li "The conference hotel is booked.  A new hotel block has been reserved at "
 	      "the nearby Metropolitan Hotel.  Reservations "
