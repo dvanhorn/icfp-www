@@ -796,9 +796,10 @@
 	      "generous support from our industrial partners.")
 
 	  (li "The full proceedings are now " (a ((href "toc.html")) "available") ".")
-	  (li "The conference hotel is booked.  A new hotel block has been reserved at "
+	  (li "The conference hotel is booked. "
+	      (span ((style "color: red")) "A new hotel block has been reserved at "
 	      "the nearby Metropolitan Hotel.  Reservations "
-	      "can be made " (a ((href "http://tiny.cc/metvan_ICFP2015")) "here") ".")
+	      "can be made " (a ((href "http://tiny.cc/metvan_ICFP2015")) "here") "."))
 	  (li "The hotel reservation block ends 8 August.  See "
 	      (a ((href "local.html")) "local information") 
 	      " for more details.")
