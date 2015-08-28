@@ -1198,7 +1198,7 @@ DARPA's HACMS Program"))
          (dt "12:30-14:00 Lunch")
 
 
-         (dt ((class "session")) "14:00-14:50 Session 3: Miscellaneous")
+         (dt ((class "session")) "14:00-15:00 Session 3: Miscellaneous")
 	 (dt ((class "paper")) (em "Applicative Bidirectional Programming with Lenses"))
 	 (dd ((class "paper")) 
 	     "Kazutaka Matsuda, Tohoku University (Japan); "
@@ -1327,7 +1327,7 @@ DARPA's HACMS Program"))
 	     "Dimitrios Vytiniotis, Microsoft Research (UK); "
 	     "Alejandro Russo, Chalmers University of Technology (Sweden)")
 
-	 (dt "17:30-18:15 ICFP Award Ceremony and Contest Presentation")
+	 (dt ((class "session")) "17:30-18:15 ICFP Award Ceremony and Contest Presentation")
 	 (dd "17:30 ICFP Award Ceremony")
 	 (dd "17:45 ICFP Contest Presentation")
 
