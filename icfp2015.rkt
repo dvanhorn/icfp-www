@@ -870,7 +870,7 @@ DARPA's HACMS Program"))
           ,(role-row "Publicity Chair" 'pub)
           ,@(role-rows "Video Chair" 'video)
           ,@(role-rows "Student Volunteer Co-Chairs" 'sv)
-	  ,(role-row "Mobile App Chair" 'mac)
+	  #;,(role-row "Mobile App Chair" 'mac)
           )
 
      (h3 "SIGPLAN Conference Anti-Harassment Policy") 
