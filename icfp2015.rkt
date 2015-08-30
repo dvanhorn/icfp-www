@@ -1546,6 +1546,7 @@ fare is $7.75 ($2.75 + $5 airport surcharge)."
      (p "There is a " (a ((href "https://www.google.com/maps/d/edit?mid=z9qwa7h0iGE0.kN2QLuYO25Q4&usp=sharing")) "map")
 	" of nearby restaurants.")
 
+     (p "Here is a Fodor blurb distilling the " (a ((href "http://www.fodors.com/world/north-america/canada/british-columbia/vancouver/restaurants")) "Vancouver restaurant scene") ".")
 
 
      (h2 "Support from the SIGPLAN Professional Activities Committee")
