@@ -349,7 +349,7 @@
 |#
       (p ((class "indent1")) "Silver partners")
       (p ((class "indent2")) (a ((href "http://www.bloomberg.com")) "Bloomberg"))
-      (p ((class "indent2")) (a ((href "http://www.facebook.com")) "Facebook"))
+      (p ((class "indent2")) (a ((href "http://research.facebook.com")) "Facebook"))
       (p ((class "indent2")) (a ((href "http://www.tsurucapital.com/en/")) "Tsuru Capital"))
 #|
       (p ((class "indent2")) (a ((href "https://www.credit-suisse.com/global/en/")) "Credit Suisse"))
