@@ -1541,6 +1541,8 @@ fare is $7.75 ($2.75 + $5 airport surcharge)."
 
      (h3 "Restaurants")
 
+     (p "Here is " (a ((href "https://docs.google.com/spreadsheets/d/18EVBqiQ2dDRq5Vp3DtCwu23s4gMgbjmPxCuXhDziEEc/pubhtml?gid=0&single=true")) "a list") " of restaurants recommended by local ICFPers.")
+
      (p "There is a " (a ((href "https://www.google.com/maps/d/edit?mid=z9qwa7h0iGE0.kN2QLuYO25Q4&usp=sharing")) "map")
 	" of nearby restaurants.")
 
