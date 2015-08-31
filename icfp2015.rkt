@@ -788,6 +788,11 @@
 
 	 (h3 "News")
 	 (ul 
+	  (li "A single PDF of the proceeedings for ICFP 2015 is available "
+	      (a ((href "http://lambda-calcul.us/icfp15-vol.pdf")) "here") ". "
+	      "It is password protected with the same credentials as the conference wifi. "
+	      "Papers are also available on the ACM Digital Library " (a ((href "toc.html")) "here")
+	      ".")
 	  (li "Don't miss the many ICFP social events: the opening "
 	      "reception and poster session on Monday night (18:15) at "
 	      "the Regency Foyer of the conference hotel, the banquet dinner on Tuesday "
@@ -796,7 +801,6 @@
 	      "on Thursday night (18:00) in the Regency C ballroom of the conference hotel.  These events are made possible by the "
 	      "generous support from our industrial partners.")
 
-	  (li "The full proceedings are now " (a ((href "toc.html")) "available") ".")
 	  (li "The conference hotel is booked. "
 	      (span ((style "color: red")) "A new hotel block has been reserved at "
 	      "the nearby Metropolitan Hotel.  Reservations "
@@ -1164,6 +1168,10 @@ DARPA's HACMS Program"))
       (h1 "Conference program"))
      (p "See the ACM Digital Library " (a ((href "toc.html")) "Table of Contents")
 	" for access to papers.")
+
+     (p "There is a single PDF of the proceedings available "
+	(a ((href "http://lambda-calcul.us/icfp15-vol.pdf")) "here")
+	".  It is password protected with the same credentials as the conference wifi.")
 
      (p "See the " (a ((href "affiliated.html")) "affiliated events") " page "
 	"for information about ICFP co-located events.")
