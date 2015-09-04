@@ -788,9 +788,13 @@
 
 	 (h3 "News")
 	 (ul 
-	  (li "A single PDF of the proceeedings for ICFP 2015 is available "
+	  (li "Videos of talks are available " (a ((href "https://www.youtube.com/channel/UCwRL68qZFfub1Ep1EScfmBw/playlists")) "here") ".")
+	  (li "A zip containing proceedings for ICFP and all affiliated "
+	      "events is available " 
+	      (a ((href "http://lambda-calcul.us/icfp15.zip")) "here") ". "
+	      "A single PDF of the proceeedings for ICFP 2015 (only) is available "
 	      (a ((href "http://lambda-calcul.us/icfp15-vol.pdf")) "here") ". "
-	      "It is password protected with the same credentials as the conference wifi. "
+	      "They are password protected with the same credentials as the conference wifi. "
 	      "Papers are also available on the ACM Digital Library " (a ((href "toc.html")) "here")
 	      ".")
 	  (li "Don't miss the many ICFP social events: the opening "
@@ -1169,9 +1173,13 @@ DARPA's HACMS Program"))
      (p "See the ACM Digital Library " (a ((href "toc.html")) "Table of Contents")
 	" for access to papers.")
 
-     (p "There is a single PDF of the proceedings available "
+     (p "There is a zip file containing proceedings for ICFP and all "
+	"affiliated events " (a ((href "http://lambda-calcul.us/icfp15.zip")) "here") ". "
+	"There is also a single PDF of the ICFP proceedings available "
 	(a ((href "http://lambda-calcul.us/icfp15-vol.pdf")) "here")
-	".  It is password protected with the same credentials as the conference wifi.")
+	".  Both password protected with the same credentials as the conference wifi.")
+
+     (p "Videos of talks are available " (a ((href "https://www.youtube.com/channel/UCwRL68qZFfub1Ep1EScfmBw/playlists")) "here") ".")
 
      (p "See the " (a ((href "affiliated.html")) "affiliated events") " page "
 	"for information about ICFP co-located events.")
