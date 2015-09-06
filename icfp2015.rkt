@@ -1178,7 +1178,7 @@ DARPA's HACMS Program"))
 	"affiliated events " (a ((href "http://lambda-calcul.us/icfp15.zip")) "here") ". "
 	"There is also a single PDF of the ICFP proceedings available "
 	(a ((href "http://lambda-calcul.us/icfp15-vol.pdf")) "here")
-	".  Both password protected with the same credentials as the conference wifi.")
+	".  Both are password protected with the same credentials as the conference wifi.")
 
      (p "Videos of talks are available " (a ((href "https://www.youtube.com/channel/UCwRL68qZFfub1Ep1EScfmBw/playlists")) "here") ".")
 
