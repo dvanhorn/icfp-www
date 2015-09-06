@@ -788,6 +788,7 @@
 
 	 (h3 "News")
 	 (ul 
+	  (li (a ((href "src.html")) "Results") " from the Student Research Competition have been posted.")
 	  (li (a ((href "sheeran-keynote.pdf")) "Slides") " from Mary Sheeran's keynote are available.")
 	  (li "Videos of talks are available " (a ((href "https://www.youtube.com/channel/UCwRL68qZFfub1Ep1EScfmBw/playlists")) "here") ".")
 	  (li "A zip containing proceedings for ICFP and all affiliated "
