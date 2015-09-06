@@ -806,11 +806,11 @@
 	      "on Thursday night (18:00) in the Regency C ballroom of the conference hotel.  These events are made possible by the "
 	      "generous support from our industrial partners.")
 
-	  (li "The conference hotel is booked. "
+	 #;(li "The conference hotel is booked. "
 	      (span ((style "color: red")) "A new hotel block has been reserved at "
 	      "the nearby Metropolitan Hotel.  Reservations "
 	      "can be made " (a ((href "http://tiny.cc/metvan_ICFP2015")) "here") "."))
-	  (li "The hotel reservation block ends 8 August.  See "
+	 #;(li "The hotel reservation block ends 8 August.  See "
 	      (a ((href "local.html")) "local information") 
 	      " for more details.")
 	  (li "The " (a ((href "program.html")) "program") " for ICFP 2015 has been finalized.")
@@ -819,11 +819,11 @@
 	      (a ((href "https://www.easychair.org/conferences/?conf=icfp2015src"))
 		 "here")
 	      ".  Submissions from undergraduates are encouraged!  Travel funding is provided, too!")
-	  (li "Book your room " (a ((href "https://resweb.passkey.com/go/acmicfp2015conf")) "here") ".")
+	  #;(li "Book your room " (a ((href "https://resweb.passkey.com/go/acmicfp2015conf")) "here") ".")
 	  (li "The ICFP 2015 "  (a ((href "http://www.icfpcontest.org/")) "Programming Contest") " will take place from "
 	      "Friday 7 August 2015 at 12:00 UTC and ends on Monday 10 "
 	      "August 2015 at 12:00 UTC.")
-	  (li (a ((href "https://regmaster4.com/2015conf/ICFP15/register.php")) "Registration")
+	  #;(li (a ((href "https://regmaster4.com/2015conf/ICFP15/register.php")) "Registration")
 	      " is now open.")
           (li "The " (a ((href "accepted.html")) "list of accepted papers") " is now online.")	 
 	  (li "The "
@@ -1805,6 +1805,32 @@ postal address."))))
      ((class "col1"))
      (center
       (h1 "Student Research Competition"))
+
+     (h2 "2015 Results")
+
+     (h3 "Finalists: Undergraduate category")
+     (ul 
+      (li "First place: Izzy Meckler, University of Chicago, "
+	  (em "Synthesis with String Diagrams in Haskell"))
+      (li "Second place: Kyle Headley, University of Maryland, "
+	  (em "Sparse Adapton"))
+     
+      (li "Third place: Alberto Sadde, University of York, "
+	  (em "Functional GPU Programming: A Comparison between "
+	      "Obsidian and Accelerate")))
+
+     (h3 "Finalists: Graduate category")
+     (ul
+      (li "First place: Jennifer Paykin, University of Pennsylvania, "
+	  (em "Curry-Howard for Callbacks"))
+      (li "Second place: Cyrus Omar, Carnegie Mellon University, "
+	  (em "Modular Syntax"))
+      (li "Third place: Robert Rand, University of Pennsylvania, "
+	  (em "Verifying Probabilistic Programs in the Presence of an Adversary")))
+     
+
+     (h3 "Overview")
+
      (p "This year ICFP will host a " 
 	(emph "Student Research Competition")
 	" where undergraduate and postgraduate students can "
