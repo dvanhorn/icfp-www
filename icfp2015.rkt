@@ -788,6 +788,7 @@
 
 	 (h3 "News")
 	 (ul 
+	  (li (a ((href "sheeran-keynote.pdf")) "Slides") " from Mary Sheeran's keynote are available.")
 	  (li "Videos of talks are available " (a ((href "https://www.youtube.com/channel/UCwRL68qZFfub1Ep1EScfmBw/playlists")) "here") ".")
 	  (li "A zip containing proceedings for ICFP and all affiliated "
 	      "events is available " 
@@ -1269,7 +1270,8 @@ DARPA's HACMS Program"))
 	 
      (h2 "Tuesday, 1 September")
      (dl (dt ((class "keynotetitle")) "9:00-10:00 Keynote: Mary Sheeran, Chalmers University of Technology (Sweden)")     
-	 (dd "Functional Programming and Hardware Design: Still Interesting after All These Years")
+	 (dd "Functional Programming and Hardware Design: Still Interesting after All These Years "
+	     (a ((href "sheeran-keynote.pdf")) "[slides]"))
 
          (dt "10:00-10:30 Coffee")
 	
